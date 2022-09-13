@@ -156,6 +156,7 @@ df_dictionary <- create_dictionary(list_dataset = list("mortality" = mortality_c
                                                        , "demographics" = demographics_clean
                                                        , "response" = response_clean
                                                        , "medications" = medications_clean
+                                                       , "questionnaire" = questionnaire_clean
                                                        , "chemicals" = chemicals_clean
                                                        , "occupation" = occupation_clean
                                                        , "weights" = weights_clean
