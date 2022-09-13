@@ -167,4 +167,4 @@ df_dictionary <- create_dictionary(list_dataset = list("mortality" = mortality_c
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Calculate statistics on the dataset  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-df_num_files <- calculate_num_files(list_master_files)
+list_num_files <- calculate_num_files(list_master_files)
