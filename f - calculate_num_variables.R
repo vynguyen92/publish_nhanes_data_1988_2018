@@ -54,7 +54,7 @@ calculate_num_variables <- function(list_documentation
     map(.
         , extract_file_columns) %>%
     bind_rows(.)
-  View(df_files)
+  # View(df_files)
   
   num_unique_original_variables <- df_files %>%
     filter(grepl("^WT_", variable_codename) == FALSE) %>%
@@ -63,19 +63,25 @@ calculate_num_variables <- function(list_documentation
     pull(variable_codename) %>%
     unique(.) %>%
     length(.)
-  print(num_unique_original_variables)
+  # print(num_unique_original_variables)
   
   harmonized_variables_dictionary <- dataset_dictionary %>%
     pull(variable_codename_use) %>%
     unique(.) 
-  print(length(harmonized_variables_dictionary))
+  # print(length(harmonized_variables_dictionary))
   
   harmonized_df_files <- df_files %>%
     pull(variable_codename_use) %>%
     unique(.) 
-  print(length(harmonized_df_files))
+  # print(length(harmonized_df_files))
     
-  print(outersect(harmonized_variables_dictionary
-                  , harmonized_df_files))
+  # print(outersect(harmonized_variables_dictionary
+  #                 , harmonized_df_files))
   # print(num_harmonized_variables)
+  
+  list_stats <- list("num_unique_original_variables" = num_unique_original_variables
+                     , "num_unique_harmonized_variables" = length(harmonized_df_files)
+                     , "df_variables_by_cycle" = df_files)
+  
+  return(list_stats)
 }
