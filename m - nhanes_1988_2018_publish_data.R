@@ -169,4 +169,5 @@ df_dictionary <- create_dictionary(list_dataset = list("mortality" = mortality_c
 
 list_num_files <- calculate_num_files(list_master_files)
 
-list_num_variables <- calculate_num_variables(list_master_files)
+list_num_variables <- calculate_num_variables(list_master_files
+                                              , df_dictionary)
