@@ -28,6 +28,25 @@ calculate_num_files <- function(list_documentation)
     map(.
         , extract_file_columns) %>%
     bind_rows(.)
+  # View(df_files)
   
+  num_unique_files <- df_files %>%
+    pull(file_name) %>%
+    unique(.) %>%
+    length(.)
+  # print(num_unique_files)
   
+  df_num_files_by_cycle <- df_files %>%
+    select(file_name, SDDSRVYR) %>%
+    unique(.) %>%
+    group_by(SDDSRVYR) %>%
+    summarise(num_files = n()) %>%
+    ungroup()
+  # print(df_num_files_by_cycle)
+  
+  list_stats <- list("num_total_files" = num_unique_files
+                     , "num_files_by_cycle" = df_num_files_by_cycle
+                     , "df_files_by_cycle" = df_files)
+  
+  return(list_stats)
 }
