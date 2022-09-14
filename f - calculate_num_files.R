@@ -1,5 +1,7 @@
 calculate_num_files <- function(list_documentation)
 {
+  library("tidyverse")
+  
   names_dataset <- names(list_documentation) %>%
     gsub(" Fix Category$| \\(trimmed for spaces\\)$| \\(old\\)$"
          , ""
@@ -14,7 +16,8 @@ calculate_num_files <- function(list_documentation)
     name_dataset_i <- x
     
     subset_files_i <- list_documentation[[name_dataset_i]] %>%
-      select(variable_codename_use
+      select(variable_codename
+             , variable_codename_use
              , file_name	
              , file_summary	
              , year	
@@ -22,6 +25,52 @@ calculate_num_files <- function(list_documentation)
       unique(.) %>%
       drop_na(file_name) %>%
       mutate(in_dataset = name_dataset_i)
+    
+    if(name_dataset_i == "Chemicals")
+    {
+      comments_i <- list_documentation[[name_dataset_i]] %>%
+        select(comment_codename
+               , comment_codename_use
+               , file_name
+               , file_summary
+               , year	
+               , SDDSRVYR) %>%
+        drop_na(comment_codename_use) %>%
+        unique(.) %>%
+        rename(variable_codename = comment_codename) %>%
+        rename(variable_codename_use = comment_codename_use) %>%
+        mutate(in_dataset = "Comments")
+      
+      subset_files_i <- subset_files_i %>%
+        full_join(.
+                  , comments_i
+                  , by = colnames(.))
+      
+    } else if(name_dataset_i == "Questionnaire") {
+    
+      subset_files_i <- subset_files_i %>%
+        filter(!(file_summary %in% c("Prescription Medications - Drug Information"
+                                   , "Prescription Medications")))
+      
+      medications_i <- list_documentation[[name_dataset_i]] %>%
+        filter(file_summary %in% c("Prescription Medications - Drug Information"
+                                   , "Prescription Medications")) %>%
+        select(variable_codename
+               , variable_codename_use
+               , file_name	
+               , file_summary	
+               , year	
+               , SDDSRVYR) %>%
+        unique(.) %>%
+        mutate(in_dataset = "Medications")
+      
+      subset_files_i <- subset_files_i %>%
+        full_join(.
+                  , medications_i
+                  , by = colnames(.))
+    }
+    
+    return(subset_files_i)
   }
   
   df_files <- names_dataset %>%
@@ -44,9 +93,19 @@ calculate_num_files <- function(list_documentation)
     ungroup()
   # print(df_num_files_by_cycle)
   
+  df_num_files_by_modules <- df_files %>%
+    select(file_name, in_dataset) %>%
+    unique(.) %>%
+    group_by(in_dataset) %>%
+    summarise(num_files = n()) %>%
+    ungroup()
+  View(df_files)
+  View(df_num_files_by_modules)
+  
   list_stats <- list("num_total_files" = num_unique_files
                      , "num_files_by_cycle" = df_num_files_by_cycle
-                     , "df_files_by_cycle" = df_files)
+                     , "df_files_by_cycle" = df_files
+                     , "df_num_files_by_modules" = df_num_files_by_modules)
   
   return(list_stats)
 }
