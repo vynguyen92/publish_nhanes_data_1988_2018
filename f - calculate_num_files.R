@@ -102,6 +102,17 @@ calculate_num_files <- function(list_documentation)
   View(df_files)
   View(df_num_files_by_modules)
   
+  df_num_variable_by_module <- df_files %>%
+    filter(grepl("^WT_", variable_codename) == FALSE) %>%
+    filter(grepl("^VN", variable_codename) == FALSE) %>%
+    drop_na(file_name) %>%
+    select(variable_codename, in_dataset) %>%
+    unique(.) %>%
+    group_by(in_dataset) %>%
+    summarise(num_variables = n()) %>%
+    ungroup()
+  View(df_num_variable_by_module)
+  
   list_stats <- list("num_total_files" = num_unique_files
                      , "num_files_by_cycle" = df_num_files_by_cycle
                      , "df_files_by_cycle" = df_files
