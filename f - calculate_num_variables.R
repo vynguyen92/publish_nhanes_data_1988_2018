@@ -21,6 +21,7 @@ calculate_num_variables <- function(list_documentation
       select(variable_codename
              , variable_codename_use
              , file_name
+             , file_category
              , year	
              , SDDSRVYR) %>%
       unique(.) %>%
@@ -32,6 +33,7 @@ calculate_num_variables <- function(list_documentation
         select(comment_codename
                , comment_codename_use
                , file_name
+               , file_category
                , year	
                , SDDSRVYR) %>%
         drop_na(comment_codename_use) %>%
@@ -74,14 +76,28 @@ calculate_num_variables <- function(list_documentation
     pull(variable_codename_use) %>%
     unique(.) 
   # print(length(harmonized_df_files))
+  
+  # View(df_files)
     
+  df_num_variables_per_module <- df_files %>%
+    select(variable_codename_use
+           , file_category
+           , in_dataset) %>%
+    unique() %>%
+    group_by(file_category
+             , in_dataset) %>%
+    count() %>%
+    ungroup()
+  # View(df_num_variables_per_module)
+  
   # print(outersect(harmonized_variables_dictionary
   #                 , harmonized_df_files))
   # print(num_harmonized_variables)
   
   list_stats <- list("num_unique_original_variables" = num_unique_original_variables
                      , "num_unique_harmonized_variables" = length(harmonized_df_files)
-                     , "df_variables_by_cycle" = df_files)
+                     , "df_variables_by_cycle" = df_files
+                     , "df_num_variables_per_module" = df_num_variables_per_module)
   
   return(list_stats)
 }
