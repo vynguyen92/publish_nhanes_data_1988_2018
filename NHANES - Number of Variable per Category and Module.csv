@@ -1,0 +1,190 @@
+file_category,in_dataset,n
+Acrylamide & Glycidamide,Chemicals,2
+Acrylamide & Glycidamide,Comments,2
+Alanine aminotransferase,Response,4
+Albumin,Response,10
+Alcohol Use,Questionnaire,15
+Aldehydes,Chemicals,12
+Aldehydes,Comments,12
+Alkaline phosphatase,Response,3
+Antibody,Response,17
+Apolipoprotein,Response,12
+Aromatic Amines,Chemicals,6
+Aromatic Amines,Comments,6
+Aromatic Diamines,Chemicals,5
+Aromatic Diamines,Comments,5
+Aspartate aminotransferase,Response,3
+Atrazine and Metabolites,Chemicals,6
+Atrazine and Metabolites,Comments,6
+Bicarbonate,Response,3
+Bilirubin,Response,7
+Bioelectrical Impedance Analysis,Response,124
+Blood Pressure,Response,75
+Blood Urea Nitrogen,Response,6
+Body Measures,Response,127
+Bone Alkaline Phosphatase,Response,3
+Breast-feeding,Dietary,1
+Brominated Flame Retardants,Chemicals,22
+Brominated Flame Retardants,Comments,11
+C-reactive protein,Response,3
+Cadmium,Chemicals,4
+Cadmium,Comments,4
+Calcium,Chemicals,3
+Calcium,Comments,3
+Cardiovascular Fitness,Response,65
+CD8+ T Cells,Response,2
+Chloride,Chemicals,3
+Chloride,Comments,3
+Cholesterol,Response,40
+Chromium & Cobalt,Chemicals,2
+Chromium & Cobalt,Comments,2
+Complete Blood Count,Response,150
+Copper,Chemicals,1
+Copper,Comments,1
+Cotinine,Chemicals,16
+Cotinine,Comments,16
+Creatine Phosphokinase,Response,1
+Creatinine,Response,6
+Current Health Status,Questionnaire,13
+Cytomegalovirus,Response,2
+Cytomegalovirus IgG & IgM Antibodies,Response,6
+DEET and Metabolites,Chemicals,4
+DEET and Metabolites,Comments,4
+Demographics,Demographics,281
+Diabetes,Questionnaire,89
+Diabetes,Response,6
+Diet,Questionnaire,38
+Diet Behaviors,Dietary,25
+Dietary Interview,Dietary,8
+"Dioxins, Furans, & Coplanar PCBs",Chemicals,116
+"Dioxins, Furans, & Coplanar PCBs",Comments,58
+Environmental Pesticides,Chemicals,5
+Environmental Pesticides,Comments,5
+Epstein-Barr Virus,Response,2
+Erythrocyte Protoporphyrin,Response,6
+Ethylene Oxide,Chemicals,1
+Ethylene Oxide,Comments,1
+Exercise,Questionnaire,35
+Family Background,Questionnaire,17
+Ferritin,Response,6
+Fibrinogen,Response,6
+Fish & Shellfish,Dietary,66
+Flame Retardant Metabolites,Chemicals,12
+Flame Retardant Metabolites,Comments,12
+Folate,Response,12
+Follicle Stimulating Hormone,Response,7
+Food Frequency,Questionnaire,81
+Food Patterns Equivalents,Dietary,37
+Formaldehyde,Chemicals,1
+Formaldehyde,Comments,1
+Gamma Glutamyl Transferase,Response,4
+Globulin,Response,6
+Glomerular Filtration Rate,Response,2
+Glycohemoglobin,Response,3
+Health Insurance and Income Assessment,Questionnaire,36
+Hepatitis,Response,18
+Herpes Simplex Virus Type-1 & Type-2,Response,6
+Heterocyclic Aromatic Amines,Chemicals,10
+Heterocyclic Aromatic Amines,Comments,10
+High-Sensitivity C-Reactive Protein,Response,3
+HIV,Response,4
+Homocysteine,Response,3
+Inorganic Mercury,Chemicals,3
+Inorganic Mercury,Comments,3
+Iodine,Chemicals,3
+Iodine,Comments,3
+Iron,Response,21
+Lactate dehydrogenase,Response,3
+Lead,Chemicals,3
+Lead,Comments,3
+Lipoprotein,Response,6
+Luteinizing Hormone,Response,6
+Manganese,Chemicals,1
+Manganese,Comments,1
+"Measles, Rubella, & Varicella",Response,11
+Medical Conditions,Questionnaire,579
+Melamine,Chemicals,2
+Melamine,Comments,2
+Mercury,Chemicals,2
+Mercury,Comments,2
+Methylmalonic Acid,Chemicals,1
+Methylmalonic Acid,Comments,1
+Mortality,Mortality,16
+Neonicotinoids,Chemicals,6
+Neonicotinoids,Comments,6
+Nitrosamines,Chemicals,3
+Nitrosamines,Comments,3
+Non-persistent Pesticide Metabolites,Chemicals,25
+Non-persistent Pesticide Metabolites,Comments,25
+Normalized Calcium,Response,3
+Occupation,Occupation,70
+Oral Glucose Tolerance Test,Response,8
+Organophosphate Insecticides - Diakyl Phosphate Metabolites,Chemicals,6
+Organophosphate Insecticides - Diakyl Phosphate Metabolites,Comments,6
+Osmolality,Response,3
+"Perchlorate, Nitrate & Thiocyanate",Chemicals,3
+"Perchlorate, Nitrate & Thiocyanate",Comments,3
+Perfluoroalkyl and Polyfluoroalkyl Substances,Chemicals,31
+Perfluoroalkyl and Polyfluoroalkyl Substances,Comments,31
+Personal Care and Consumer Product Chemicals and Metabolites,Chemicals,11
+Personal Care and Consumer Product Chemicals and Metabolites,Comments,11
+Pesticides - Carbamates & Organophosphorus Metabolites,Chemicals,6
+Pesticides - Carbamates & Organophosphorus Metabolites,Comments,6
+Pesticides - Organochlorine Metabolites,Chemicals,25
+Pesticides - Organochlorine Metabolites,Comments,13
+Phlebotomy Screening,Response,21
+Phosphorus,Response,6
+Phthalates & Plasticizers Metabolites,Chemicals,21
+Phthalates & Plasticizers Metabolites,Comments,21
+Physical Activity,Questionnaire,113
+Phytoestrogens,Chemicals,6
+Phytoestrogens,Comments,6
+Plasma Fasting Glucose & Insulin,Response,30
+Polycyclic Aromatic Hydrocarbons,Chemicals,12
+Polycyclic Aromatic Hydrocarbons,Comments,12
+Potassium,Chemicals,3
+Potassium,Comments,3
+Prescription Medications,Questionnaire,87
+"Pyrethroids, Herbicides, & Organophosphorus Metabolites",Chemicals,11
+"Pyrethroids, Herbicides, & Organophosphorus Metabolites",Comments,11
+Salt,Dietary,6
+Selenium,Chemicals,3
+Selenium,Comments,3
+Serum C-peptide,Response,10
+Sex Steroid Hormone,Response,1
+Sodium,Chemicals,3
+Sodium,Comments,3
+Spirometry,Response,103
+Survey Variables,Dietary,6
+Survey Weights,Weights,262
+Survey Weights - Chemicals,Weights,595
+Terephthalate,Chemicals,2
+Terephthalate,Comments,2
+Thyroid Profile,Response,13
+Tobacco,Questionnaire,30
+Total & Speciated Arsenics,Chemicals,9
+Total & Speciated Arsenics,Comments,9
+Total Nutrient Intakes,Dietary,164
+Total protein,Response,3
+Total Protein,Response,3
+Transferrin,Response,1
+Uric Acid,Response,6
+Urinary Metals,Chemicals,15
+Urinary Metals,Comments,15
+Urinary N-telopeptides,Response,3
+"Vitamin A, Vitamin E & Carotenoids",Chemicals,44
+"Vitamin A, Vitamin E & Carotenoids",Comments,32
+Vitamin B,Chemicals,5
+Vitamin B,Comments,5
+Vitamin C,Chemicals,3
+Vitamin C,Comments,3
+Vitamin D,Chemicals,6
+Vitamin D,Comments,6
+"Vitamine, Mineral, and Medicine Usage",Questionnaire,192
+Volatile N-Nitrosamine Compounds,Chemicals,5
+Volatile N-Nitrosamine Compounds,Comments,5
+Volatile Organic Compound (VOC) Metabolites,Chemicals,84
+Volatile Organic Compound (VOC) Metabolites,Comments,84
+Water,Dietary,5
+Zinc,Chemicals,1
+Zinc,Comments,1
