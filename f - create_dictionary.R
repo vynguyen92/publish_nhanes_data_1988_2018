@@ -63,18 +63,90 @@ create_dictionary <- function(list_dataset
     list_dictionary[[i]] <- df_labels_i
   }
   
+  names_dataset <- names(list_documentations) %>%
+    gsub(" Fix Category$| \\(trimmed for spaces\\)$| \\(old\\)$"
+         , ""
+         , .) %>% 
+    unique(.) 
+  
+  names_dataset <- names_dataset[!(names_dataset %in% "Biomonitoring Equivalents")]
+  # print(names_dataset)
+  
+  extract_file_columns <- function(x)
+  {
+    name_dataset_i <- x
+    
+    subset_files_i <- list_documentations[[name_dataset_i]] %>%
+      select(variable_codename_use
+             , variable_description_use
+             , file_name
+             , file_category
+             , year	
+             , SDDSRVYR) %>%
+      unique(.) %>%
+      mutate(in_dataset = name_dataset_i)
+    
+    if(name_dataset_i == "Chemicals")
+    {
+      comments_i <- list_documentations[[name_dataset_i]] %>%
+        select(comment_codename_use
+               , variable_description_use
+               , units
+               , file_name
+               , file_category
+               , year	
+               , SDDSRVYR) %>%
+        drop_na(comment_codename_use) %>%
+        unique(.) %>%
+        rename(variable_codename_use = comment_codename_use) %>%
+        mutate(in_dataset = "Comments")
+      # View(comments_i)
+      
+      subset_files_i <- subset_files_i %>%
+        full_join(.
+                  , comments_i
+                  , by = colnames(.))
+      
+    }
+    
+    return(subset_files_i)
+  }
+  
+  df_files <- names_dataset %>%
+    map(.
+        , extract_file_columns) %>%
+    bind_rows(.)
+  # View(df_files)
+  
   joining_by_colnames <- function(x, y) full_join(x
                                                   , y
                                                   , by = NULL)
-  
+
   df_dictionary_merged <- list_dictionary %>%
     reduce(joining_by_colnames)
-  
+
   df_dictionary_merged <- df_dictionary_merged %>%
     left_join(.
               , df_documentation_chemicals
               , by = c("variable_codename_use"
-                       , "variable_description_use"))
+                       , "variable_description_use")) %>%
+    left_join(.
+              , df_files %>%
+                select(variable_codename_use
+                       , file_category) %>%
+                unique(.)
+              , by = c("variable_codename_use")) %>%
+    mutate(file_category = tolower(file_category)) %>%
+    relocate(file_category
+             , .after = in_dataset)
   
-  return(df_dictionary_merged)
+
+  index_cat_blank<- which(df_dictionary_merged$variable_codename_use %in% c("SEQN_new"
+                                                                            , "survey_day"))
+  
+  df_dictionary_merged[index_cat_blank,"file_category"] <- "survey variables"
+  
+  View(df_dictionary_merged)
+  
+  # return(df_dictionary_merged)
 }
