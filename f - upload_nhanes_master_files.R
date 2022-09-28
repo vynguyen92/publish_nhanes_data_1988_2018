@@ -32,6 +32,7 @@ upload_nhanes_master_files <- function(name_of_file)
                                                   , "text"
                                                   , "text"
                                                   , "text"
+                                                  , "text"
                                                   , "numeric"
                                                   , "text"
                                                   , "numeric"
@@ -53,6 +54,7 @@ upload_nhanes_master_files <- function(name_of_file)
                                                   , "text"	
                                                   , "text"	
                                                   , "text"	
+                                                  , "text"
                                                   , "text"
                                                   , "text"
                                                   , "numeric"	
@@ -120,6 +122,7 @@ upload_nhanes_master_files <- function(name_of_file)
                                                   , "text"	
                                                   , "text"
                                                   , "text"	
+                                                  , "text"
                                                   , "text"))
       
       
@@ -131,6 +134,7 @@ upload_nhanes_master_files <- function(name_of_file)
                                                   , "text"	
                                                   , "text"	
                                                   , "text"	
+                                                  , "text"
                                                   , "text"
                                                   , "text"
                                                   , "text"
