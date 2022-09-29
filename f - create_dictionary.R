@@ -4,6 +4,7 @@ create_dictionary <- function(list_dataset
   library("tidyverse")
   library("readxl")
   library("sjlabelled")
+  library("stringr")
   
   df_documentation_chemicals <- list_documentations[["Chemicals"]] %>%
     select("variable_codename_use"
@@ -57,7 +58,7 @@ create_dictionary <- function(list_dataset
     df_labels_i <- data.frame(variable_codename_use = codenames
                               , variable_description_use = descriptions
                               , stringsAsFactors = FALSE) %>%
-      mutate(in_dataset = name_i)
+      mutate(in_dataset = str_to_title(name_i))
     # View(df_labels_i)
     
     list_dictionary[[i]] <- df_labels_i
@@ -84,7 +85,7 @@ create_dictionary <- function(list_dataset
              , year	
              , SDDSRVYR) %>%
       unique(.) %>%
-      mutate(in_dataset = name_dataset_i)
+      mutate(in_dataset = str_to_title(name_dataset_i))
     
     if(name_dataset_i == "Chemicals")
     {
@@ -136,7 +137,7 @@ create_dictionary <- function(list_dataset
                        , file_category) %>%
                 unique(.)
               , by = c("variable_codename_use")) %>%
-    mutate(file_category = tolower(file_category)) %>%
+    # mutate(file_category = tolower(file_category)) %>%
     relocate(file_category
              , .after = in_dataset)
   
@@ -144,7 +145,7 @@ create_dictionary <- function(list_dataset
   index_cat_blank<- which(df_dictionary_merged$variable_codename_use %in% c("SEQN_new"
                                                                             , "survey_day"))
   
-  df_dictionary_merged[index_cat_blank,"file_category"] <- "survey variables"
+  df_dictionary_merged[index_cat_blank,"file_category"] <- "Survey Variables"
   
   View(df_dictionary_merged)
   
