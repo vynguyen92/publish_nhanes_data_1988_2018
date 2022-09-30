@@ -45,6 +45,19 @@ create_dictionary <- function(list_dataset
     
     dataset_i <- list_dataset[[name_i]]
     
+    df_num_measurements_cycles_i <- dataset_i %>%
+      map(.
+          , calculate_num_measurements_cycles
+          , df_nhanes = dataset_i)
+    
+    
+    names_df_num_measurements_cycles_i <- names(df_num_measurements_cycles_i)
+    
+    df_num_measurements_cycles_i <- df_num_measurements_cycles_i %>%
+      bind_rows(.) %>%
+      mutate(variable_codename_use = names_df_num_measurements_cycles_i)
+    # View(df_num_measurements_cycles_i)
+    
     df_labels_i <- get_label(dataset_i) %>%
       data.frame(.)
     # View(df_labels_i)
@@ -58,6 +71,9 @@ create_dictionary <- function(list_dataset
     df_labels_i <- data.frame(variable_codename_use = codenames
                               , variable_description_use = descriptions
                               , stringsAsFactors = FALSE) %>%
+      full_join(.
+                , df_num_measurements_cycles_i
+                , by = "variable_codename_use") %>%
       mutate(in_dataset = str_to_title(name_i))
     # View(df_labels_i)
     
@@ -75,7 +91,8 @@ create_dictionary <- function(list_dataset
   
   df_files <- names_dataset %>%
     map(.
-        , extract_file_columns) %>%
+        , extract_file_columns
+        , list_documentations = list_documentations) %>%
     bind_rows(.)
   # View(df_files)
   
@@ -110,7 +127,6 @@ create_dictionary <- function(list_dataset
   df_dictionary_merged <- df_dictionary_merged %>%
     filter(!(variable_codename_use == "SDDSRVYR" & file_category == "Demographics"))
   
-  df_num_measurements_cycles <- list_dataset
   
   View(df_dictionary_merged)
   
