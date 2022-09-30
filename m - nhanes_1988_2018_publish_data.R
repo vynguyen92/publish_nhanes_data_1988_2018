@@ -100,7 +100,7 @@ medications_clean <- clean_medications_dataset(medications_unclean
                                                , list_master_files
                                                , "Questionnaire")
 
-list_master_files <- upload_nhanes_master_files("NHANES - Master List of Files 1i.xlsx")
+
 
 chemicals_clean_test <- clean_chemicals_dataset(chemicals_unclean
                                                 , list_master_files
@@ -148,6 +148,8 @@ questionnaire_clean <- clean_questionnaire_dataset(questionnaire_unclean
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Create dictionary  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+list_master_files <- upload_nhanes_master_files("NHANES - Master List of Files 1i.xlsx")
 
 df_medications_drug_info <- create_dictionary_drugs("RXQ_DRUG")
 
