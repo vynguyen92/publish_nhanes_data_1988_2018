@@ -73,46 +73,6 @@ create_dictionary <- function(list_dataset
   names_dataset <- names_dataset[!(names_dataset %in% "Biomonitoring Equivalents")]
   # print(names_dataset)
   
-  extract_file_columns <- function(x)
-  {
-    name_dataset_i <- x
-    
-    subset_files_i <- list_documentations[[name_dataset_i]] %>%
-      select(variable_codename_use
-             , variable_description_use
-             , file_name
-             , file_category
-             , year	
-             , SDDSRVYR) %>%
-      unique(.) %>%
-      mutate(in_dataset = str_to_title(name_dataset_i))
-    
-    if(name_dataset_i == "Chemicals")
-    {
-      comments_i <- list_documentations[[name_dataset_i]] %>%
-        select(comment_codename_use
-               , variable_description_use
-               , units
-               , file_name
-               , file_category
-               , year	
-               , SDDSRVYR) %>%
-        drop_na(comment_codename_use) %>%
-        unique(.) %>%
-        rename(variable_codename_use = comment_codename_use) %>%
-        mutate(in_dataset = "Comments")
-      # View(comments_i)
-      
-      subset_files_i <- subset_files_i %>%
-        full_join(.
-                  , comments_i
-                  , by = colnames(.))
-      
-    }
-    
-    return(subset_files_i)
-  }
-  
   df_files <- names_dataset %>%
     map(.
         , extract_file_columns) %>%
@@ -142,10 +102,15 @@ create_dictionary <- function(list_dataset
              , .after = in_dataset)
   
 
-  index_cat_blank<- which(df_dictionary_merged$variable_codename_use %in% c("SEQN_new"
+  index_cat_blank <- which(df_dictionary_merged$variable_codename_use %in% c("SEQN_new"
                                                                             , "survey_day"))
   
   df_dictionary_merged[index_cat_blank,"file_category"] <- "Survey Variables"
+  
+  df_dictionary_merged <- df_dictionary_merged %>%
+    filter(!(variable_codename_use == "SDDSRVYR" & file_category == "Demographics"))
+  
+  df_num_measurements_cycles <- list_dataset
   
   View(df_dictionary_merged)
   
