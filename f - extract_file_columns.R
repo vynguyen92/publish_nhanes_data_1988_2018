@@ -1,4 +1,5 @@
-extract_file_columns <- function(x)
+extract_file_columns <- function(x
+                                 , list_documentations)
 {
   name_dataset_i <- x
   
