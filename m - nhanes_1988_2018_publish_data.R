@@ -165,6 +165,7 @@ df_dictionary <- create_dictionary(list_dataset = list("mortality" = mortality_c
                                                        , "comments" = comments_clean)
                                    , list_documentations = list_master_files)
 
+df_levels_categorical_variables <- create_dictionary_harmonized_categories(list_documentations = list_master_files)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Calculate statistics on the dataset  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
