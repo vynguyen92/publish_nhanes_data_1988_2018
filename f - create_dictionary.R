@@ -127,8 +127,12 @@ create_dictionary <- function(list_dataset
   df_dictionary_merged <- df_dictionary_merged %>%
     filter(!(variable_codename_use == "SDDSRVYR" & file_category == "Demographics"))
   
+  df_dictionary_merged <- df_dictionary_merged %>%
+    relocate(any_of(c("num_participants_measurements"
+                      , "unique_cycles"))
+             , .after = file_category)
   
-  View(df_dictionary_merged)
+  # View(df_dictionary_merged)
   
-  # return(df_dictionary_merged)
+  return(df_dictionary_merged)
 }
