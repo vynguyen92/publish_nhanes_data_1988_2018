@@ -39,10 +39,6 @@ demographics_unclean <- compile_datasets(cleaning_documentation = list_master_fi
                                          , current_directory = working_directory
                                          , name_dataset = "Demographics")
 
-# demographics_unclean <- dumb_compile_demographics_datasets(list_document_cleaning = list_master_files
-#                                                            , current_directory = working_directory
-#                                                            , name_dataset = "Demographics")
-
 
 # Fix this due to change from df to list for the cleaning documentation
 medications_unclean <- compile_datasets(cleaning_documentation = list_master_files$Questionnaire %>%
