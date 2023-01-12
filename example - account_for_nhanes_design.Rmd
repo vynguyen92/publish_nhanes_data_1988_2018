@@ -1,0 +1,229 @@
+---
+title: "Account for NHANES Sampling Design in Regression"
+author: "Vy Nguyen"
+date: "1/9/2023"
+output: html_document
+---
+
+## Goal 
+We will learn how to 
+1. merge datasets together using tidyverse syntax by using the %>% (AKA pipe) operator
+2. run a linear regression model that accounts for NHANES sampling design
+3. run a cox proportional hazard model that accounts for NHANES sampling design
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Install packages to run analysis
+You only need to run this ONCE!
+```{r, echo = FALSE}
+install.packages("survey") # Needed to run a regression model that accounts for the NHANES sampling design
+install.packages("tidyverse") # Needed to pipe functions together
+install.packages("broom") # Needed to easily extract regression statistics
+```
+
+## Load packages
+Run this so you have access to the functions in these packages.
+```{r, echo = FALSE}
+library("survey") 
+library("tidyverse") 
+library("broom") 
+```
+
+## Loading NHANES datasets
+Make sure you set your working directory to be the folder containing file for the NHANES data. 
+```{r, echo = FALSE}
+load("./w - nhanes_1988_2018.RData")
+```
+
+
+## Merge NHANES datasets
+Please use any dataset that ends with "_clean". 
+Let's merge the demographics, mortality, and weights datasets together using tidyverse syntax.
+```{r, echo = FALSE}
+nhanes_merged <- full_join(demographics_clean, 
+                    mortality_clean, 
+                    by = c("SEQN",
+                           "SEQN_new", 
+                           "SDDSRVYR")) %>%
+  full_join(., 
+            weights_clean, 
+            by = c("SEQN",
+                   "SEQN_new", 
+                   "SDDSRVYR")) %>%
+  full_join(.,
+            response_clean,
+            by = c("SEQN",
+                   "SEQN_new", 
+                   "SDDSRVYR"))
+```
+
+
+## Data dictionary
+Take a look at the dictionary to know the codename and description of the variables
+```{r, echo = FALSE}
+View(df_dictionary)
+```
+
+## Ensure that sex and race/ethnicity variables are categorical
+factor() is a base R function that encode a variable as categorical 
+relevel() is a base R function that set the reference group. 
+
+We ensured that sex (RIAGENDR) is a categorical variable.
+We ensured that race/ethnicity (RIDRETH1) is a categorical variable with the reference group as Non-Hispanic Whites (3). 
+```{r, echo = FALSE}
+nhanes_merged <- nhanes_merged %>%
+  mutate(RIAGENDR = factor(RIAGENDR)) %>%
+  mutate(RIDRETH1 = factor(RIDRETH1) %>%
+           relevel(., ref = 3))
+```
+
+## Choose only variables that you will use 
+Let's subset the nhanes_merged dataset to include only variables that we will use and participants who have info on all selected variables.
+We will create two subsets:  one for the linear model and another for the cox proportional model. Notice the different size of these two subsets.
+Tip: Make your dataset as small as possible and as big as necessary or else you'll be waiting for results for quite some time!
+
+select() is a tidyverse function that choose columns 
+na.omit() is a base R function that exclude rows if it's missing any of the selected columns
+```{r, echo = FALSE}
+# For a generalized linear model, we will have the outcome variable be BMI (BMXBMI) and the predictors as age (RIDAGEYR), sex (RIAGENDR), and race/ethnicity (RIDRETH1). 
+nhanes_merged_for_glm <- nhanes_merged %>%
+  select("SEQN",
+         "SEQN_new", 
+         "SDDSRVYR",
+         "SDMVPSU",
+         "SDMVSTRA",
+         "WTMEC2YR",
+         "BMXBMI",
+         "RIDAGEYR",
+         "RIAGENDR",
+         "RIDRETH1") %>%
+  na.omit(.)
+
+# For the Cox proportional hazard model, we will have the outcome variable be mortality status (MORTSTAT) and time to death or end of the study period (PERMTH_INT) and the predictors as age (RIDAGEYR), sex (RIAGENDR), and race/ethnicity (RIDRETH1).
+nhanes_merged_for_cox <- nhanes_merged %>%
+  select("SEQN",
+         "SEQN_new", 
+         "SDDSRVYR",
+         "SDMVPSU",
+         "SDMVSTRA",
+         "WTMEC2YR",
+         "MORTSTAT",
+         "PERMTH_INT",
+         "RIDAGEYR",
+         "RIAGENDR",
+         "RIDRETH1") %>%
+  na.omit(.)
+
+```
+
+Check out the dimension of these two different subsets.
+
+```{r, echo = FALSE}
+
+dim(nhanes_merged_for_glm)
+
+dim(nhanes_merged_for_cox)
+
+```
+
+
+## Account for NHANES sampling design
+svydesign() is a survey function that creates an object to specify the sampling design
+```{r, echo = FALSE}
+dsn_glm <- svydesign(ids = ~SDMVPSU, 
+                 strata = ~SDMVSTRA, 
+                 weights = ~WTMEC2YR, 
+                 nest = TRUE, 
+                 data = nhanes_merged_for_glm)
+
+dsn_cox <- svydesign(ids = ~SDMVPSU, 
+                 strata = ~SDMVSTRA, 
+                 weights = ~WTMEC2YR, 
+                 nest = TRUE, 
+                 data = nhanes_merged_for_cox)
+```
+
+## Linear regression model
+Let's run a generalized regression model and another one accounting for NHANES sampling design.
+BMI is the outcome while the predictors are age, sex, and race/ethnicity.
+```{r, echo = FALSE}
+# Run a generalized linear model
+model_glm <- glm(BMXBMI ~ RIDAGEYR + RIAGENDR + RIDRETH1, 
+                 data = nhanes_merged_for_glm)
+
+# Run a generalized linear model accounting for the NHANES sampling design
+model_svyglm <- svyglm(BMXBMI ~ RIDAGEYR + RIAGENDR + RIDRETH1, 
+                       design = dsn_glm)
+```
+
+# Looking at the results of the linear model
+```{r, echo = FALSE}
+# Show the regression statistics on the associations between the predictors and outcome
+tidy(model_glm)
+tidy(model_svyglm)
+
+# Show the regression statistics on the model
+glance(model_glm)
+glance(model_svyglm)
+```
+
+## Cox proportional hazard model
+Let's run a Cox proportional hazard model accounting for NHANES sampling design.
+Mortality status and time to death or end of the study period are the outcome and the predictors are age, sex, and race/ethnicity.
+```{r, echo = FALSE}
+# Run a cox proportional hazard model
+model_coxph <- coxph(Surv(time = PERMTH_INT,
+                                event = MORTSTAT) ~ RIDAGEYR + RIAGENDR + RIDRETH1,
+                           data = nhanes_merged_for_cox)
+
+# Run a cox proportional hazard model accounting for NHANES sampling design
+model_svycoxph <- svycoxph(Surv(time = PERMTH_INT,
+                                event = MORTSTAT) ~ RIDAGEYR + RIAGENDR + RIDRETH1,
+                           design = dsn_cox)
+```
+
+# Looking at the results of the Cox model
+```{r, echo = FALSE}
+# Show the regression statistics on the associations between the predictors and mortality risk
+tidy(model_coxph)
+tidy(model_svycoxph)
+
+# Extract the hazard ratios
+tidy(model_coxph, exponentiate = TRUE)
+tidy(model_svycoxph, exponentiate = TRUE)
+
+# Show the regression statistics on the model
+glance(model_coxph)
+
+# Unfortunately glance() doesn't work on a survey model object
+glance(model_svycoxph)
+```
+
+
+```{r, echo = FALSE}
+summary_svycoxph <- summary(model_svycoxph)
+
+data.frame(n = summary_svycoxph$n,
+           nevent = summary_svycoxph$nevent,
+           statistic.log = -2*(model_svycoxph$ll[1] - model_svycoxph$ll[2]),
+           p.value.log = ,
+           statistic.sc = ,
+           p.value.sc = ,
+           statistic.wald = summary_svycoxph$waldtest["test"],
+           p.value.wald = summary_svycoxph$waldtest["pvalue"],
+           r.squared = 1 - exp((2/n)*(model_svycoxph$ll[1] - model_svycoxph$ll[2])),
+           r.squared.max = 1 - exp(2*model_svycoxph$ll[1]/n),
+           concordance = summary_svycoxph$concordance["C"],
+           std.error.concordance = summary_svycoxph$concordance["se(C)"],
+           logLik = model_svycoxph$ll[2],
+           df = length(model_coxph$coefficients),
+           AIC = -2*logLik + 2*df, 
+           BIC = -2*logLik + log(n)*df,
+           nobs = summary_svycoxph$n)
+
+```
+

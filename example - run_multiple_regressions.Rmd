@@ -1,0 +1,317 @@
+---
+title: "Run Multiple Regression Models"
+author: "Vy Nguyen"
+date: "1/10/2023"
+output: html_document
+---
+
+## Goal 
+We will learn how to run regression models using the chemical dataset. We will specifically learn to 
+1. run a regression model
+2. run a regression model accounting for NHANES sampling design
+3. run multiple regression models using tidyverse
+4. run multiple regression models accounting for NHANES sampling design via tidyverse
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Install packages to run analysis
+You only need to run this ONCE!
+```{r, echo = FALSE}
+install.packages("survey") # Needed to run a regression model that accounts for the NHANES sampling design
+install.packages("tidyverse") # Needed to pipe functions together
+install.packages("broom") # Needed to easily extract regression statistics
+```
+
+## Load packages
+Run this so you have access to the functions in these packages.
+```{r, echo = FALSE}
+library("survey") 
+library("tidyverse") 
+library("broom") 
+```
+
+## Loading NHANES datasets
+Make sure you set your working directory to be the folder containing file for the NHANES data. 
+```{r, echo = FALSE}
+load("./w - nhanes_1988_2018.RData")
+```
+
+
+## Merge NHANES datasets
+Please use any dataset that ends with "_clean". 
+Let's merge the demographics, chemicals, and weights datasets together using tidyverse syntax.
+```{r, echo = FALSE}
+nhanes_merged <- full_join(demographics_clean, 
+                           chemicals_clean, 
+                           by = c("SEQN",
+                                  "SEQN_new", 
+                                  "SDDSRVYR")) %>%
+  full_join(., 
+            weights_clean, 
+            by = c("SEQN",
+                   "SEQN_new", 
+                   "SDDSRVYR")) 
+```
+
+## Data dictionary
+Take a look at the dictionary to know the codename and description of the variables
+```{r, echo = FALSE}
+View(df_dictionary)
+```
+
+## Ensure that sex and race/ethnicity variables are categorical
+factor() is a base R function that encode a variable as categorical 
+relevel() is a base R function that set the reference group. 
+
+We ensured that sex (RIAGENDR) is a categorical variable.
+We ensured that race/ethnicity (RIDRETH1) is a categorical variable with the reference group as Non-Hispanic Whites (3). 
+```{r, echo = FALSE}
+nhanes_merged <- nhanes_merged %>%
+  mutate(RIAGENDR = factor(RIAGENDR)) %>%
+  mutate(RIDRETH1 = factor(RIDRETH1) %>%
+           relevel(., ref = 3))
+```
+
+## Choose only variables that you will use
+
+```{r, echo = FALSE}
+metals_codename <- df_dictionary %>%
+  filter(chemical_family == "Metals") %>%
+  filter(grepl("replicate", variable_description_use) == FALSE) %>%
+  pull(variable_codename_use) 
+  
+
+weights_codename_for_metals <- paste("WT_"
+                                     , metals_codename
+                                     , sep = "")
+
+nhanes_subset <- nhanes_merged %>%
+  select("SEQN",
+         "SEQN_new", 
+         "SDDSRVYR",
+         "SDMVPSU",
+         "SDMVSTRA",
+         all_of(metals_codename),
+         all_of(weights_codename_for_metals),
+         "RIDAGEYR",
+         "RIAGENDR",
+         "RIDRETH1")
+
+```
+
+## A generalized linear regression model 
+
+```{r, echo = FALSE}
+
+dataset_lead <- nhanes_subset %>%
+  select("SEQN",
+         "SEQN_new", 
+         "SDDSRVYR",
+         "SDMVPSU",
+         "SDMVSTRA",
+         "WT_LBXBPB",
+         "LBXBPB",
+         "RIDAGEYR",
+         "RIAGENDR",
+         "RIDRETH1") %>%
+  na.omit(.)
+
+model_glm_lead <- glm(log10(LBXBPB) ~ RIDAGEYR + RIAGENDR + RIDRETH1,
+                      data = dataset_lead)
+
+tidy(model_glm_lead) %>%
+  mutate(percent_diff = (10^estimate - 1)*100)
+
+glance(model_glm_lead)
+
+```
+## A generalized linear regression model accounting for NHANES sampling design
+
+```{r, echo = FALSE}
+unique_cycles_lead <- dataset_lead %>%
+  pull(SDDSRVYR) %>%
+  unique(.)
+
+num_cycles_lead <- length(unique_cycles_lead)
+
+dataset_lead <- dataset_lead %>%
+  mutate(adjusted_weights = ifelse(SDDSRVYR %in% c(1,2), 
+                                   (2/num_cycles_lead)*WT_LBXBPB,
+                                   (1/num_cycles_lead)*WT_LBXBPB))
+
+# Checking our calculations
+dataset_lead %>%
+  select(SDDSRVYR,
+         WT_LBXBPB,
+         adjusted_weights) %>%
+  unique(.) %>%
+  mutate(multiplier = adjusted_weights/WT_LBXBPB) %>%
+  View(.)
+
+dsn_lead <- svydesign(ids = ~SDMVPSU, 
+                      strata = ~SDMVSTRA,
+                      weights = ~adjusted_weights, 
+                      nest = TRUE, 
+                      data = dataset_lead)
+
+model_svyglm_lead <- svyglm(log10(LBXBPB) ~ RIDAGEYR + RIAGENDR + RIDRETH1, 
+                            design = dsn_lead)
+
+tidy(model_svyglm_lead) %>%
+  mutate(percent_diff = (10^estimate - 1)*100)
+
+glance(model_svyglm_lead)
+```
+
+## Running generalized linear regression models over all metal biomarkers
+```{r, echo = FALSE}
+
+run_associations_glm <- function(x, 
+                                 df_nhanes, 
+                                 boolean_statistics_type)
+{
+  print(x)
+  
+  formula_regression <- paste("log10(",
+                              x,
+                              ")",
+                              " ~ RIDAGEYR + RIAGENDR + RIDRETH1",
+                              sep = "")
+  # print(formula_regression)
+  
+  string_chem_no_equal_zero <- paste(x ,
+                                     "!= 0", 
+                                     sep = "")
+  
+  subset_x <- df_nhanes %>%
+    select("SEQN",
+           "SEQN_new", 
+           "SDDSRVYR",
+           all_of(x),
+           "RIDAGEYR",
+           "RIAGENDR",
+           "RIDRETH1") %>%
+    na.omit(.) %>%
+    filter(eval(parse(text = string_chem_no_equal_zero)))
+  
+  # View(subset_x)
+  
+  model_x <- glm(as.formula(formula_regression),
+                 data = subset_x)
+
+  string_stats_expression <- paste(boolean_statistics_type,
+                                   "(model_x)",
+                                   sep = "")
+
+  df_stats <- eval(parse(text = string_stats_expression)) %>%
+    mutate(variable_codename_use = x) %>%
+    mutate(formula = formula_regression) %>% 
+    relocate(variable_codename_use)
+
+  return(df_stats)
+}
+
+df_glm_metals_tidy <- metals_codename %>%
+    map(.
+        , run_associations_glm
+        , nhanes_subset
+        , "tidy") %>%
+    bind_rows(.)
+
+df_glm_metals_glance <- metals_codename %>%
+    map(.
+        , run_associations_glm
+        , nhanes_subset
+        , "glance") %>%
+    bind_rows(.)
+```
+
+## Running generalized linear regression models over all metal biomarkers & accounting for NHANES sampling design
+```{r, echo = FALSE}
+
+run_associations_svyglm <- function(x, 
+                                    df_nhanes,
+                                    boolean_statistics_type)
+{
+  print(x)
+  
+  weight_codename <- paste("WT_",
+                           x,
+                           sep = "")
+  
+  formula_regression <- paste("log10(",
+                              x,
+                              ")",
+                              " ~ RIDAGEYR + RIAGENDR + RIDRETH1",
+                              sep = "")
+  # print(formula_regression)
+  
+  string_chem_no_equal_zero <- paste(x ,
+                                     "!= 0", 
+                                     sep = "")
+  
+  subset_x <- df_nhanes %>%
+    select("SEQN",
+           "SEQN_new", 
+           "SDDSRVYR",
+           "SDMVPSU",
+           "SDMVSTRA",
+           all_of(x),
+           all_of(weight_codename),
+           "RIDAGEYR",
+           "RIAGENDR",
+           "RIDRETH1") %>%
+    na.omit(.) %>%
+    filter(eval(parse(text = string_chem_no_equal_zero)))
+  
+  # View(subset_x)
+  
+  unadjusted_weights <- subset_x %>%
+    pull(all_of(weight_codename))
+  
+  unique_cycles_x <- subset_x %>%
+    pull(SDDSRVYR) %>%
+    unique(.)
+  # print(unique_cycles_x)
+
+  num_cycles <- length(unique_cycles_x)
+  
+  indicator_cycles = ifelse(1 %in% unique_cycles_x & 2 %in% unique_cycles_x,
+                            "yes", 
+                            "no")
+  print(indicator_cycles)
+  
+  if(indicator_cycles == "yes")
+  {
+    adjusted_weights <- ifelse(subset_x$SDDSRVYR %in% c(1,2), 
+                               (2/num_cycles)*unadjusted_weights,
+                               (1/num_cycles)*unadjusted_weights)
+  } else {
+    adjusted_weights <- (1/num_cycles)*unadjusted_weights
+  }
+  
+  
+  subset_x <- subset_x %>%
+    mutate(adjusted_weights = adjusted_weights)
+  
+  subset_x %>% 
+    select(SDDSRVYR,
+           adjusted_weights) %>%
+    cbind(.
+          , unadjusted_weights) %>%
+    unique() %>%
+    mutate(multiplier = adjusted_weights/unadjusted_weights) %>%
+    View(.)
+}
+
+df_svyglm_metals_tidy <- metals_codename[1] %>%
+    map(.
+        , run_associations_svyglm
+        , nhanes_subset
+        , "tidy") %>%
+    bind_rows(.)
+
+```
+

@@ -5,11 +5,9 @@
 library(survey)
 library(tidyverse)
 library(broom)
-
-load('./w - nhanes_1988_2018.RData')
+load("./w - nhanes_1988_2018.RData")
 
 nhanes <- full_join(demographics_clean, 
-                    mortality_clean, 
                     by = c("SEQN",
                            "SEQN_new", 
                            "SDDSRVYR")) %>%

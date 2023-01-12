@@ -122,20 +122,6 @@ occupation_clean <- clean_occupation_dataset(occupations_unclean
                                              , list_master_files)
 
 
-
-# process_fix_categories(list_master_files$`Questionnaire Fix Category`)
-# 
-# check_num_cycles_documentation(list_master_files
-#                                , "Questionnaire")
-
-# process_lower_cases_fix_cats(list_master_files$`Questionnaire Fix Category`)
-
-# check_new_codename(list_master_files
-#                    , "Questionnaire")
-# 
-# eliminate_fix_categories_same(list_master_files$`Questionnaire Fix Category`)
-
-
 questionnaire_clean <- clean_questionnaire_dataset(questionnaire_unclean
                                                    , list_master_files
                                                    , "Questionnaire")
