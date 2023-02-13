@@ -1,0 +1,55 @@
+---
+title: "Merge Datasets Together"
+author: "Vy Nguyen"
+date: "1/15/2023"
+output: html_document
+---
+
+## Goal
+We will learn how to merge NHANES datasets together by using tidyverse syntax.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Install packages 
+You only need to run this ONCE!
+```{r, echo = FALSE}
+install.packages("tidyverse") # Needed to pipe functions together
+```
+
+## Load packages
+Run this to have access to the functions in the tidyverse package.
+```{r, echo = FALSE}
+library("tidyverse") 
+```
+
+## Loading NHANES datasets
+Make sure you set your working directory to be the folder containing the file for the NHANES data. 
+```{r, echo = FALSE}
+load("./w - nhanes_1988_2018.RData")
+```
+
+
+## Merge NHANES datasets
+Please use any dataset that ends with "_clean". 
+Let's merge the demographics, mortality, and weights datasets together using tidyverse syntax.
+```{r, echo = FALSE}
+nhanes_merged <- full_join(demographics_clean, 
+                    mortality_clean, 
+                    by = c("SEQN",
+                           "SEQN_new", 
+                           "SDDSRVYR")) %>%
+  full_join(., # Mean the previous data frame, so the merged dataset of demographic and mortality variables
+            weights_clean, 
+            by = c("SEQN",
+                   "SEQN_new", 
+                   "SDDSRVYR")) %>%
+  full_join(., # Mean the previous data frame, so the merged dataset of demographic, mortality, and response variables
+            response_clean,
+            by = c("SEQN",
+                   "SEQN_new", 
+                   "SDDSRVYR"))
+```

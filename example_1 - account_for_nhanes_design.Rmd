@@ -26,7 +26,7 @@ install.packages("broom") # Needed to easily extract regression statistics
 ```
 
 ## Load packages
-Run this so you have access to the functions in these packages.
+Run this to have access to the functions in these packages.
 ```{r, echo = FALSE}
 library("survey") 
 library("tidyverse") 
@@ -34,7 +34,7 @@ library("broom")
 ```
 
 ## Loading NHANES datasets
-Make sure you set your working directory to be the folder containing file for the NHANES data. 
+Make sure you set your working directory to be the folder containing the file for the NHANES data. 
 ```{r, echo = FALSE}
 load("./w - nhanes_1988_2018.RData")
 ```
@@ -49,12 +49,12 @@ nhanes_merged <- full_join(demographics_clean,
                     by = c("SEQN",
                            "SEQN_new", 
                            "SDDSRVYR")) %>%
-  full_join(., 
+  full_join(., # Mean the previous data frame, so the merged dataset of demographic and mortality variables
             weights_clean, 
             by = c("SEQN",
                    "SEQN_new", 
                    "SDDSRVYR")) %>%
-  full_join(.,
+  full_join(., # Mean the previous data frame, so the merged dataset of demographic, mortality, and response variables
             response_clean,
             by = c("SEQN",
                    "SEQN_new", 
@@ -70,7 +70,7 @@ View(df_dictionary)
 
 ## Ensure that sex and race/ethnicity variables are categorical
 factor() is a base R function that encode a variable as categorical 
-relevel() is a base R function that set the reference group. 
+relevel() is a base R function that set the reference group
 
 We ensured that sex (RIAGENDR) is a categorical variable.
 We ensured that race/ethnicity (RIDRETH1) is a categorical variable with the reference group as Non-Hispanic Whites (3). 
@@ -135,16 +135,16 @@ dim(nhanes_merged_for_cox)
 svydesign() is a survey function that creates an object to specify the sampling design
 ```{r, echo = FALSE}
 dsn_glm <- svydesign(ids = ~SDMVPSU, 
-                 strata = ~SDMVSTRA, 
-                 weights = ~WTMEC2YR, 
-                 nest = TRUE, 
-                 data = nhanes_merged_for_glm)
+                     strata = ~SDMVSTRA, 
+                     weights = ~WTMEC2YR, 
+                     nest = TRUE, 
+                     data = nhanes_merged_for_glm)
 
 dsn_cox <- svydesign(ids = ~SDMVPSU, 
-                 strata = ~SDMVSTRA, 
-                 weights = ~WTMEC2YR, 
-                 nest = TRUE, 
-                 data = nhanes_merged_for_cox)
+                     strata = ~SDMVSTRA, 
+                     weights = ~WTMEC2YR, 
+                     nest = TRUE, 
+                     data = nhanes_merged_for_cox)
 ```
 
 ## Linear regression model
@@ -203,27 +203,32 @@ glance(model_coxph)
 glance(model_svycoxph)
 ```
 
-
+# Manually extracting or calculating the statistics for a Cox model that accounts for the sampling design
 ```{r, echo = FALSE}
-summary_svycoxph <- summary(model_svycoxph)
+glance_svycoxph <- function(model_object)
+{
+  summary_svycoxph <- summary(model_svycoxph)
 
-data.frame(n = summary_svycoxph$n,
-           nevent = summary_svycoxph$nevent,
-           statistic.log = -2*(model_svycoxph$ll[1] - model_svycoxph$ll[2]),
-           p.value.log = ,
-           statistic.sc = ,
-           p.value.sc = ,
-           statistic.wald = summary_svycoxph$waldtest["test"],
-           p.value.wald = summary_svycoxph$waldtest["pvalue"],
-           r.squared = 1 - exp((2/n)*(model_svycoxph$ll[1] - model_svycoxph$ll[2])),
-           r.squared.max = 1 - exp(2*model_svycoxph$ll[1]/n),
-           concordance = summary_svycoxph$concordance["C"],
-           std.error.concordance = summary_svycoxph$concordance["se(C)"],
-           logLik = model_svycoxph$ll[2],
-           df = length(model_coxph$coefficients),
-           AIC = -2*logLik + 2*df, 
-           BIC = -2*logLik + log(n)*df,
-           nobs = summary_svycoxph$n)
+  data.frame(n = summary_svycoxph$n,
+             nevent = summary_svycoxph$nevent,
+             statistic.log = -2*(model_object$ll[1] - model_object$ll[2]),
+             p.value.log = ,
+             statistic.sc = ,
+             p.value.sc = ,
+             statistic.wald = summary_svycoxph$waldtest["test"],
+             p.value.wald = summary_svycoxph$waldtest["pvalue"],
+             r.squared = 1 - exp((2/n)*(model_object$ll[1] - model_object$ll[2])),
+             r.squared.max = 1 - exp(2*model_object$ll[1]/n),
+             concordance = summary_svycoxph$concordance["C"],
+             std.error.concordance = summary_svycoxph$concordance["se(C)"],
+             logLik = model_object$ll[2],
+             df = length(model_coxph$coefficients),
+             AIC = -2*logLik + 2*df, 
+             BIC = -2*logLik + log(n)*df,
+             nobs = summary_svycoxph$n)
+}
+
+glance_svycoxph(model_svycoxph)
 
 ```
 

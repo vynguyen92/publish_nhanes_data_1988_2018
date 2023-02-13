@@ -76,6 +76,9 @@ nhanes_merged <- nhanes_merged %>%
 
 ## Choose only variables that you will use
 
+For the portion on calculating summary statistics for multiple variables, we'll iterate over the metal biomarkers to get distribution statistics for each metal biomarkers. 
+So let's include the metal biomarkers and their corresponding weight codenames in this NHANES subset to prepare for subsequential analysis.
+
 ```{r, echo = FALSE}
 metals_codename <- df_dictionary %>%
   filter(chemical_family == "Metals") %>%
@@ -103,6 +106,8 @@ nhanes_subset <- nhanes_merged %>%
 
 ## A generalized linear regression model 
 
+Let's run a regression model with blood lead as the outcome variable and the predictors as age, sex, and race/ethnicity.
+
 ```{r, echo = FALSE}
 
 dataset_lead <- nhanes_subset %>%
@@ -121,21 +126,39 @@ dataset_lead <- nhanes_subset %>%
 model_glm_lead <- glm(log10(LBXBPB) ~ RIDAGEYR + RIAGENDR + RIDRETH1,
                       data = dataset_lead)
 
+# Extract the regression statistics for the predictors 
 tidy(model_glm_lead) %>%
   mutate(percent_diff = (10^estimate - 1)*100)
 
+# Extract the statistics for the model
 glance(model_glm_lead)
 
 ```
+
 ## A generalized linear regression model accounting for NHANES sampling design
 
+The survey weights for a given two-year cycle in the set of cycles 3-10 (2003-2018) is representative of a national sample (i.e. the survey weights in a given cycle should sum to the population size of the US). 
+The survey weights for cycles 1 and 2 (1999-2002) TOGETHER is representative of a national sample. 
+
+When we combine survey cycles, let's suppose for two cycles (cycle 3 and 4), then the survey weights are going to be representative of two national samples, so any estimates are going to be representative of two US population. This doesn't make sense! So we multiply the survey weights by 1/2 (i.e. 1 over the number of studied cycles), and then the adjusted survey weights are representative of ONLY ONE national sample. 
+
+More examples can be found under the tab "When and How to Construct Weights When Combining Survey Cycles" at https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx 
+
+Sanity check:  sum the adjusted survey weights and it should be close to the US population size. 
+
+Let's run a regression model with blood lead as the outcome variable and the predictors as age, sex, and race/ethnicity, while adjusting for the sampling design.
+
 ```{r, echo = FALSE}
+
+# Determine the cycles with measurements for blood lead
 unique_cycles_lead <- dataset_lead %>%
   pull(SDDSRVYR) %>%
   unique(.)
 
+# Determine the total number of cycles with measurements for lead
 num_cycles_lead <- length(unique_cycles_lead)
 
+# Calculate the adjusted survey weights
 dataset_lead <- dataset_lead %>%
   mutate(adjusted_weights = ifelse(SDDSRVYR %in% c(1,2), 
                                    (2/num_cycles_lead)*WT_LBXBPB,
@@ -150,41 +173,58 @@ dataset_lead %>%
   mutate(multiplier = adjusted_weights/WT_LBXBPB) %>%
   View(.)
 
+# Account for the sampling design
 dsn_lead <- svydesign(ids = ~SDMVPSU, 
                       strata = ~SDMVSTRA,
                       weights = ~adjusted_weights, 
                       nest = TRUE, 
                       data = dataset_lead)
 
+# Run the regression model 
 model_svyglm_lead <- svyglm(log10(LBXBPB) ~ RIDAGEYR + RIAGENDR + RIDRETH1, 
                             design = dsn_lead)
 
+# Extract the regression statistics for the predictors 
 tidy(model_svyglm_lead) %>%
   mutate(percent_diff = (10^estimate - 1)*100)
 
+# Extract the statistics for the model
 glance(model_svyglm_lead)
 ```
 
 ## Running generalized linear regression models over all metal biomarkers
+
+We will iterate over each metal biomarker, run a regression model for each metal biomarker, extract the regression statistics from each model, and stitch the dataset of statistics together. 
+
+To iterate over each metal biomarkers, we will use map() on the codenames of the metal biomarkers.
+
+To calculate the statistics for each metal biomarker, we will customize a function (e.g. run_associations_glm) to run a regression model and extract the regression statistics. The model will be log10(chemical concentration) ~ age + sex + race/ethnicity.
+
+To stitch the dataset of statistics together, we will use bind_rows().
+
 ```{r, echo = FALSE}
 
 run_associations_glm <- function(x, 
                                  df_nhanes, 
                                  boolean_statistics_type)
 {
+  # Print out the codename of a given chemical biomarker
+  # This helps with debugging to detect which chemical biomarker is causing problems.
   print(x)
   
+  # Define a string for the code to run the regression model
   formula_regression <- paste("log10(",
                               x,
                               ")",
                               " ~ RIDAGEYR + RIAGENDR + RIDRETH1",
                               sep = "")
-  # print(formula_regression)
-  
+
+  # Define a string to exclude chemical measurements that are 0
   string_chem_no_equal_zero <- paste(x ,
                                      "!= 0", 
                                      sep = "")
   
+  # Define a subset to include any participants with measurements for the chemical biomarker
   subset_x <- df_nhanes %>%
     select("SEQN",
            "SEQN_new", 
@@ -194,32 +234,37 @@ run_associations_glm <- function(x,
            "RIAGENDR",
            "RIDRETH1") %>%
     na.omit(.) %>%
-    filter(eval(parse(text = string_chem_no_equal_zero)))
+    filter(eval(parse(text = string_chem_no_equal_zero))) # Exclude all measurements that are 0
   
-  # View(subset_x)
-  
+  # Run the regression model
   model_x <- glm(as.formula(formula_regression),
                  data = subset_x)
 
+  # Define a string to extract the regression statistics
+  # It could be either tidy(model_x) or glance(model_x)
   string_stats_expression <- paste(boolean_statistics_type,
                                    "(model_x)",
                                    sep = "")
 
+  # Tabulate the regression statistics
   df_stats <- eval(parse(text = string_stats_expression)) %>%
-    mutate(variable_codename_use = x) %>%
-    mutate(formula = formula_regression) %>% 
-    relocate(variable_codename_use)
+    mutate(variable_codename_use = x) %>% # Include the codename to know which statistics belongs to which chemical when we stitch the datasets together
+    mutate(formula = formula_regression) %>% # Include the regression formula
+    relocate(variable_codename_use) # Make the column of chemical codenames be the 1st column
 
   return(df_stats)
 }
 
+# Run a regression model on each metal biomarker and extract the regression statistics for all metal biomarkers
 df_glm_metals_tidy <- metals_codename %>%
     map(.
         , run_associations_glm
         , nhanes_subset
         , "tidy") %>%
-    bind_rows(.)
+    bind_rows(.) %>%
+  mutate(percent_diff = (10^estimate - 1)*100)
 
+# Run a regression model on each metal biomarker and extract the regression statistics for all metal biomarkers
 df_glm_metals_glance <- metals_codename %>%
     map(.
         , run_associations_glm
@@ -229,29 +274,38 @@ df_glm_metals_glance <- metals_codename %>%
 ```
 
 ## Running generalized linear regression models over all metal biomarkers & accounting for NHANES sampling design
+
+AGain, we will iterate over each metal biomarker, run a regression model for each metal biomarker, extract the regression statistics from each model, and stitch the dataset of statistics together. 
+
+Now the difference is that when we customize the function for each metal biomarker, we need to adjust the survey weights, so that our estimates will be representative of ONLY ONE national sample.
+
 ```{r, echo = FALSE}
 
 run_associations_svyglm <- function(x, 
                                     df_nhanes,
                                     boolean_statistics_type)
 {
+  # Print out the codename of a given chemical biomarker
   print(x)
   
+  # Define the weight codename for a given chemical biomarker
   weight_codename <- paste("WT_",
                            x,
                            sep = "")
   
+  # Define a string for the code to run the regression model
   formula_regression <- paste("log10(",
                               x,
                               ")",
                               " ~ RIDAGEYR + RIAGENDR + RIDRETH1",
                               sep = "")
-  # print(formula_regression)
   
+  # Define a string to exclude chemical measurements that are 0
   string_chem_no_equal_zero <- paste(x ,
                                      "!= 0", 
                                      sep = "")
   
+  # Define a subset to include any participants with measurements for the chemical biomarker
   subset_x <- df_nhanes %>%
     select("SEQN",
            "SEQN_new", 
@@ -264,25 +318,28 @@ run_associations_svyglm <- function(x,
            "RIAGENDR",
            "RIDRETH1") %>%
     na.omit(.) %>%
-    filter(eval(parse(text = string_chem_no_equal_zero)))
+    filter(eval(parse(text = string_chem_no_equal_zero))) # Exclude all measurements that are 0
   
-  # View(subset_x)
-  
+  # Extract the unadjusted survey weights from the subset
   unadjusted_weights <- subset_x %>%
     pull(all_of(weight_codename))
   
+  # Determine the cycles that the metal biomarker was measured
   unique_cycles_x <- subset_x %>%
     pull(SDDSRVYR) %>%
     unique(.)
   # print(unique_cycles_x)
 
+  # Determine the total number of cycles
   num_cycles <- length(unique_cycles_x)
+  # print(num_cycles)
   
-  indicator_cycles = ifelse(1 %in% unique_cycles_x & 2 %in% unique_cycles_x,
+  # Determine if the chemical biomarker had measurements in both cycle 1 and cycle 2
+  indicator_cycles <- ifelse(1 %in% unique_cycles_x & 2 %in% unique_cycles_x,
                             "yes", 
                             "no")
-  print(indicator_cycles)
   
+  # Calculate the adjusted weights
   if(indicator_cycles == "yes")
   {
     adjusted_weights <- ifelse(subset_x$SDDSRVYR %in% c(1,2), 
@@ -292,26 +349,77 @@ run_associations_svyglm <- function(x,
     adjusted_weights <- (1/num_cycles)*unadjusted_weights
   }
   
-  
+    # Include the adjusted weights in the subset and exclude any weights that are 0 or else the code to calculate the statistics may not run
   subset_x <- subset_x %>%
-    mutate(adjusted_weights = adjusted_weights)
+    mutate(adjusted_weights = adjusted_weights) %>%
+    filter(adjusted_weights != 0)
   
-  subset_x %>% 
-    select(SDDSRVYR,
-           adjusted_weights) %>%
-    cbind(.
-          , unadjusted_weights) %>%
-    unique() %>%
-    mutate(multiplier = adjusted_weights/unadjusted_weights) %>%
-    View(.)
+  # df_check <- subset_x %>% 
+  #   select(SDDSRVYR,
+  #          adjusted_weights) %>%
+  #   cbind(.
+  #         , unadjusted_weights) %>%
+  #   unique() %>%
+  #   mutate(multiplier = adjusted_weights/unadjusted_weights) 
+  # View(df_check)
+  # 
+  # print(unique(df_check$multiplier))
+  
+  # Define the survey object to account for the sampling design
+  dsn_x <- svydesign(ids = ~SDMVPSU,
+                   strata = ~SDMVSTRA,
+                   weights = ~adjusted_weights,
+                   nest = TRUE,
+                   data = subset_x)
+  
+  # Run the regression model
+  model_x <- svyglm(as.formula(formula_regression),
+                    design = dsn_x)
+
+  # Extract the regression statistics for the predictors
+  if(boolean_statistics_type == "tidy")
+  {
+    df_stats <- tidy(model_x) %>%
+      mutate(variable_codename_use = x) %>%
+      mutate(formula = formula_regression) %>% 
+      relocate(variable_codename_use)
+    
+  # Manually extract and calculate the model statistics
+  # glance() did not work on a model object that account for the sampling design 
+  } else if(boolean_statistics_type == "glance") {
+    
+    df_stats <- data.frame("nobs" = length(model_x$y),
+                           "null.deviance" = model_x$null.deviance,
+                           "df.null" = model_x$df.null,
+                           "logLik" = logLik(model_x)[1],
+                           "df" = length(model_svyglm_lead$coefficients) + 1,
+                           "AIC" = model_x$aic,
+                           "BIC" = -2*logLik + log(nobs)*df,
+                           "deviance" = model_x$deviance,
+                           "df.residual" = model_x$df.residual) %>%
+      mutate(variable_codename_use = x) %>%
+      mutate(formula = formula_regression) %>% 
+      relocate(variable_codename_use)
+    
+  }
+  
+  
+  return(df_stats)
 }
 
-df_svyglm_metals_tidy <- metals_codename[1] %>%
-    map(.
-        , run_associations_svyglm
-        , nhanes_subset
-        , "tidy") %>%
-    bind_rows(.)
+df_svyglm_metals_tidy <- metals_codename %>%
+    map(., 
+        run_associations_svyglm, 
+        nhanes_subset, 
+        "tidy") %>%
+    bind_rows(.) %>%
+  mutate(percent_diff = (10^estimate - 1)*100)
 
+df_svyglm_metals_glance <- metals_codename %>%
+    map(., 
+        run_associations_svyglm, 
+        nhanes_subset, 
+        "glance") %>%
+    bind_rows(.)
 ```
 
