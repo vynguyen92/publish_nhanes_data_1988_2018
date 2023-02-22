@@ -143,6 +143,7 @@ upload_nhanes_master_files <- function(name_of_file)
                                                   , "numeric"
                                                   , "text"
                                                   , "text"	
+                                                  , "text"
                                                   , "numeric"
                                                   , "text"))
       
