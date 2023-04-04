@@ -19,7 +19,7 @@ mortality_directory <- paste(working_directory
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 # Upload the cleaning documentation for all datasets
-
+list_master_files <- upload_nhanes_master_files("NHANES - Master List of Files 1i.xlsx")
 
 # Extract the individual mortality datasets and compile them into the unclean mortality dataset
 mortality_unclean <- compile_mortality_dataset(dataset_directory = mortality_directory
@@ -59,11 +59,19 @@ occupations_unclean <- compile_datasets(cleaning_documentation = list_master_fil
                                         , current_directory = working_directory
                                         , name_dataset = "Occupation")
 
-setwd(working_directory)
+
 questionnaire_unclean <- compile_datasets(cleaning_documentation = list_master_files$Questionnaire %>%
                                             filter(grepl("\\bPrescription Medications\\b"
                                                          , .$file_summary) == FALSE &
                                                      is.na(.$SDDSRVYR) == FALSE)
+                                          , current_directory = working_directory
+                                          , name_dataset = "Questionnaire")
+
+setwd(working_directory)
+questionnaire_unclean <- compile_datasets(cleaning_documentation = list_master_files$Questionnaire %>%
+                                                 filter(grepl("\\bPrescription Medications\\b"
+                                                              , .$file_summary) == FALSE &
+                                                          is.na(.$SDDSRVYR) == FALSE)
                                           , current_directory = working_directory
                                           , name_dataset = "Questionnaire")
 
