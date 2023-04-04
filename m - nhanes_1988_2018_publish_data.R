@@ -32,8 +32,6 @@ response_unclean <- compile_datasets(cleaning_documentation = list_master_files$
 
 dietary_unclean <- NHANES_dietary_final
 
-# response_unclean <- clean_duplicates_of_seqn_from_cycles(response_unclean)
-
 
 demographics_unclean <- compile_datasets(cleaning_documentation = list_master_files$Demographics
                                          , current_directory = working_directory
@@ -72,8 +70,6 @@ questionnaire_unclean <- compile_datasets(cleaning_documentation = list_master_f
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Clean the NHANES Datasets  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-
-list_master_files <- upload_nhanes_master_files("NHANES - Master List of Files 1i.xlsx")
 
 # Clean the mortality dataset
 mortality_clean <- clean_mortality_dataset(mortality_unclean
