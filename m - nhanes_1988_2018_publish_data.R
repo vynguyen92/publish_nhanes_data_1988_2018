@@ -2,7 +2,7 @@
 ################################  MAIN SCRIPT - FORMING NHANES MERGED DATASET  ##############################
 #############################################################################################################
 
-working_directory <- "/Users/vynguyen/Dropbox (University of Michigan)/Postdoc/NHANES Datasets/1988-2018"
+working_directory <- "/Users/vynguyen/Dropbox/Mac/Documents/GitHub/publish_nhanes_data_1988_2018"
 
 setwd(working_directory)
 
