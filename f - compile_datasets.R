@@ -89,9 +89,20 @@ compile_datasets <- function(cleaning_documentation
         
       } else {
         
-        codenames_include <- subset_cleaning_doc_i %>%
-          pull(variable_codename) %>%
-          unique(.)
+        # if(cycle_i == -1)
+        # {
+        #   codenames_include <- subset_cleaning_doc_i %>%
+        #     filter(is.na(file_name) == FALSE) %>%
+        #     pull(variable_codename) %>%
+        #     unique(.)
+        #   
+        # } else {
+          codenames_include <- subset_cleaning_doc_i %>%
+            pull(variable_codename) %>%
+            unique(.)
+        # }
+        
+        
       }
       # print(codenames_include)
       
@@ -297,6 +308,9 @@ compile_datasets <- function(cleaning_documentation
                          , cycle_i
                          , sep = " ")
 
+    codenames_include <- intersect(codenames_include
+                                   , colnames(df_merged_for_cycle_i))
+    
     list_all_datasets[[label_cycle]] <- df_merged_for_cycle_i %>%
       select(SEQN
              , SEQN_new
