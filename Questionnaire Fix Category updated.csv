@@ -1,0 +1,1255 @@
+codename_original,categories_num,categories_description,new_categories,new_categories_description,cycle_-1,cycle_1,cycle_2,cycle_3,cycle_4,cycle_5,cycle_6,cycle_7,cycle_8,cycle_9,cycle_10,new_codename
+HAB1,1,Excellent,1,Excellent,x,,,,,,,,,,,HSD010
+HAB1,2,Very good,2,Very good,x,,,,,,,,,,,HSD010
+HAB1,3,Good,3,Good,x,,,,,,,,,,,HSD010
+HAB1,4,Fair,4,Fair,x,,,,,,,,,,,HSD010
+HAB1,5,Poor,5,Poor,x,,,,,,,,,,,HSD010
+HAB1,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,HSD010
+HAB1,9,Don't know,9,Don't know,x,,,,,,,,,,,HSD010
+HSD010,1,"Excellent,",1,Excellent,,,x,x,x,x,x,x,x,x,x,HSD010
+HSD010,2,"Very good,",2,Very good,,,x,x,x,x,x,x,x,x,x,HSD010
+HSD010,3,"Good,",3,Good,,,x,x,x,x,x,x,x,x,x,HSD010
+HSD010,4,"Fair, or",4,Fair,,,x,x,x,x,x,x,x,x,x,HSD010
+HSD010,5,Poor?,5,Poor,,,x,x,x,x,x,x,x,x,x,HSD010
+HSD010,7,Refused,7,Refused,,,x,x,x,x,x,x,x,x,x,HSD010
+HSD010,9,Don't know,9,Don't know,,,x,x,x,x,x,x,x,x,x,HSD010
+HAC1E,1,Yes (HAC2E),1,Yes,x,,,,,,,,,,,MCQ010
+MCQ010,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,MCQ010
+HAC1E,2,No (HAC1F),2,No,x,,,,,,,,,,,MCQ010
+MCQ010,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,MCQ010
+MCQ010,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,MCQ010
+HAC1E,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ010
+HAC1E,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ010
+MCQ010,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,MCQ010
+HAC3ER,777,Less than 1 year,0.5,Less than 1 year,x,,,,,,,,,,,MCQ025
+HAC2E,1,Yes (HAC2E),1,Yes,x,,,,,,,,,,,MCQ035
+HAC2E,2,No (HAC1F),2,No,x,,,,,,,,,,,MCQ035
+HAC2E,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ035
+MCQ030,1,Yes,1,Yes,,x,,,,,,,,,,MCQ035
+MCQ030,2,No,2,No,,x,,,,,,,,,,MCQ035
+MCQ030,7,Refused,7,Refused,,x,,,,,,,,,,MCQ035
+MCQ030,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ035
+MCQ035,1,Yes,1,Yes,,,x,x,x,x,x,x,x,x,x,MCQ035
+MCQ035,2,No,2,No,,,x,x,x,x,x,x,x,x,x,MCQ035
+MCQ035,7,Refused,7,Refused,,,x,x,x,x,x,x,x,x,x,MCQ035
+MCQ035,9,Don't know,9,Don't know,,,x,x,x,x,x,x,x,x,x,MCQ035
+HAE2,1,Yes,1,Yes,x,,,,,,,,,,,MCQ100
+MCQ100,1,Yes,1,Yes,,x,,,,,,,,,,MCQ100
+HAE2,2,No (HAE6),2,No,x,,,,,,,,,,,MCQ100
+MCQ100,2,No,2,No,,x,,,,,,,,,,MCQ100
+MCQ100,7,Refused,7,Refused,,x,,,,,,,,,,MCQ100
+HAE2,9,Don't know (HAE6),9,Don't know,x,,,,,,,,,,,MCQ100
+MCQ100,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ100
+HAE4A,1,Yes,1,Yes,x,,,,,,,,,,,MCQ110
+MCQ110,1,Yes,1,Yes,,x,,,,,,,,,,MCQ110
+HAE4A,2,No,2,No,x,,,,,,,,,,,MCQ110
+MCQ110,2,No,2,No,,x,,,,,,,,,,MCQ110
+MCQ110,7,Refused,7,Refused,,x,,,,,,,,,,MCQ110
+HAE4A,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ110
+MCQ110,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ110
+HAE4A,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ110
+HAP3,1,Yes,1,Yes,x,,,,,,,,,,,MCQ140
+HAP3,2,No,2,No,x,,,,,,,,,,,MCQ140
+HAP3,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ140
+MCQ140,1,Yes,1,Yes,,x,x,x,x,x,x,x,,,,MCQ140
+MCQ140,2,No,2,No,,x,x,x,x,x,x,x,,,,MCQ140
+MCQ140,7,Refused,7,Refused,,x,x,x,x,x,x,x,,,,MCQ140
+MCQ140,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,,,,MCQ140
+MCQ148,7,7 years old,7,7 years old,,x,,,,,,,,,,MCQ151
+MCQ148,8,8 years old,8,8 years old,,x,,,,,,,,,,MCQ151
+MCQ148,9,9 years old,9,9 years old,,x,,,,,,,,,,MCQ151
+MCQ148,10,10 years old,10,10 years old,,x,,,,,,,,,,MCQ151
+MCQ148,11,11 years old,11,11 years old,,x,,,,,,,,,,MCQ151
+MCQ148,7777,Refused,7777,Refused,,x,,,,,,,,,,MCQ151
+MCQ148,9999,Don't know,9999,Don't know,,x,,,,,,,,,,MCQ151
+MCQ151,7,7 years old,7,7 years old,,,,,,,,,x,x,x,MCQ151
+MCQ151,8,8 years old,8,8 years old,,,,,,,,,x,x,x,MCQ151
+MCQ151,9,9 years old,9,9 years old,,,,,,,,,x,x,x,MCQ151
+MCQ151,10,10 years old,10,10 years old,,,,,,,,,x,x,x,MCQ151
+MCQ151,11,11 years old,11,11 years old,,,,,,,,,x,x,x,MCQ151
+MCQ151,7777,Refused,7777,Refused,,,,,,,,,x,x,x,MCQ151
+MCQ151,9999,Don't know,9999,Don't know,,,,,,,,,x,x,x,MCQ151
+HAC1A,1,Yes (HAC3AR),1,Yes,x,,,,,,,,,,,MCQ160A
+HAC1A,2,No (HAC1C),2,No,x,,,,,,,,,,,MCQ160A
+HAC1A,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160A
+MCQ160A,1,Yes,1,Yes,,x,x,x,x,x,x,,,,,MCQ160A
+MCQ160a,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ160A
+MCQ160A,2,No,2,No,,x,x,x,x,x,x,,,,,MCQ160A
+MCQ160a,2,No,2,No,,,,,,,,x,x,x,x,MCQ160A
+MCQ160A,7,Refused,7,Refused,,x,x,x,x,x,x,,,,,MCQ160A
+MCQ160a,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ160A
+MCQ160A,9,Don't know,9,Don't know,,x,x,x,x,x,x,,,,,MCQ160A
+MCQ160a,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ160A
+HAC1C,1,Yes (HAC3CR),1,Yes,x,,,,,,,,,,,MCQ160B
+HAC1C,2,No (HAC1D),2,No,x,,,,,,,,,,,MCQ160B
+HAC1C,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160B
+MCQ160B,1,Yes,1,Yes,,x,x,x,x,x,x,,,,,MCQ160B
+MCQ160b,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ160B
+MCQ160B,2,No,2,No,,x,x,x,x,x,x,,,,,MCQ160B
+MCQ160b,2,No,2,No,,,,,,,,x,x,x,x,MCQ160B
+MCQ160B,7,Refused,7,Refused,,x,x,x,x,x,x,,,,,MCQ160B
+MCQ160b,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ160B
+MCQ160B,9,Don't know,9,Don't know,,x,x,x,x,x,x,,,,,MCQ160B
+MCQ160b,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ160B
+HAF10,1,Yes,1,Yes,x,,,,,,,,,,,MCQ160E
+MCQ160E,1,Yes,1,Yes,,x,x,x,x,x,x,,,,,MCQ160E
+MCQ160e,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ160E
+HAF10,2,No (HAF14),2,No,x,,,,,,,,,,,MCQ160E
+MCQ160E,2,No,2,No,,x,x,x,x,x,x,,,,,MCQ160E
+MCQ160e,2,No,2,No,,,,,,,,x,x,x,x,MCQ160E
+MCQ160E,7,Refused,7,Refused,,x,x,x,x,x,x,,,,,MCQ160E
+MCQ160e,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ160E
+HAF10,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160E
+MCQ160E,9,Don't know,9,Don't know,,x,x,x,x,x,x,,,,,MCQ160E
+MCQ160e,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ160E
+HAC1D,1,Yes (HAC3DR),1,Yes,x,,,,,,,,,,,MCQ160F
+MCQ160F,1,Yes,1,Yes,,x,x,x,x,x,x,,,,,MCQ160F
+MCQ160f,1,Yes,1,Yes,,x,x,x,x,x,x,,,,,MCQ160F
+HAC1D,2,No (HAC1E),2,No,x,,,,,,,,,,,MCQ160F
+MCQ160F,2,No,2,No,,x,x,x,x,x,x,,,,,MCQ160F
+MCQ160f,2,No,2,No,,,,,,,,x,x,x,x,MCQ160F
+MCQ160F,7,Refused,7,Refused,,x,x,x,x,x,x,,,,,MCQ160F
+MCQ160f,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ160F
+HAC1D,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160F
+MCQ160F,9,Don't know,9,Don't know,,x,x,x,x,x,x,,,,,MCQ160F
+MCQ160f,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ160F
+HAC1G,1,Yes (HAC2F),1,Yes,x,,,,,,,,,,,MCQ160G
+MCQ160G,1,Yes,1,Yes,,x,x,x,x,x,x,,,,,MCQ160G
+MCQ160g,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ160G
+HAC1G,2,No (HAC1G),2,No,x,,,,,,,,,,,MCQ160G
+MCQ160G,2,No,2,No,,x,x,x,x,x,x,,,,,MCQ160G
+MCQ160g,2,No,2,No,,,,,,,,x,x,x,x,MCQ160G
+MCQ160G,7,Refused,7,Refused,,x,x,x,x,x,x,,,,,MCQ160G
+MCQ160g,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ160G
+HAC1G,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160G
+MCQ160G,9,Don't know,9,Don't know,,x,x,x,x,x,x,,,,,MCQ160G
+MCQ160g,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ160G
+HAC1J,1,Yes (HAC2J),1,Yes,x,,,,,,,,,,,MCQ160H
+HAC1J,2,No (HAC1K),2,No,x,,,,,,,,,,,MCQ160H
+HAC1J,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ160H
+HAC1J,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160H
+MCQ160H,1,Yes,1,Yes,,x,,,,,,,,,,MCQ160H
+MCQ160H,2,No,2,No,,x,,,,,,,,,,MCQ160H
+MCQ160H,7,Refused,7,Refused,,x,,,,,,,,,,MCQ160H
+MCQ160H,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ160H
+HAC1F,1,Yes (HAC2E),1,Yes,x,,,,,,,,,,,MCQ160K
+MCQ160K,1,Yes,1,Yes,,x,x,x,x,x,x,,,,,MCQ160K
+MCQ160k,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ160K
+HAC1F,2,No (HAC1F),2,No,x,,,,,,,,,,,MCQ160K
+MCQ160K,2,No,2,No,,x,x,x,x,x,x,,,,,MCQ160K
+MCQ160k,2,No,2,No,,,,,,,,x,x,x,x,MCQ160K
+MCQ160K,7,Refused,7,Refused,,x,x,x,x,x,x,,,,,MCQ160K
+MCQ160k,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ160K
+HAC1F,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ160K
+HAC1F,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160K
+MCQ160K,9,Don't know,9,Don't know,,x,x,x,x,x,x,,,,,MCQ160K
+MCQ160k,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ160K
+HAC1K,1,Yes (HAC2K),1,Yes,x,,,,,,,,,,,MCQ160M
+MCD160M,1,Yes,1,Yes,,,x,,,,,,,,,MCQ160M
+MCQ160I,1,Yes,1,Yes,,x,,,,,,,,,,MCQ160M
+MCQ160M,1,Yes,1,Yes,,,,x,x,x,x,,,,,MCQ160M
+MCQ160m,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ160M
+HAC1K,2,No (HAC1L),2,No,x,,,,,,,,,,,MCQ160M
+MCD160M,2,No,2,No,,,x,,,,,,,,,MCQ160M
+MCQ160I,2,No,2,No,,x,,,,,,,,,,MCQ160M
+MCQ160M,2,No,2,No,,,,x,x,x,x,,,,,MCQ160M
+MCQ160m,2,No,2,No,,,,,,,,x,x,x,x,MCQ160M
+MCD160M,7,Refused,7,Refused,,,x,,,,,,,,,MCQ160M
+MCQ160I,7,Refused,7,Refused,,x,,,,,,,,,,MCQ160M
+MCQ160M,7,Refused,7,Refused,,,,x,x,x,x,,,,,MCQ160M
+MCQ160m,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ160M
+HAC1K,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160M
+MCD160M,9,Don't know,9,Don't know,,,x,,,,,,,,,MCQ160M
+MCQ160I,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ160M
+MCQ160M,9,Don't know,9,Don't know,,,,x,x,x,x,,,,,MCQ160M
+MCQ160m,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ160M
+HAC1M,1,Yes (HAC3LR),1,Yes,x,,,,,,,,,,,MCQ160N
+HAC1M,2,No (HAC1M),2,No,x,,,,,,,,,,,MCQ160N
+HAC1M,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160N
+MCQ160N,1,Yes,1,Yes,,,,,,x,x,,,,,MCQ160N
+MCQ160n,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ160N
+MCQ160N,2,No,2,No,,,,,,x,x,,,,,MCQ160N
+MCQ160n,2,No,2,No,,,,,,,,x,x,x,x,MCQ160N
+MCQ160N,7,Refused,7,Refused,,,,,,x,x,,,,,MCQ160N
+MCQ160n,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ160N
+MCQ160N,9,Don't know,9,Don't know,,,,,,x,x,,,,,MCQ160N
+MCQ160n,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ160N
+HAC2J,1,Yes,1,Yes,x,,,,,,,,,,,MCQ170H
+HAC2J,2,No,2,No,x,,,,,,,,,,,MCQ170H
+HAC2J,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ170H
+HAC2J,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ170H
+MCQ170H,1,Yes,1,Yes,,x,,,,,,,,,,MCQ170H
+MCQ170H,2,No,2,No,,x,,,,,,,,,,MCQ170H
+MCQ170H,7,Refused,7,Refused,,x,,,,,,,,,,MCQ170H
+MCQ170H,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ170H
+HAC2F,1,Yes,1,Yes,x,,,,,,,,,,,MCQ170K
+HAC2F,2,No,2,No,x,,,,,,,,,,,MCQ170K
+HAC2F,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ170K
+MCQ170K,1,Yes,1,Yes,,x,x,x,x,x,x,,,,,MCQ170K
+MCQ170k,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ170K
+MCQ170K,2,No,2,No,,x,x,x,x,x,x,,,,,MCQ170K
+MCQ170k,2,No,2,No,,,,,,,,x,x,x,x,MCQ170K
+MCQ170K,7,Refused,7,Refused,,x,x,x,x,x,x,,,,,MCQ170K
+MCQ170k,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ170K
+MCQ170K,9,Don't know,9,Don't know,,x,x,x,x,x,x,,,,,MCQ170K
+MCQ170k,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ170K
+HAC2K,1,Yes,1,Yes,x,,,,,,,,,,,MCQ170M
+HAC2K,2,No,2,No,x,,,,,,,,,,,MCQ170M
+HAC2K,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ170M
+MCD170M,1,Yes,1,Yes,,,x,,,,,,,,,MCQ170M
+MCD170M,2,No,2,No,,,x,,,,,,,,,MCQ170M
+MCD170M,7,Refused,7,Refused,,,x,,,,,,,,,MCQ170M
+MCD170M,9,Don't know,9,Don't know,,,x,,,,,,,,,MCQ170M
+MCQ170I,1,Yes,1,Yes,,x,,,,,,,,,,MCQ170M
+MCQ170I,2,No,2,No,,x,,,,,,,,,,MCQ170M
+MCQ170I,7,Refused,7,Refused,,x,,,,,,,,,,MCQ170M
+MCQ170I,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ170M
+MCQ170M,1,Yes,1,Yes,,,,x,x,x,x,,,,,MCQ170M
+MCQ170m,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ170M
+MCQ170M,2,No,2,No,,,,x,x,x,x,,,,,MCQ170M
+MCQ170m,2,No,2,No,,,,,,,,x,x,x,x,MCQ170M
+MCQ170M,7,Refused,7,Refused,,,,x,x,x,x,,,,,MCQ170M
+MCQ170m,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ170M
+MCQ170M,9,Don't know,9,Don't know,,,,x,x,x,x,,,,,MCQ170M
+MCQ170m,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ170M
+HAC3AR,777,Less than 1 year,16,16 years or younger,x,,,,,,,,,,,MCQ180A
+MCD180a,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180A
+MCQ180A,16-Jan,16 years or younger,16,16 years or younger,,,,,,x,x,,,,,MCQ180A
+MCQ180a,0-16,16 years or younger,16,16 years or younger,,,,,,,,x,x,x,,MCQ180A
+HAC3AR,0-16,16 years or younger,16,16 years or younger,x,,,,,,,,,,,MCQ180A
+MCQ180A,16-Jan,16 years or younger,16,16 years or younger,,x,x,x,x,,,,,,,MCQ180A
+MCQ180A,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ180A
+MCQ180a,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180A
+MCD180a,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,,,,x,MCQ180A
+MCQ180A,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ180A
+HAC3AR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCQ180A
+MCQ180A,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180A
+MCQ180a,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180A
+MCD180a,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180A
+MCQ180A,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ180A
+HAC3AR,90,90 + years,90,90 + years,x,,,,,,,,,,,MCQ180A
+HAC3AR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ180A
+MCQ180A,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ180A
+MCQ180a,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180A
+MCD180a,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180A
+MCQ180A,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ180A
+MCQ180a,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180A
+MCD180a,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180A
+MCD180b,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180B
+HAC3CR,777,Less than 1 year,16,16 years or younger,x,,,,,,,,,,,MCQ180B
+MCQ180b,0-16,16 years or younger,16,16 years or younger,,,,,,,,x,x,x,,MCQ180B
+MCQ180B,0-16,16 years or younger,16,16 years or younger,,x,x,x,x,,,,,,,MCQ180B
+HAC3CR,16-Jan,16 years or younger,16,16 years or younger,x,,,,,,,,,,,MCQ180B
+MCQ180B,16-Jan,16 years or younger,16,16 years or younger,,,,,,x,x,,,,,MCQ180B
+MCQ180b,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180B
+MCQ180B,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ180B
+MCQ180B,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ180B
+HAC3CR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCQ180B
+MCD180b,18-79,18-79 years old,18-79,18-79 years old,,,,,,,,,,,x,MCQ180B
+MCD180b,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180B
+MCQ180B,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180B
+MCQ180b,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180B
+MCQ180B,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ180B
+HAC3CR,90,90 + years,90,90 + years,x,,,,,,,,,,,MCQ180B
+HAC3CR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ180B
+MCD180b,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180B
+MCQ180B,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ180B
+MCQ180b,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180B
+MCD180b,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180B
+MCQ180B,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ180B
+MCQ180b,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180B
+MCD180c,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180C
+MCQ180c,0-16,16 years or younger,16,16 years or younger,,,,,,,,x,x,x,,MCQ180C
+MCQ180C,16-Jan,16 years or younger,16,16 years or younger,,,,,,x,x,,,,,MCQ180C
+MCQ180C,16-Jan,16 years or younger,16,16 years or younger,,x,x,x,x,,,,,,,MCQ180C
+MCQ180c,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180C
+MCQ180C,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ180C
+MCQ180C,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ180C
+MCD180c,20-79,20-79 years old,20-79,20-79 years old,,,,,,,,,,,x,MCQ180C
+MCQ180C,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180C
+MCQ180c,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180C
+MCD180c,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180C
+MCQ180C,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ180C
+MCQ180C,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ180C
+MCQ180c,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180C
+MCD180c,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180C
+MCQ180C,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ180C
+MCQ180c,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180C
+MCD180c,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180C
+MCD180d,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180D
+MCQ180d,0-16,16 years or younger,16,16 years or younger,,,,,,,,x,x,x,,MCQ180D
+MCQ180D,16-Jan,16 years or younger,16,16 years or younger,,,,,,x,x,,,,,MCQ180D
+MCQ180D,16-Jan,16 years or younger,16,16 years or younger,,x,x,x,x,,,,,,,MCQ180D
+MCQ180d,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180D
+MCQ180D,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ180D
+MCQ180D,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ180D
+MCD180d,20-79,20-79 years old,20-79,20-79 years old,,,,,,,,,,,x,MCQ180D
+MCQ180D,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180D
+MCQ180d,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180D
+MCD180d,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180D
+MCQ180D,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ180D
+MCQ180D,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ180D
+MCQ180d,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180D
+MCD180d,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180D
+MCQ180D,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ180D
+MCQ180d,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180D
+MCD180d,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180D
+MCD180e,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180E
+HAF12R,16-Jan,16 years or younger,16,16 years or younger,x,,,,,,,,,,,MCQ180E
+MCQ180e,16-Jan,16 years or younger,16,16 years or younger,,,,,,,,x,x,x,,MCQ180E
+MCQ180E,16-Feb,16 years or younger,16,16 years or younger,,x,x,x,x,,,,,,,MCQ180E
+MCQ180E,16-Apr,16 years or younger,16,16 years or younger,,,,,,x,x,,,,,MCQ180E
+MCQ180e,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180E
+MCQ180E,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ180E
+MCQ180E,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ180E
+HAF12R,17-88,17-88 years old,17-88,17-88 years old,x,,,,,,,,,,,MCQ180E
+MCD180e,19-79,19-79 years old,19-79,19-79 years old,,,,,,,,,,,x,MCQ180E
+MCQ180E,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180E
+MCQ180e,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180E
+MCD180e,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180E
+MCQ180E,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ180E
+HAF12R,90,90 + years,90,90 + years,x,,,,,,,,,,,MCQ180E
+HAF12R,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ180E
+MCQ180E,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ180E
+MCQ180e,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180E
+MCD180e,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180E
+MCQ180E,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ180E
+MCQ180e,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180E
+MCD180e,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180E
+MCD180f,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180F
+MCQ180F,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180F
+MCQ180f,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180F
+MCD180f,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180F
+MCQ180F,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ180F
+HAC3DR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ180F
+MCQ180F,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ180F
+MCQ180f,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180F
+MCD180f,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180F
+MCQ180F,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ180F
+MCQ180f,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180F
+MCD180f,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180F
+HAC3DR,90,90 + years,80,80 years or older,x,,,,,,,,,,,MCQ180F
+MCD180f,17-79,Range of Values,17-79,Range of Values,,,,,,,,,,,x,MCQ180F
+MCQ180f,0-79,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,,,,,,,x,x,x,,MCQ180F
+MCQ180f,0-16,0-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ180F
+MCQ180f,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180F
+MCQ180F,Jan-79,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,,,,,x,x,,,,,MCQ180F
+MCQ180F,16-Jan,1-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ180F
+MCQ180F,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ180F
+MCQ180F,Jan-84,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,x,x,x,x,,,,,,,MCQ180F
+MCQ180F,16-Jan,1-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ180F
+MCQ180F,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ180F
+HAC3DR,Jun-89,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,x,,,,,,,,,,,MCQ180F
+HAC3DR,16-Jun,6-16 years old,16,16 years or younger,x,,,,,,,,,,,MCQ180F
+HAC3DR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCQ180F
+MCD180g,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180G
+MCQ180G,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180G
+MCQ180g,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180G
+MCD180g,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180G
+MCQ180G,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ180G
+HAC3GR,888,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ180G
+HAC3GR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ180G
+MCQ180G,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ180G
+MCQ180g,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180G
+MCD180g,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180G
+MCQ180G,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ180G
+MCQ180g,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180G
+MCD180g,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180G
+HAC3GR,90,90 + years,80,80 years or older,x,,,,,,,,,,,MCQ180G
+MCD180g,26-76,Range of Values,26-76,Range of Values,,,,,,,,,,,x,MCQ180G
+HAC3GR,Jan-89,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,x,,,,,,,,,,,MCQ180G
+HAC3GR,16-Jan,1-16 years old,16,16 years or younger,x,,,,,,,,,,,MCQ180G
+HAC3GR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCQ180G
+MCQ180g,Oct-79,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,,,,,,,x,x,x,,MCQ180G
+MCQ180g,16-Oct,10-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ180G
+MCQ180g,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180G
+MCQ180G,Mar-84,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,x,x,x,x,,,,,,,MCQ180G
+MCQ180G,16-Mar,3-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ180G
+MCQ180G,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ180G
+MCQ180G,Jun-79,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,,,,,x,x,,,,,MCQ180G
+MCQ180G,16-Jun,6-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ180G
+MCQ180G,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ180G
+MCD180k,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180K
+MCQ180K,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180K
+MCQ180k,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180K
+MCD180k,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180K
+MCQ180K,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ180K
+HAC3FR,777,Less than 1 year,16,16 years or younger,x,,,,,,,,,,,MCQ180K
+HAC3FR,888,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ180K
+HAC3FR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ180K
+MCQ180K,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ180K
+MCQ180k,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180K
+MCD180k,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180K
+MCQ180K,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ180K
+MCQ180k,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180K
+MCD180k,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180K
+HAC3FR,90,90 + years,80,80 years or older,x,,,,,,,,,,,MCQ180K
+MCD180k,17-79,Range of Values,17-79,Range of values,,,,,,,,,,,x,MCQ180K
+MCQ180K,0-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ180K
+MCQ180K,0-16,0-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ180K
+MCQ180K,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ180K
+MCQ180k,0-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ180K
+MCQ180k,0-16,0-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ180K
+MCQ180k,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180K
+MCQ180K,0-83,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ180K
+MCQ180K,0-16,0-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ180K
+MCQ180K,17-83,17-83 years old,17-83,17-83 years old,,x,x,x,x,,,,,,,MCQ180K
+HAC3FR,Jan-89,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,x,,,,,,,,,,,MCQ180K
+HAC3FR,16-Jan,1-16 years old,16,16 years or younger,x,,,,,,,,,,,MCQ180K
+HAC3FR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCQ180K
+MCD180l,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180L
+MCQ180L,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180L
+MCQ180l,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180L
+MCD180l,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180L
+MCQ180L,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ180L
+MCQ180L,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ180L
+MCQ180l,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180L
+MCD180l,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180L
+MCQ180L,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ180L
+MCQ180l,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180L
+MCD180l,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180L
+MCD180l,17-79,Range of Values,17-79,Range of values,,,,,,,,,,,x,MCQ180L
+MCQ180L,0-83,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ180L
+MCQ180L,0-16,0-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ180L
+MCQ180L,17-83,17-83 years old,17-83,17-83 years old,,x,x,x,x,,,,,,,MCQ180L
+MCQ180L,Jan-78,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ180L
+MCQ180L,16-Jan,1-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ180L
+MCQ180L,17-78,17-78 years old,17-78,17-78 years old,,,,,,x,x,,,,,MCQ180L
+MCQ180l,Jan-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ180L
+MCQ180l,16-Jan,1-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ180L
+MCQ180l,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180L
+MCD180m,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180M
+MCQ180M,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180M
+MCQ180m,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180M
+MCD180m,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180M
+MCQ180H,85,85 years or older,80,80 years or older,,x,,,,,,,,,,MCQ180M
+MCQ180I,85,85 years or older,80,80 years or older,,x,,,,,,,,,,MCQ180M
+MCD180M,85,85 years or older,80,80 years or older,,,x,,,,,,,,,MCQ180M
+MCQ180M,85,85 years or older,80,80 years or older,,,,x,x,,,,,,,MCQ180M
+HAC3JR,888,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ180M
+HAC3KR,888,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ180M
+HAC3JR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ180M
+HAC3KR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ180M
+MCQ180H,77777,Refused,77777,Refused,,x,,,,,,,,,,MCQ180M
+MCQ180I,77777,Refused,77777,Refused,,x,,,,,,,,,,MCQ180M
+MCD180M,77777,Refused,77777,Refused,,,x,,,,,,,,,MCQ180M
+MCQ180M,77777,Refused,77777,Refused,,,,x,x,x,x,,,,,MCQ180M
+MCQ180m,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180M
+MCD180m,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180M
+MCQ180H,99999,Don't know,99999,Don't know,,x,,,,,,,,,,MCQ180M
+MCQ180I,99999,Don't know,99999,Don't know,,x,,,,,,,,,,MCQ180M
+MCD180M,99999,Don't know,99999,Don't know,,,x,,,,,,,,,MCQ180M
+MCQ180M,99999,Don't know,99999,Don't know,,,,x,x,x,x,,,,,MCQ180M
+MCQ180m,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180M
+MCD180m,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180M
+HAC3JR,90,90 + years,80,80 years or older,x,,,,,,,,,,,MCQ180M
+MCD180m,17-79,Range of Values,17-79,Range of Values,,,,,,,,,,,x,MCQ180M
+MCQ180M,0-79,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,,,,,x,x,,,,,MCQ180M
+MCQ180M,0-16,0-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ180M
+MCQ180M,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ180M
+MCQ180M,0-84,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,,,x,x,,,,,,,MCQ180M
+MCQ180M,0-16,0-16 years old,16,16 years or younger,,,,x,x,,,,,,,MCQ180M
+MCQ180M,17-84,17-84 years old,17-84,17-84 years old,,,,x,x,,,,,,,MCQ180M
+HAC3JR,Jan-84,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,x,,,,,,,,,,,MCQ180M
+HAC3JR,16-Jan,1-16 years old,16,16 years or younger,x,,,,,,,,,,,MCQ180M
+HAC3JR,17-84,17-84 years old,17-84,17-84 years old,x,,,,,,,,,,,MCQ180M
+HAC3KR,Mar-89,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,x,,,,,,,,,,,MCQ180M
+HAC3KR,16-Mar,3-16 years old,16,16 years or younger,x,,,,,,,,,,,MCQ180M
+HAC3KR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCQ180M
+MCQ180H,Jan-72,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,x,,,,,,,,,,MCQ180M
+MCQ180H,16-Jan,1-16 years old,16,16 years or younger,,x,,,,,,,,,,MCQ180M
+MCQ180H,17-72,17-72 years old,17-72,17-72 years old,,x,,,,,,,,,,MCQ180M
+MCQ180m,Jan-79,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,,,,,,,x,x,x,,MCQ180M
+MCQ180m,16-Jan,1-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ180M
+MCQ180m,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180M
+MCD180M,Jan-84,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,,x,,,,,,,,,MCQ180M
+MCD180M,16-Jan,1-16 years old,16,16 years or younger,,,x,,,,,,,,,MCQ180M
+MCD180M,17-84,17-84 years old,17-84,17-84 years old,,,x,,,,,,,,,MCQ180M
+MCQ180I,May-84,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,,x,,,,,,,,,,MCQ180M
+MCQ180I,16-May,5-16 years old,16,16 years or younger,,x,,,,,,,,,,MCQ180M
+MCQ180I,17-84,17-84 years old,17-84,17-84 years old,,x,,,,,,,,,,MCQ180M
+MCD180n,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180n
+MCQ180N,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ180n
+MCQ180n,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ180n
+MCD180n,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180n
+HAC3MR,777,Less than 1 year,16,16 years or younger,x,,,,,,,,,,,MCQ180n
+HAC3MR,888,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ180n
+HAC3MR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ180n
+MCQ180N,77777,Refused,77777,Refused,,,,,,x,x,,,,,MCQ180n
+MCQ180n,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ180n
+MCD180n,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180n
+MCQ180N,99999,Don't know,99999,Don't know,,,,,,x,x,,,,,MCQ180n
+MCQ180n,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ180n
+MCD180n,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180n
+MCD180n,17-79,Range of Values,17-79,Range of Values,,,,,,,,,,,x,MCQ180n
+HAC3MR,Jan-86,Range of Values,16; 17-79; 80,if value <= 16 years or younger; Range of values; if value >= 80 years or older,x,,,,,,,,,,,MCQ180n
+HAC3MR,16-Jan,1-16 years old,16,16 years or younger,x,,,,,,,,,,,MCQ180n
+HAC3MR,17-86,17-86 years old,17-86,17-86 years old,x,,,,,,,,,,,MCQ180n
+MCQ180N,Feb-79,Range of Values,16; 17-79,if value <= 16 years or younger; Range of values,,,,,,x,x,,,,,MCQ180n
+MCQ180N,16-Feb,2-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ180n
+MCQ180N,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ180n
+MCQ180n,Aug-79,Range of Values,16; 17-79,if value <= 16 years or younger; Range of values,,,,,,,,x,x,x,,MCQ180n
+MCQ180n,16-Aug,8-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ180n
+MCQ180n,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ180n
+HAC1B,1,Rheumatoid arthritis,1,Rheumatoid arthritis,x,,,,,,,,,,,MCQ195
+MCQ190,1,Rheumatoid arthritis,1,Rheumatoid arthritis,,x,x,x,x,x,,,,,,MCQ195
+MCQ191,1,Rheumatoid arthritis,1,Rheumatoid arthritis,,,,,,,x,,,,,MCQ195
+MCQ195,1,Osteoarthritis or degenerative arthritis,2,Osteoarthritis or degenerative arthritis,,,,,,,,x,x,x,x,MCQ195
+HAC1B,2,Osteoarthritis,2,Osteoarthritis or degenerative arthritis,x,,,,,,,,,,,MCQ195
+MCQ190,2,Osteoarthritis,2,Osteoarthritis or degenerative arthritis,,x,x,x,x,x,,,,,,MCQ195
+MCQ191,2,Osteoarthritis,2,Osteoarthritis or degenerative arthritis,,,,,,,x,,,,,MCQ195
+MCQ195,2,Rheumatoid arthritis,1,Rheumatoid arthritis,,,,,,,,x,x,x,x,MCQ195
+MCQ190,3,Other,4,Other,,x,x,x,x,x,,,,,,MCQ195
+MCQ191,3,Psoriatic arthritis,3,Psoriatic arthritis,,,,,,,x,,,,,MCQ195
+MCQ195,3,Psoriatic arthritis,3,Psoriatic arthritis,,,,,,,,x,x,x,x,MCQ195
+MCQ191,4,Other,4,Other,,,,,,,x,,,,,MCQ195
+MCQ195,4,Other,4,Other,,,,,,,,x,x,x,x,MCQ195
+MCQ190,7,Refused,7,Refused,,x,x,x,x,x,,,,,,MCQ195
+MCQ191,7,Refused,7,Refused,,,,,,,x,,,,,MCQ195
+MCQ195,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ195
+HAC1B,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ195
+HAC1B,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ195
+MCQ190,9,Don't know,9,Don't know,,x,x,x,x,x,,,,,,MCQ195
+MCQ191,9,Don't know,9,Don't know,,,,,,,x,,,,,MCQ195
+MCQ195,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ195
+HAC1N,1,Yes (HAC3NR),1,Yes,x,,,,,,,,,,,MCQ220
+HAC1O,1,Yes (HAC3OR),1,Yes,x,,,,,,,,,,,MCQ220
+MCQ220,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,MCQ220
+HAC1N,2,No (HAC1O),2,No,x,,,,,,,,,,,MCQ220
+HAC1O,2,No (HAC4A),2,No,x,,,,,,,,,,,MCQ220
+MCQ220,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,MCQ220
+MCQ220,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,MCQ220
+HAC1N,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ220
+HAC1O,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ220
+HAC1N,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ220
+HAC1O,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ220
+MCQ220,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,MCQ220
+MCQ240A,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240A
+MCQ240a,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240A
+MCQ240A,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240A
+MCQ240A,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240A
+MCQ240a,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240A
+MCQ240A,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240A
+MCQ240a,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240A
+MCQ240A,42-77,Range of Values,42-77,if value is <=16; if value is 17 to 79; if value is >=80,,,,,,x,x,,,,,MCQ240A
+MCQ240A,May-83,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240A
+MCQ240A,16-May,5-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240A
+MCQ240A,17-83,17-83 years old,17-83,17-83 years old,,x,x,x,x,,,,,,,MCQ240A
+MCQ240a,Jul-78,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,,,,,,,x,x,x,,MCQ240A
+MCQ240a,16-Jul,7-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240A
+MCQ240a,17-78,17-78 years old,17-78,17-78 years old,,,,,,,,x,x,x,,MCQ240A
+MCQ240AA,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240AA
+MCQ240aa,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240AA
+MCQ240AA,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240AA
+MCQ240AA,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240AA
+MCQ240aa,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240AA
+MCQ240AA,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240AA
+MCQ240aa,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240AA
+MCQ240AA,18-75,18-75 years old,18-75,18-75 years old,,x,x,x,x,x,x,,,,,MCQ240AA
+MCQ240aa,20-67,20-67 years old,20-67,20-67 years old,,,,,,,,x,x,x,,MCQ240AA
+MCQ240B,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240B
+MCQ240b,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240B
+MCQ240B,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240B
+MCQ240B,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240B
+MCQ240b,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240B
+MCQ240B,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240B
+MCQ240b,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240B
+MCQ240B,Jan-66,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,x,x,,,,,MCQ240B
+MCQ240B,16-Jan,1-16 years old,16,16 years or younger,,x,x,x,x,x,x,,,,,MCQ240B
+MCQ240B,17-66,17-66 years old,17-66,17-66 years old,,x,x,x,x,x,x,,,,,MCQ240B
+MCQ240b,Oct-70,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240B
+MCQ240b,16-Oct,10-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240B
+MCQ240b,17-70,17-70 years old,17-70,17-70 years old,,,,,,,,x,x,x,,MCQ240B
+MCQ240BB,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240BB
+MCQ240bb,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240BB
+MCQ240BB,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240BB
+MCQ240BB,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240BB
+MCQ240bb,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240BB
+MCQ240BB,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240BB
+MCQ240bb,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240BB
+MCQ240BB,17-75,Range of Values,17-79; 80,17 to 79; if value is >=80,,x,x,x,x,x,x,,,,,MCQ240BB
+MCQ240bb,25-72,Range of Values,25-72,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240BB
+MCQ240C,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240C
+MCQ240c,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240C
+MCQ240C,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240C
+MCQ240C,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240C
+MCQ240c,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240C
+MCQ240C,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240C
+MCQ240c,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240C
+MCQ240C,Apr-84,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240C
+MCQ240C,16-Apr,4-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240C
+MCQ240C,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240C
+MCQ240c,55-76,55-76 years old,55-76,55-76 years old,,,,,,,,x,x,x,,MCQ240C
+MCQ240C,Jun-77,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ240C
+MCQ240C,16-Jun,6-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240C
+MCQ240C,17-77,17-77 years old,17-77,17-77 years old,,,,,,x,x,,,,,MCQ240C
+MCQ240CC,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240CC
+MCQ240cc,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240CC
+MCQ240CC,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240CC
+MCQ240CC,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240CC
+MCQ240cc,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240CC
+MCQ240CC,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240CC
+MCQ240cc,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240CC
+MCQ240CC,0-84,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240CC
+MCQ240CC,0-16,0-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240CC
+MCQ240CC,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240CC
+MCQ240cc,14-77,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240CC
+MCQ240cc,14-16,14-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240CC
+MCQ240cc,17-77,17-77 years old,17-77,17-77 years old,,,,,,,,x,x,x,,MCQ240CC
+MCQ240CC,20-72,20-72 years old,20-72,20-72 years old,,,,,,x,x,,,,,MCQ240CC
+MCQ240D,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240D
+MCQ240d,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240D
+MCQ240D,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240D
+MCQ240D,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240D
+MCQ240d,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240D
+MCQ240D,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240D
+MCQ240d,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240D
+MCQ240d,Nov-73,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,,,MCQ240D
+MCQ240d,16-Nov,11-16 years old,16,16 years or younger,,,,,,,,x,x,,,MCQ240D
+MCQ240d,17-73,17-73 years old,17-73,17-73 years old,,,,,,,,x,x,,,MCQ240D
+MCQ240D,Sep-75,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,x,x,x,x,x,,,,,MCQ240D
+MCQ240D,16-Sep,9-16 years old,16,16 years or younger,,,x,x,x,x,x,,,,,MCQ240D
+MCQ240D,17-75,17-75 years old,17-75,17-75 years old,,,x,x,x,x,x,,,,,MCQ240D
+MCQ240DD,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240DD
+MCQ240dd,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240DD
+MCQ240DD,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240DD
+MCQ240DD,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240DD
+MCQ240dd,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240DD
+MCQ240DD,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240DD
+MCQ240dd,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240DD
+MCQ240DD,0-77,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ240DD
+MCQ240DD,0-16,0-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240DD
+MCQ240DD,17-77,17-77 years old,17-77,17-77 years old,,,,,,x,x,,,,,MCQ240DD
+MCQ240DD,Jan-83,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240DD
+MCQ240DD,16-Jan,1-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240DD
+MCQ240DD,17-83,17-83 years old,17-83,17-83 years old,,x,x,x,x,,,,,,,MCQ240DD
+MCQ240dd,Mar-78,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240DD
+MCQ240dd,16-Mar,3-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240DD
+MCQ240dd,17-78,17-78 years old,17-78,17-78 years old,,,,,,,,x,x,x,,MCQ240DD
+MCQ240DK,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240DK
+MCQ240dk,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240DK
+MCQ240DK,85,85 years or older,80,80 years or older,,,,,x,,,,,,,MCQ240DK
+MCQ240dk,777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240DK
+MCQ240dk,999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240DK
+MCQ240DK,77777,Refused,77777,Refused,,,,,x,x,x,,,,,MCQ240DK
+MCQ240DK,99999,Don't know,99999,Don't know,,,,,x,x,x,,,,,MCQ240DK
+MCQ240DK,20-80,20-80 years old,20-80,20-80 years old,,,,,x,x,x,,,,,MCQ240DK
+MCQ240dk,23-47,23-47 years old,23-47,23-47 years old,,,,,,,,x,x,x,,MCQ240DK
+MCQ240E,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240E
+MCQ240e,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240E
+MCQ240E,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240E
+MCQ240E,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240E
+MCQ240e,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240E
+MCQ240E,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240E
+MCQ240e,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240E
+MCQ240e,14-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240E
+MCQ240e,14-16,14-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240E
+MCQ240e,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ240E
+MCQ240E,Feb-78,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ240E
+MCQ240E,16-Feb,2-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240E
+MCQ240E,17-78,17-78 years old,17-78,17-78 years old,,,,,,x,x,,,,,MCQ240E
+MCQ240E,Feb-84,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79,,x,x,x,x,,,,,,,MCQ240E
+MCQ240E,16-Feb,2-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240E
+MCQ240E,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240E
+MCQ240F,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240F
+MCQ240f,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240F
+MCQ240F,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240F
+MCQ240F,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240F
+MCQ240f,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240F
+MCQ240F,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240F
+MCQ240f,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240F
+MCQ240f,15-65,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240F
+MCQ240f,15-16,15-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240F
+MCQ240f,17-65,17-65 years old,17-65,17-65 years old,,,,,,,,x,x,x,,MCQ240F
+MCQ240F,Apr-73,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,x,x,,,,,MCQ240F
+MCQ240F,16-Apr,4-16 years old,16,16 years or younger,,x,x,x,x,x,x,,,,,MCQ240F
+MCQ240F,17-73,17-73 years old,17-73,17-73 years old,,x,x,x,x,x,x,,,,,MCQ240F
+MCQ240G,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240G
+MCQ240g,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240G
+MCQ240G,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240G
+MCQ240G,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240G
+MCQ240g,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240G
+MCQ240G,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240G
+MCQ240g,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240G
+MCQ240g,13-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240G
+MCQ240g,13-16,13-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240G
+MCQ240g,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ240G
+MCQ240G,Feb-84,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240G
+MCQ240G,16-Feb,2-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240G
+MCQ240G,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240G
+MCQ240G,21-79,21-79 years old,21-79,21-79 years old,,,,,,x,x,,,,,MCQ240G
+MCQ240H,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240H
+MCQ240h,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240H
+MCQ240H,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240H
+MCQ240H,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240H
+MCQ240h,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240H
+MCQ240H,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240H
+MCQ240h,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240H
+MCQ240H,34-83,34-83 years old,34-83,34-83 years old,,x,x,x,x,,,,,,,MCQ240H
+MCQ240H,43-75,43-75 years old,43-75,43-75 years old,,,,,,x,x,,,,,MCQ240H
+MCQ240h,52-71,52-71 years old,52-71,52-71 years old,,,,,,,,x,x,x,,MCQ240H
+MCQ240I,52,52 years old,52,52 years old,,,,,,x,,,,,,MCQ240I
+MCQ240I,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240I
+MCQ240i,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240I
+MCQ240I,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240I
+MCQ240I,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240I
+MCQ240i,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240I
+MCQ240I,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240I
+MCQ240i,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240I
+MCQ240J,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240J
+MCQ240j,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240J
+MCQ240J,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240J
+MCQ240J,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240J
+MCQ240j,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240J
+MCQ240J,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240J
+MCQ240j,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240J
+MCQ240J,26-83,26-83 years old,26-83,26-83 years old,,x,x,x,x,,,,,,,MCQ240J
+MCQ240J,27-76,27-76 years old,27-76,27-76 years old,,,,,,x,x,,,,,MCQ240J
+MCQ240j,27-76,27-76 years old,27-76,27-76 years old,,,,,,,,x,x,x,,MCQ240J
+MCQ240K,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240K
+MCQ240k,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240K
+MCQ240K,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240K
+MCQ240K,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240K
+MCQ240k,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240K
+MCQ240K,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240K
+MCQ240k,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240K
+MCQ240K,19-75,19-75 years old,19-75,19-75 years old,,x,x,x,x,,,,,,,MCQ240K
+MCQ240K,30-70,30-70 years old,30-70,30-70 years old,,,,,,x,x,,,,,MCQ240K
+MCQ240k,43-74,43-74 years old,43-74,43-74 years old,,,,,,,,x,x,,,MCQ240K
+MCQ240L,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240L
+MCQ240l,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240L
+MCQ240L,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240L
+MCQ240L,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240L
+MCQ240l,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240L
+MCQ240L,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240L
+MCQ240l,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240L
+MCQ240L,28-84,28-84 years old,28-84,28-84 years old,,x,x,x,x,,,,,,,MCQ240L
+MCQ240l,Mar-75,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240L
+MCQ240l,16-Mar,3-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240L
+MCQ240l,17-75,17-75 years old,17-75,17-75 years old,,,,,,,,x,x,x,,MCQ240L
+MCQ240L,Apr-70,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ240L
+MCQ240L,16-Apr,4-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240L
+MCQ240L,17-70,17-70 years old,17-70,17-70 years old,,,,,,x,x,,,,,MCQ240L
+MCQ240M,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240M
+MCQ240m,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240M
+MCQ240M,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240M
+MCQ240M,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240M
+MCQ240m,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240M
+MCQ240M,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240M
+MCQ240m,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240M
+MCQ240m,28-70,28-70 years old,28-70,28-70 years old,,,,,,,,x,x,x,,MCQ240M
+MCQ240M,28-83,28-83 years old,28-83,28-83 years old,,x,x,x,x,,,,,,,MCQ240M
+MCQ240M,29-77,29-77 years old,29-77,29-77 years old,,,,,,x,x,,,,,MCQ240M
+MCQ240N,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240N
+MCQ240n,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240N
+MCQ240N,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240N
+MCQ240N,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240N
+MCQ240n,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240N
+MCQ240N,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240N
+MCQ240n,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240N
+MCQ240N,Dec-84,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240N
+MCQ240N,16-Dec,12-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240N
+MCQ240N,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240N
+MCQ240N,15-76,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ240N
+MCQ240N,15-16,15-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240N
+MCQ240N,17-76,17-76 years old,17-76,17-76 years old,,,,,,x,x,,,,,MCQ240N
+MCQ240n,29-79,29-79 years old,29-79,29-79 years old,,,,,,,,x,x,x,,MCQ240N
+MCQ240O,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240O
+MCQ240o,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240O
+MCQ240O,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240O
+MCQ240O,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240O
+MCQ240o,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240O
+MCQ240O,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240O
+MCQ240o,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240O
+MCQ240O,15-76,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ240O
+MCQ240O,15-16,15-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240O
+MCQ240O,17-76,17-76 years old,17-76,17-76 years old,,,,,,x,x,,,,,MCQ240O
+MCQ240o,19-79,19-79 years old,19-79,19-79 years old,,,,,,,,x,x,x,,MCQ240O
+MCQ240O,Sep-80,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240O
+MCQ240O,16-Sep,9-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240O
+MCQ240O,17-80,17-80 years old,17-80,17-80 years old,,x,x,x,x,,,,,,,MCQ240O
+MCQ240P,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240P
+MCQ240p,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240P
+MCQ240P,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240P
+MCQ240P,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240P
+MCQ240p,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240P
+MCQ240P,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240P
+MCQ240p,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240P
+MCQ240P,Dec-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ240P
+MCQ240P,16-Dec,12-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240P
+MCQ240P,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ240P
+MCQ240p,15-78,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240P
+MCQ240p,15-16,15-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240P
+MCQ240p,17-78,17-78 years old,17-78,17-78 years old,,,,,,,,x,x,x,,MCQ240P
+MCQ240P,Jun-83,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240P
+MCQ240P,16-Jun,6-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240P
+MCQ240P,17-83,17-83 years old,17-83,17-83 years old,,x,x,x,x,,,,,,,MCQ240P
+MCQ240Q,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240Q
+MCQ240q,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240Q
+MCQ240Q,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240Q
+MCQ240Q,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240Q
+MCQ240q,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240Q
+MCQ240Q,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240Q
+MCQ240q,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240Q
+MCQ240q,Jan-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240Q
+MCQ240q,16-Jan,1-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240Q
+MCQ240q,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ240Q
+MCQ240Q,27-70,27-70 years old,27-70,27-70 years old,,,,,,x,x,,,,,MCQ240Q
+MCQ240Q,30-70,30-70 years old,30-70,30-70 years old,,x,x,x,x,,,,,,,MCQ240Q
+MCQ240R,23,23 years old,23,23 years old,,,,,,x,,,,,,MCQ240R
+MCQ240R,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240R
+MCQ240r,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240R
+MCQ240R,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240R
+MCQ240R,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240R
+MCQ240r,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240R
+MCQ240R,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240R
+MCQ240r,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240R
+MCQ240S,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240S
+MCQ240s,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240S
+MCQ240S,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240S
+MCQ240S,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240S
+MCQ240s,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240S
+MCQ240S,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240S
+MCQ240s,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240S
+MCQ240s,16-74,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240S
+MCQ240s,16,16-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240S
+MCQ240s,17-74,17-74 years old,17-74,17-74 years old,,,,,,,,x,x,x,,MCQ240S
+MCQ240S,16-80,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240S
+MCQ240S,16,16-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240S
+MCQ240S,17-80,17-80 years old,17-80,17-80 years old,,x,x,x,x,,,,,,,MCQ240S
+MCQ240S,18-79,18-79 years old,18-79,18-79 years old,,,,,,x,x,,,,,MCQ240S
+MCQ240T,40,40 years old,40,40 years old,,,x,,,,,,,,,MCQ240T
+MCQ240T,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240T
+MCQ240t,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240T
+MCQ240T,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240T
+MCQ240T,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240T
+MCQ240t,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240T
+MCQ240T,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240T
+MCQ240t,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240T
+MCQ240t,40-71,40-71 years old,40-71,40-71 years old,,,,,,,,x,x,x,,MCQ240T
+MCQ240T,55-77,55-77 years old,55-77,55-77 years old,,,,,,x,x,,,,,MCQ240T
+MCQ240U,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240U
+MCQ240u,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240U
+MCQ240U,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240U
+MCQ240U,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240U
+MCQ240u,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240U
+MCQ240U,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240U
+MCQ240u,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240U
+MCQ240U,Feb-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ240U
+MCQ240U,16-Feb,2-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240U
+MCQ240U,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ240U
+MCQ240U,Feb-84,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240U
+MCQ240U,16-Feb,2-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240U
+MCQ240U,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240U
+MCQ240u,32-79,32-79 years old,32-79,32-79 years old,,,,,,,,x,x,x,,MCQ240U
+MCQ240V,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240V
+MCQ240v,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240V
+MCQ240V,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240V
+MCQ240V,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240V
+MCQ240v,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240V
+MCQ240V,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240V
+MCQ240v,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240V
+MCQ240V,41-78,41-78 years old,41-78,41-78 years old,,,,,,,x,,,,,MCQ240V
+MCQ240V,43-81,43-81 years old,43-81,43-81 years old,,x,x,x,x,,,,,,,MCQ240V
+MCQ240v,48-65,48-65 years old,48-65,48-65 years old,,,,,,,,x,x,x,,MCQ240V
+MCQ240W,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240W
+MCQ240w,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240W
+MCQ240W,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240W
+MCQ240W,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240W
+MCQ240w,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240W
+MCQ240W,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240W
+MCQ240w,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240W
+MCQ240W,Oct-84,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240W
+MCQ240W,16-Oct,10-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240W
+MCQ240W,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240W
+MCQ240W,Nov-78,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ240W
+MCQ240W,16-Nov,11-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240W
+MCQ240W,17-78,17-78 years old,17-78,17-78 years old,,,,,,x,x,,,,,MCQ240W
+MCQ240w,Mar-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240W
+MCQ240w,16-Mar,3-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240W
+MCQ240w,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ240W
+MCQ240X,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240X
+MCQ240x,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240X
+MCQ240X,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240X
+MCQ240X,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240X
+MCQ240x,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240X
+MCQ240X,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240X
+MCQ240x,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240X
+MCQ240X,Jan-84,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,x,x,x,x,,,,,,,MCQ240X
+MCQ240X,16-Jan,1-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240X
+MCQ240X,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240X
+MCQ240x,18-79,18-79 years old,18-79,18-79 years old,,,,,,,,x,x,x,,MCQ240X
+MCQ240X,May-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,x,,,,,MCQ240X
+MCQ240X,16-May,5-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240X
+MCQ240X,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ240X
+MCQ240Y,30,30 years old,30,30 years old,,,,,,x,,,,,,MCQ240Y
+MCQ240Y,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240Y
+MCQ240y,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240Y
+MCQ240Y,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240Y
+MCQ240Y,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240Y
+MCQ240y,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240Y
+MCQ240Y,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240Y
+MCQ240y,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240Y
+MCQ240y,16-55,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,,,MCQ240Y
+MCQ240y,16,16-16 years old,16,16 years or younger,,,,,,,,x,x,,,MCQ240Y
+MCQ240y,17-55,17-55 years old,17-55,17-55 years old,,,,,,,,x,x,,,MCQ240Y
+MCQ240Y,32-71,32-71 years old,32-71,32-71 years old,,x,x,x,x,,,,,,,MCQ240Y
+MCQ240Z,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,MCQ240Z
+MCQ240z,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,MCQ240Z
+MCQ240Z,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,MCQ240Z
+MCQ240Z,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,MCQ240Z
+MCQ240z,77777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240Z
+MCQ240Z,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,MCQ240Z
+MCQ240z,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240Z
+MCQ240z,Nov-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,,,x,x,x,,MCQ240Z
+MCQ240z,16-Nov,11-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240Z
+MCQ240z,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ240Z
+MCQ240Z,22-82,22-82 years old,22-82,22-82 years old,,x,x,x,x,,,,,,,MCQ240Z
+MCQ240Z,32-76,32-76 years old,32-76,32-76 years old,,,,,,x,x,,,,,MCQ240Z
+HAC6,1,Yes,1,Yes,x,,,,,,,,,,,MCQ250E
+MCQ250E,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ250E
+HAC6,2,No,2,No,x,,,,,,,,,,,MCQ250E
+MCQ250E,2,No,2,No,,x,x,x,,,,,,,,MCQ250E
+MCQ250E,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ250E
+HAC6,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ250E
+HAC6,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ250E
+MCQ250E,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ250E
+MCQ250F,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ250F
+MCQ250F,2,No,2,No,,x,x,x,,,,,,,,MCQ250F
+MCQ250F,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ250F
+MCQ250F,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ250F
+HAC7,1,Yes,1,Yes,x,,,,,,,,,,,MCQ270
+MCQ270,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ270
+HAC7,2,No (HAD1),2,No,x,,,,,,,,,,,MCQ270
+MCQ270,2,No,2,No,,x,x,x,,,,,,,,MCQ270
+MCQ270,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ270
+HAC7,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ270
+HAC7,9,Don't know (HAD1),9,Don't know,x,,,,,,,,,,,MCQ270
+MCQ270,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ270
+HAC8,888,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ280
+HAC8,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ280
+MCQ280,77777,Refused,77777,Refused,,x,x,x,,,,,,,,MCQ280
+MCQ280,99999,Don't know,99999,Don't know,,x,x,x,,,,,,,,MCQ280
+HAC8,444,Under 50,444,Under 50,x,,,,,,,,,,,MCQ280
+HAC8,555,50 +,555,50 +,x,,,,,,,,,,,MCQ280
+HAC8,9-107,Range of Values,009-107,Range of Values,x,,,,,,,,,,,MCQ280
+MCQ280,1-101,Range of Values,1-101; 444; 555,Range of Values; Under 50; 50 +,,x,x,x,,,,,,,,MCQ280
+HAC4B,1,Yes (HAC5B1),1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B1,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B10,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B11,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B12,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B2,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B3,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B4,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B5,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B6,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B7,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B8,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+HAC5B9,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300a
+MCQ250G,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ300a
+MCQ300A,1,Yes,1,Yes,,,,,x,x,x,,,,,MCQ300a
+MCQ300a,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ300a
+HAC4B,2,No (HAC6),2,No,x,,,,,,,,,,,MCQ300a
+HAC5B1,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B10,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B11,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B12,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B2,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B3,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B4,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B5,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B6,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B7,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B8,2,No,2,No,x,,,,,,,,,,,MCQ300a
+HAC5B9,2,No,2,No,x,,,,,,,,,,,MCQ300a
+MCQ250G,2,No,2,No,,x,x,x,,,,,,,,MCQ300a
+MCQ300A,2,No,2,No,,,,,x,x,x,,,,,MCQ300a
+MCQ300a,2,No,2,No,,,,,,,,x,x,x,x,MCQ300a
+MCQ250G,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ300a
+MCQ300A,7,Refused,7,Refused,,,,,x,x,x,,,,,MCQ300a
+MCQ300a,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ300a
+HAC4B,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B1,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B10,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B11,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B12,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B2,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B3,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B4,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B5,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B6,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B7,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B8,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC5B9,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300a
+HAC4B,9,Don't know (HAC6),9,Don't know,x,,,,,,,,,,,MCQ300a
+MCQ250G,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ300a
+MCQ300A,9,Don't know,9,Don't know,,,,,x,x,x,,,,,MCQ300a
+MCQ300a,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ300a
+MCQ250C,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ300B
+MCQ300B,1,Yes,1,Yes,,,,,x,x,x,,,,,MCQ300B
+MCQ300b,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ300B
+MCQ250C,2,No,2,No,,x,x,x,,,,,,,,MCQ300B
+MCQ300B,2,No,2,No,,,,,x,x,x,,,,,MCQ300B
+MCQ300b,2,No,2,No,,,,,,,,x,x,x,x,MCQ300B
+MCQ250C,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ300B
+MCQ300B,7,Refused,7,Refused,,,,,x,x,x,,,,,MCQ300B
+MCQ300b,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ300B
+MCQ250C,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ300B
+MCQ300B,9,Don't know,9,Don't know,,,,,x,x,x,,,,,MCQ300B
+MCQ300b,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ300B
+HAC4A,1,Yes (HAC5A1),1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A1,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A10,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A11,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A12,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A2,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A3,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A4,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A5,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A6,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A7,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A8,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+HAC5A9,1,Yes,1,Yes,x,,,,,,,,,,,MCQ300c
+MCQ250A,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ300c
+MCQ300C,1,Yes,1,Yes,,,,,x,x,x,,,,,MCQ300c
+MCQ300c,1,Yes,1,Yes,,,,,,,,x,x,x,x,MCQ300c
+HAC4A,2,No (HAC4B),2,No,x,,,,,,,,,,,MCQ300c
+HAC5A1,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A10,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A11,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A12,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A2,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A3,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A4,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A5,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A6,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A7,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A8,2,No,2,No,x,,,,,,,,,,,MCQ300c
+HAC5A9,2,No,2,No,x,,,,,,,,,,,MCQ300c
+MCQ250A,2,No,2,No,,x,x,x,,,,,,,,MCQ300c
+MCQ300C,2,No,2,No,,,,,x,x,x,,,,,MCQ300c
+MCQ300c,2,No,2,No,,,,,,,,x,x,x,x,MCQ300c
+MCQ250A,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ300c
+MCQ300C,7,Refused,7,Refused,,,,,x,x,x,,,,,MCQ300c
+MCQ300c,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ300c
+HAC4A,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A1,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A10,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A11,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A12,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A2,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A3,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A4,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A5,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A6,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A7,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A8,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC5A9,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ300c
+HAC4A,9,Don't know (HAC4B),9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A1,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A10,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A11,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A12,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A2,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A3,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A4,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A5,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A6,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A7,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A8,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+HAC5A9,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ300c
+MCQ250A,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ300c
+MCQ300C,9,Don't know,9,Don't know,,,,,x,x,x,,,,,MCQ300c
+MCQ300c,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ300c
+MCQ320,80,80 years or older,80,80 years or older,,,,,,x,,,,,,MCQ320
+MCQ320,777,Refused,777,Refused,,,,,x,x,,,,,,MCQ320
+MCQ320,999,Don't know,999,Don't know,,,,,x,x,,,,,,MCQ320
+MCQ320,Jan-79,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,,,,,,x,,,,,,MCQ320
+MCQ320,16-Jan,1-16 years old,16,16 years or younger,,,,,,x,,,,,,MCQ320
+MCQ320,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,,,,,,MCQ320
+MCQ320,Jan-85,Range of Values,16; 17-79; 80,if value is <=16; if value is 17 to 79; if value is >=80,,,,,x,,,,,,,MCQ320
+MCQ320,16-Jan,1-16 years old,16,16 years or younger,,,,,x,,,,,,,MCQ320
+MCQ320,17-85,17-85 years old,17-85,17-85 years old,,,,,x,,,,,,,MCQ320
+HAJ1,1,Yes,1,Yes,x,,,,,,,,,,,MCQ520
+MCQ520,1,Yes,1,Yes,,,,,,,,,,,x,MCQ520
+HAJ1,2,No (HAJ9),2,No,x,,,,,,,,,,,MCQ520
+MCQ520,2,No,2,No,,,,,,,,,,,x,MCQ520
+MCQ520,7,Refused,7,Refused,,,,,,,,,,,x,MCQ520
+HAJ1,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ520
+HAJ1,9,Don't know (HAJ9),9,Don't know,x,,,,,,,,,,,MCQ520
+MCQ520,9,Don't know,9,Don't know,,,,,,,,,,,x,MCQ520
+HAJ7,1,Yes,1,Yes,x,,,,,,,,,,,MCQ540
+MCQ540,1,Yes,1,Yes,,,,,,,,,,,x,MCQ540
+HAJ7,2,No (HAJ9),2,No,x,,,,,,,,,,,MCQ540
+MCQ540,2,No,2,No,,,,,,,,,,,x,MCQ540
+MCQ540,7,Refused,7,Refused,,,,,,,,,,,x,MCQ540
+HAJ7,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ540
+HAJ7,9,Don't know (HAK1),9,Don't know,x,,,,,,,,,,,MCQ540
+MCQ540,9,Don't know,9,Don't know,,,,,,,,,,,x,MCQ540
+HAJ16,1,Yes,1,Yes,x,,,,,,,,,,,MCQ550
+HAJ9,1,Yes,1,Yes,x,,,,,,,,,,,MCQ550
+MCQ550,1,Yes,1,Yes,,,,,,,,,,,x,MCQ550
+HAJ16,2,No,2,No,x,,,,,,,,,,,MCQ550
+HAJ9,2,No,2,No,x,,,,,,,,,,,MCQ550
+MCQ550,2,No,2,No,,,,,,,,,,,x,MCQ550
+MCQ550,7,Refused,7,Refused,,,,,,,,,,,x,MCQ550
+HAJ16,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ550
+HAJ9,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ550
+HAJ16,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ550
+HAJ9,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ550
+MCQ550,9,Don't know,9,Don't know,,,,,,,,,,,x,MCQ550
+HAJ17,1,Yes,1,Yes,x,,,,,,,,,,,MCQ560
+HAJ12,1,Yes,1,Yes,x,,,,,,,,,,,MCQ560
+MCQ560,1,Yes,1,Yes,,,,,,,,,,,x,MCQ560
+HAJ17,2,No (HAK1),2,No,x,,,,,,,,,,,MCQ560
+HAJ12,2,No (HAK1),2,No,x,,,,,,,,,,,MCQ560
+MCQ560,2,No,2,No,,,,,,,,,,,x,MCQ560
+MCQ560,7,Refused,7,Refused,,,,,,,,,,,x,MCQ560
+HAJ17,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ560
+HAJ12,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ560
+HAJ17,9,Don't know (HAK1),9,Don't know,x,,,,,,,,,,,MCQ560
+HAJ12,9,Don't know (HAK1),9,Don't know,x,,,,,,,,,,,MCQ560
+MCQ560,9,Don't know,9,Don't know,,,,,,,,,,,x,MCQ560
+MCQ570,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ570
+HAJ18R,888,Blank but applicable,NA,Missing,x,,,,,,,,,,,MCQ570
+HAJ18R,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ570
+MCQ570,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ570
+MCQ570,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ570
+HAJ18R,90,90 + years,80,80 years or older,x,,,,,,,,,,,MCQ570
+HAJ13,11-992,Range of Values,17-79; 80,Range of values; if value >= 80 years or older,x,,,,,,,,,,,MCQ570
+HAJ18R,20-87,Range of Values,20-79; 80,Range of values; if value >= 80 years or older,x,,,,,,,,,,,MCQ570
+MCQ570,15-79,Range of Values,15-79,Range of Values,,,,,,,,,,,x,MCQ570
+HAT4,1,Yes (HAT5),1,Yes,x,,,,,,,,,,,PAD020
+PAD020,1,Yes,1,Yes,,x,x,x,x,,,,,,,PAD020
+HAT4,2,No (HAT6),2,No,x,,,,,,,,,,,PAD020
+PAD020,2,No,2,No,,x,x,x,x,,,,,,,PAD020
+PAD020,3,Unable to do activity,3,Unable to do activity,,x,x,x,x,,,,,,,PAD020
+PAD020,7,Refused,7,Refused,,x,x,x,x,,,,,,,PAD020
+HAT4,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,PAD020
+PAD020,9,Don't know,9,Don't know,,x,x,x,x,,,,,,,PAD020
+HAT15S,8888,Blank but applicable,NA,Missing,x,,,,,,,,,,,PAD120
+HAT15S,9999,Don't know,99999,Don't know,x,,,,,,,,,,,PAD120
+PAD120,77777,Refused,77777,Refused,,x,x,x,x,,,,,,,PAD120
+PAD120,99999,Don't know,99999,Don't know,,x,x,x,x,,,,,,,PAD120
+HAT15S,100,100 +,100,100 +,x,,,,,,,,,,,PAD120
+HAT15S,Jan-95,Range of Values,Jan-95,Range of Values,x,,,,,,,,,,,PAD120
+PAD120,1-300,Range of Values,1-99; >=100,Range of Values; 100+,,x,x,x,x,,,,,,,PAD120
+HAT16,1,Yes (HAT17),1,Yes,x,,,,,,,,,,,PAD440
+PAD440,1,Yes,1,Yes,,x,x,x,x,,,,,,,PAD440
+HAT16,2,No (HAT18),2,No,x,,,,,,,,,,,PAD440
+PAD440,2,No,2,No,,x,x,x,x,,,,,,,PAD440
+PAD440,3,Unable to do activity,3,Unable to do activity,,x,x,x,x,,,,,,,PAD440
+PAD440,7,Refused,7,Refused,,x,x,x,x,,,,,,,PAD440
+HAT16,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,PAD440
+PAD440,9,Don't know,9,Don't know,,x,x,x,x,,,,,,,PAD440
+PAD460,777,Refused,777,Refused,,x,x,x,x,,,,,,,PAD460
+PAD460,999,Don't know,999,Don't know,,x,x,x,x,,,,,,,PAD460
+HAT17S,8888,Blank but applicable,NA,Missing,x,,,,,,,,,,,PAD460
+HAT17S,100,100 +,100,100 +,x,,,,,,,,,,,PAD460
+HAT17S,Jan-91,Range of Values,Jan-91,Range of Values,x,,,,,,,,,,,PAD460
+PAD460,1-300,Range of Values,1-99; >=100,Range of Values; 100+,,x,x,x,x,,,,,,,PAD460
+HAT5S,8888,Blank but applicable,NA,Missing,x,,,,,,,,,,,PAQ050Q
+PAQ050Q,77777,Refused,77777,Refused,,x,x,x,x,,,,,,,PAQ050Q
+PAQ050Q,99999,Don't know,99999,Don't know,,x,x,x,x,,,,,,,PAQ050Q
+HAT5S,100,100 +,100,100 +,x,,,,,,,,,,,PAQ050Q
+HAT5S,Jan-91,Range of Values,Jan-91,Range of Values,x,,,,,,,,,,,PAQ050Q
+PAQ050Q,1-124,Range of Values,1-99; >=100,Range of Values; 100+,,x,x,x,x,,,,,,,PAQ050Q
+HAT27,1,More active,1,More active,x,,,,,,,,,,,PAQ500
+PAQ500,1,more active,1,More active,,x,x,x,x,,,,,,,PAQ500
+HAT27,2,Less active,2,Less active,x,,,,,,,,,,,PAQ500
+PAQ500,2,"less active, or",2,Less active,,x,x,x,x,,,,,,,PAQ500
+HAT27,3,About the same,3,About the same,x,,,,,,,,,,,PAQ500
+PAQ500,3,About the same?,3,About the same,,x,x,x,x,,,,,,,PAQ500
+PAQ500,7,Refused,7,Refused,,x,x,x,x,,,,,,,PAQ500
+HAT27,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,PAQ500
+HAT27,9,Don't know,9,Don't know,x,,,,,,,,,,,PAQ500
+PAQ500,9,Don't know,9,Don't know,,x,x,x,x,,,,,,,PAQ500
+HAT28,1,More active,1,More active,x,,,,,,,,,,,PAQ520
+PAQ520,1,more active,1,More active,,x,x,x,x,,,,,,,PAQ520
+HAT28,2,Less active,2,Less active,x,,,,,,,,,,,PAQ520
+PAQ520,2,"less active, or",2,Less active,,x,x,x,x,,,,,,,PAQ520
+HAT28,3,About the same,3,About the same,x,,,,,,,,,,,PAQ520
+PAQ520,3,About the same?,3,About the same,,x,x,x,x,,,,,,,PAQ520
+PAQ520,7,Refused,7,Refused,,x,x,x,x,,,,,,,PAQ520
+HAT28,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,PAQ520
+HAT28,9,Don't know,9,Don't know,x,,,,,,,,,,,PAQ520
+PAQ520,9,Don't know,9,Don't know,,x,x,x,x,,,,,,,PAQ520
+HAT30,1,More active,1,More active,x,,,,,,,,,,,PAQ540
+PAQ540,1,more active,1,More active,,x,x,x,x,,,,,,,PAQ540
+HAT30,2,Less active,2,Less active,x,,,,,,,,,,,PAQ540
+PAQ540,2,"less active, or",2,Less active,,x,x,x,x,,,,,,,PAQ540
+HAT30,3,About the same,3,About the same,x,,,,,,,,,,,PAQ540
+PAQ540,3,About the same?,3,About the same,,x,x,x,x,,,,,,,PAQ540
+PAQ540,7,Refused,7,Refused,,x,x,x,x,,,,,,,PAQ540
+HAT30,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,PAQ540
+HAT30,9,Don't know,9,Don't know,x,,,,,,,,,,,PAQ540
+PAQ540,9,Don't know,9,Don't know,,x,x,x,x,,,,,,,PAQ540
+HQKX2B,88,Blank but applicable,NA,Missing,x,,,,,,,,,,,RXDCOUNT
+HQKX2B,16-Jan,Range of Values,20-Jan,Range of Values,x,,,,,,,,,,,RXDCOUNT
+RXD295,18-Jan,Range of Values,20-Jan,Range of Values,,x,x,,,,,,,,,RXDCOUNT
+RXDCOUNT,20-Jan,Range of Values,20-Jan,Range of Values,,,,x,x,x,x,x,x,x,x,RXDCOUNT
+RXD260,77777,Refused,77777,Refused,,x,x,,,,,,,,,RXDDAYS
+RXDDAYS,77777,Refused,77777,Refused,,,,x,x,x,x,x,x,x,x,RXDDAYS
+HQKX12S,88888,Blank but applicable,NA,Missing,x,,,,,,,,,,,RXDDAYS
+HQKX12S,99999,Don't know,99999,Don't know,x,,,,,,,,,,,RXDDAYS
+RXD260,99999,Don't know,99999,Don't know,,x,x,,,,,,,,,RXDDAYS
+RXDDAYS,99999,Don't know,99999,Don't know,,,,x,x,x,x,x,x,x,x,RXDDAYS
+HQKX12S,1-23360,Range of Values,1-31025,Range of Values,x,,,,,,,,,,,RXDDAYS
+RXD260,1-25550,Range of Values,1-31025,Range of Values,,x,x,,,,,,,,,RXDDAYS
+RXDDAYS,1-31025,Range of Values,1-31025,Range of Values,,,,x,x,x,x,x,x,x,x,RXDDAYS
+HQKX1B,1,Yes,1,Yes,x,,,,,,,,,,,RXDUSE
+RXD030,1,Yes,1,Yes,,x,x,,,,,,,,,RXDUSE
+RXDUSE,1,Yes,1,Yes,,x,x,,,,,,,,,RXDUSE
+RXD030,2,No,2,No,,x,x,,,,,,,,,RXDUSE
+RXDUSE,2,No,2,No,,,,x,x,x,x,x,x,x,x,RXDUSE
+RXD030,7,Refused,7,Refused,,x,x,,,,,,,,,RXDUSE
+RXDUSE,7,Refused,7,Refused,,,,x,x,x,x,x,x,x,x,RXDUSE
+HQKX1B,8,Blank but applicable,NA,Missing,x,,,,,,,,,,,RXDUSE
+RXD030,9,Don't know,9,Don't know,,x,x,,,,,,,,,RXDUSE
+RXDUSE,9,Don't know,9,Don't know,,,,x,x,x,x,x,x,x,x,RXDUSE
+RXQ250,1,Yes,1,Yes,,x,x,,,,,,,,,RXQSEEN
+RXQSEEN,1,Yes,1,Yes,,,,x,x,x,x,x,x,x,x,RXQSEEN
+RXQ250,2,No,2,No,,x,x,,,,,,,,,RXQSEEN
+RXQSEEN,2,No,2,No,,,,x,x,x,x,x,x,x,x,RXQSEEN
+RXQSEEN,3,Only pharmacy print out seen,3,Only pharmacy print out seen,,,,,,,,,x,x,x,RXQSEEN
+MCQ300B,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,VNQREASORHAY
+MCQ300B,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,VNQREASORHAY
+MCQ300B,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,VNQREASORHAY
+MCQ300B,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,VNQREASORHAY
+VNQREOCANCR,80,80 years or older,80,80 years or older,,x,x,x,x,x,x,x,x,x,x,VNQREOCANCR
+HAC3OR,888,Blank but applicable,NA,Missing,x,,,,,,,,,,,VNQREOCANCR
+HAC3OR,999,Don't know,99999,Don't know,x,,,,,,,,,,,VNQREOCANCR
+VNQREOCANCR,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,x,VNQREOCANCR
+VNQREOCANCR,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,x,VNQREOCANCR
+HAC3OR,90,90 + years,80,80 years or older,x,,,,,,,,,,,VNQREOCANCR
+VNQREOCANCR,16; 17-79,if value is <=16; if value is 17 to 79,16; 17-79,if value is <=16; if value is 17 to 79,,x,x,x,x,x,x,x,x,x,x,VNQREOCANCR
+VNQREOCANCR,16; 17-79,if value is <=16; if value is 17 to 79,16; 17-79,if value is <=16; if value is 17 to 79,,x,x,x,x,x,x,x,x,x,x,VNQREOCANCR
+VNQREOCANCR,16; 17-79,if value is <=16; if value is 17 to 79,16; 17-79,if value is <=16; if value is 17 to 79,,x,x,x,x,x,x,x,x,x,x,VNQREOCANCR
+HAC3OR,Apr-89,Range of Values,16; 17-79,if value is <=16; if value is 17 to 79,x,,,,,,,,,,,VNQREOCANCR
+HAC3OR,16-Apr,4-16 years old,16,16 years or younger,x,,,,,,,,,,,VNQREOCANCR
+HAC3OR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,VNQREOCANCR
+MCQ240W,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,VNQRESCANCR
+MCQ240w,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,VNQRESCANCR
+MCQ240X,80,80 years or older,80,80 years or older,,,,,,x,x,,,,,VNQRESCANCR
+MCQ240x,80,80 years or older,80,80 years or older,,,,,,,,x,x,x,,VNQRESCANCR
+MCQ240W,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,VNQRESCANCR
+MCQ240X,85,85 years or older,80,80 years or older,,x,x,x,x,,,,,,,VNQRESCANCR
+HAC3NR,888,Blank but applicable,NA,Missing,x,,,,,,,,,,,VNQRESCANCR
+HAC3NR,999,Don't know,99999,Don't know,x,,,,,,,,,,,VNQRESCANCR
+MCQ240W,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,VNQRESCANCR
+MCQ240w,77777,Refused,77777,Refused,,,,,,,,x,x,x,,VNQRESCANCR
+MCQ240X,77777,Refused,77777,Refused,,x,x,x,x,x,x,,,,,VNQRESCANCR
+MCQ240x,77777,Refused,77777,Refused,,,,,,,,x,x,x,,VNQRESCANCR
+MCQ240W,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,VNQRESCANCR
+MCQ240w,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,VNQRESCANCR
+MCQ240X,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,,,,,VNQRESCANCR
+MCQ240x,99999,Don't know,99999,Don't know,,,,,,,,x,x,x,,VNQRESCANCR
+HAC3NR,90,90 + years,80,80 years or older,x,,,,,,,,,,,VNQRESCANCR
+HAC3NR,Dec-89,Range of Values,17-79; 80,Range of values; if value >= 80 years or older,x,,,,,,,,,,,VNQRESCANCR
+MCQ240X,Jan-84,Range of Values,17-79; 80,Range of values; if value >= 80 years or older,,x,x,x,x,,,,,,,VNQRESCANCR
+MCQ240W,Oct-84,Range of Values,17-79; 80,Range of values; if value >= 80 years or older,,x,x,x,x,,,,,,,VNQRESCANCR
+MCQ240W,Nov-78,Range of Values,17-79; 80,Range of values; if value >= 80 years or older,,,,,,x,x,,,,,VNQRESCANCR
+MCQ240x,18-79,Range of Values,17-79; 80,Range of values; if value >= 80 years or older,,,,,,,,x,x,x,,VNQRESCANCR
+MCQ240w,Mar-79,Range of Values,17-79; 80,Range of values; if value >= 80 years or older,,,,,,,,x,x,x,,VNQRESCANCR
+MCQ240X,May-79,Range of Values,17-79; 80,Range of values; if value >= 80 years or older,,,,,,x,x,,,,,VNQRESCANCR

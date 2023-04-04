@@ -1,0 +1,814 @@
+codename_original,categories_num,categories_description,new_categories,new_categories_description,cycle_-1,cycle_1,cycle_2,cycle_3,cycle_4,cycle_5,cycle_6,cycle_7,cycle_8,cycle_9,cycle_10,new_codename,
+HAB1,1,Excellent,1,Excellent,x,,,,,,,,,,,HSD010,1
+HSD010,1,"Excellent,",1,Excellent,,,x,x,x,x,x,x,x,x,x,HSD010,1
+HAB1,2,Very good,2,Very good,x,,,,,,,,,,,HSD010,1
+HSD010,2,"Very good,",2,Very good,,,x,x,x,x,x,x,x,x,x,HSD010,1
+HAB1,3,Good,3,Good,x,,,,,,,,,,,HSD010,1
+HSD010,3,"Good,",3,Good,,,x,x,x,x,x,x,x,x,x,HSD010,1
+HAB1,4,Fair,4,Fair,x,,,,,,,,,,,HSD010,1
+HSD010,4,"Fair, or",4,Fair,,,x,x,x,x,x,x,x,x,x,HSD010,1
+HAB1,5,Poor,5,Poor,x,,,,,,,,,,,HSD010,1
+HSD010,5,Poor?,5,Poor,,,x,x,x,x,x,x,x,x,x,HSD010,1
+HSD010,7,Refused,7,Refused,,,x,x,x,x,x,x,x,x,x,HSD010,1
+HAB1,9,Don't know,9,Don't know,x,,,,,,,,,,,HSD010,1
+HSD010,9,Don't know,9,Don't know,,,x,x,x,x,x,x,x,x,x,HSD010,1
+HAC1E,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ010,1
+MCQ010,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,MCQ010,1
+MCQ010,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,MCQ010,1
+HAC1E,2,No (HAC1F),2,No,x,,,,,,,,,,,MCQ010,1
+MCQ010,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,MCQ010,1
+MCQ010,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,MCQ010,1
+HAC1E,1,Yes (HAC2E),1,Yes,x,,,,,,,,,,,MCQ010,1
+HAC2E,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ035,1
+MCQ030,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ035,1
+MCQ035,9,Don't know,9,Don't know,,,x,x,x,x,x,x,x,x,x,MCQ035,1
+MCQ030,2,No,2,No,,x,,,,,,,,,,MCQ035,1
+MCQ035,2,No,2,No,,,x,x,x,x,x,x,x,x,x,MCQ035,1
+HAC2E,2,No (HAC1F),2,No,x,,,,,,,,,,,MCQ035,1
+MCQ030,7,Refused,7,Refused,,x,,,,,,,,,,MCQ035,1
+MCQ035,7,Refused,7,Refused,,,x,x,x,x,x,x,x,x,x,MCQ035,1
+MCQ030,1,Yes,1,Yes,,x,,,,,,,,,,MCQ035,1
+MCQ035,1,Yes,1,Yes,,,x,x,x,x,x,x,x,x,x,MCQ035,1
+HAC2E,1,Yes (HAC2E),1,Yes,x,,,,,,,,,,,MCQ035,1
+MCQ100,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ100,1
+HAE2,9,Don't know (HAE6),9,Don't know,x,,,,,,,,,,,MCQ100,1
+MCQ100,2,No,2,No,,x,,,,,,,,,,MCQ100,1
+HAE2,2,No (HAE6),2,No,x,,,,,,,,,,,MCQ100,1
+MCQ100,7,Refused,7,Refused,,x,,,,,,,,,,MCQ100,1
+HAE2,1,Yes,1,Yes,x,,,,,,,,,,,MCQ100,1
+MCQ100,1,Yes,1,Yes,,x,,,,,,,,,,MCQ100,1
+HAE4A,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ110,1
+MCQ110,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ110,1
+HAE4A,2,No,2,No,x,,,,,,,,,,,MCQ110,1
+MCQ110,2,No,2,No,,x,,,,,,,,,,MCQ110,1
+MCQ110,7,Refused,7,Refused,,x,,,,,,,,,,MCQ110,1
+HAE4A,1,Yes,1,Yes,x,,,,,,,,,,,MCQ110,1
+MCQ110,1,Yes,1,Yes,,x,,,,,,,,,,MCQ110,1
+HAP3,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ140,1
+MCQ140,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,,,,MCQ140,1
+HAP3,2,No,2,No,x,,,,,,,,,,,MCQ140,1
+MCQ140,2,No,2,No,,x,x,x,x,x,x,x,,,,MCQ140,1
+MCQ140,7,Refused,7,Refused,,x,x,x,x,x,x,x,,,,MCQ140,1
+HAP3,1,Yes,1,Yes,x,,,,,,,,,,,MCQ140,1
+MCQ140,1,Yes,1,Yes,,x,x,x,x,x,x,x,,,,MCQ140,1
+MCQ148,10,10 years old,10,10 years old,,x,,,,,,,,,,MCQ151,1
+MCQ151,10,10 years old,10,10 years old,,,,,,,,,x,x,x,MCQ151,1
+MCQ148,11,11 years old,11,11 years old,,x,,,,,,,,,,MCQ151,1
+MCQ151,11,11 years old,11,11 years old,,,,,,,,,x,x,x,MCQ151,1
+MCQ148,7,7 years old,7,7 years old,,x,,,,,,,,,,MCQ151,1
+MCQ151,7,7 years old,7,7 years old,,,,,,,,,x,x,x,MCQ151,1
+MCQ148,8,8 years old,8,8 years old,,x,,,,,,,,,,MCQ151,1
+MCQ151,8,8 years old,8,8 years old,,,,,,,,,x,x,x,MCQ151,1
+MCQ148,9,9 years old,9,9 years old,,x,,,,,,,,,,MCQ151,1
+MCQ151,9,9 years old,9,9 years old,,,,,,,,,x,x,x,MCQ151,1
+MCQ148,9999,Don't know,9999,Don't know,,x,,,,,,,,,,MCQ151,1
+MCQ151,9999,Don't know,9999,Don't know,,,,,,,,,x,x,x,MCQ151,1
+MCQ148,7777,Refused,7777,Refused,,x,,,,,,,,,,MCQ151,1
+MCQ151,7777,Refused,7777,Refused,,,,,,,,,x,x,x,MCQ151,1
+HAC1A,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160A,1
+MCQ160A,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,MCQ160A,1
+MCQ160A,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,MCQ160A,1
+HAC1A,2,No (HAC1C),2,No,x,,,,,,,,,,,MCQ160A,1
+MCQ160A,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,MCQ160A,1
+MCQ160A,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,MCQ160A,1
+HAC1A,1,Yes (HAC3AR),1,Yes,x,,,,,,,,,,,MCQ160A,1
+HAC1C,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160B,1
+MCQ160B,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,MCQ160B,1
+MCQ160B,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,MCQ160B,1
+HAC1C,2,No (HAC1D),2,No,x,,,,,,,,,,,MCQ160B,1
+MCQ160B,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,MCQ160B,1
+MCQ160B,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,MCQ160B,1
+HAC1C,1,Yes (HAC3CR),1,Yes,x,,,,,,,,,,,MCQ160B,1
+HAF10,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160E,1
+MCQ160E,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,MCQ160E,1
+MCQ160E,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,MCQ160E,1
+HAF10,2,No (HAF14),2,No,x,,,,,,,,,,,MCQ160E,1
+MCQ160E,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,MCQ160E,1
+HAF10,1,Yes,1,Yes,x,,,,,,,,,,,MCQ160E,1
+MCQ160E,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,MCQ160E,1
+HAC1D,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160F,1
+HAC1D,2,No (HAC1E),2,No,x,,,,,,,,,,,MCQ160F,1
+HAC1D,1,Yes (HAC3DR),1,Yes,x,,,,,,,,,,,MCQ160F,1
+HAC1G,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160G,1
+MCQ160G,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,MCQ160G,1
+MCQ160G,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,MCQ160G,1
+HAC1G,2,No (HAC1G),2,No,x,,,,,,,,,,,MCQ160G,1
+MCQ160G,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,MCQ160G,1
+MCQ160G,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,MCQ160G,1
+HAC1G,1,Yes (HAC2F),1,Yes,x,,,,,,,,,,,MCQ160G,1
+HAC1J,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160H,1
+MCQ160H,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ160H,1
+MCQ160H,2,No,2,No,,x,,,,,,,,,,MCQ160H,1
+HAC1J,2,No (HAC1K),2,No,x,,,,,,,,,,,MCQ160H,1
+MCQ160H,7,Refused,7,Refused,,x,,,,,,,,,,MCQ160H,1
+MCQ160H,1,Yes,1,Yes,,x,,,,,,,,,,MCQ160H,1
+HAC1J,1,Yes (HAC2J),1,Yes,x,,,,,,,,,,,MCQ160H,1
+HAC1F,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160K,1
+MCQ160K,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,MCQ160K,1
+MCQ160K,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,MCQ160K,1
+HAC1F,2,No (HAC1F),2,No,x,,,,,,,,,,,MCQ160K,1
+MCQ160K,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,MCQ160K,1
+MCQ160K,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,MCQ160K,1
+HAC1F,1,Yes (HAC2E),1,Yes,x,,,,,,,,,,,MCQ160K,1
+HAC1K,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160M,1
+MCD160M,9,Don't know,9,Don't know,,,x,,,,,,,,,MCQ160M,1
+MCQ160I,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ160M,1
+MCQ160M,9,Don't know,9,Don't know,,,,x,x,x,x,x,x,x,x,MCQ160M,1
+MCD160M,2,No,2,No,,,x,,,,,,,,,MCQ160M,1
+MCQ160I,2,No,2,No,,x,,,,,,,,,,MCQ160M,1
+MCQ160M,2,No,2,No,,,,x,x,x,x,x,x,x,x,MCQ160M,1
+HAC1K,2,No (HAC1L),2,No,x,,,,,,,,,,,MCQ160M,1
+MCD160M,7,Refused,7,Refused,,,x,,,,,,,,,MCQ160M,1
+MCQ160I,7,Refused,7,Refused,,x,,,,,,,,,,MCQ160M,1
+MCQ160M,7,Refused,7,Refused,,,,x,x,x,x,x,x,x,x,MCQ160M,1
+MCD160M,1,Yes,1,Yes,,,x,,,,,,,,,MCQ160M,1
+MCQ160I,1,Yes,1,Yes,,x,,,,,,,,,,MCQ160M,1
+MCQ160M,1,Yes,1,Yes,,,,x,x,x,x,x,x,x,x,MCQ160M,1
+HAC1K,1,Yes (HAC2K),1,Yes,x,,,,,,,,,,,MCQ160M,1
+HAC1M,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ160N,1
+MCQ160N,9,Don't know,9,Don't know,,,,,,x,x,x,x,x,x,MCQ160N,1
+MCQ160N,2,No,2,No,,,,,,x,x,x,x,x,x,MCQ160N,1
+HAC1M,2,No (HAC1M),2,No,x,,,,,,,,,,,MCQ160N,1
+MCQ160N,7,Refused,7,Refused,,,,,,x,x,x,x,x,x,MCQ160N,1
+MCQ160N,1,Yes,1,Yes,,,,,,x,x,x,x,x,x,MCQ160N,1
+HAC1M,1,Yes (HAC3LR),1,Yes,x,,,,,,,,,,,MCQ160N,1
+HAC2J,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ170H,1
+MCQ170H,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ170H,1
+HAC2J,2,No,2,No,x,,,,,,,,,,,MCQ170H,1
+MCQ170H,2,No,2,No,,x,,,,,,,,,,MCQ170H,1
+MCQ170H,7,Refused,7,Refused,,x,,,,,,,,,,MCQ170H,1
+HAC2J,1,Yes,1,Yes,x,,,,,,,,,,,MCQ170H,1
+MCQ170H,1,Yes,1,Yes,,x,,,,,,,,,,MCQ170H,1
+HAC2F,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ170K,1
+MCQ170K,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,MCQ170K,1
+HAC2F,2,No,2,No,x,,,,,,,,,,,MCQ170K,1
+MCQ170K,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,MCQ170K,1
+MCQ170K,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,MCQ170K,1
+HAC2F,1,Yes,1,Yes,x,,,,,,,,,,,MCQ170K,1
+MCQ170K,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,MCQ170K,1
+HAC2K,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ170M,1
+MCD170M,9,Don't know,9,Don't know,,,x,,,,,,,,,MCQ170M,1
+MCQ170I,9,Don't know,9,Don't know,,x,,,,,,,,,,MCQ170M,1
+MCQ170M,9,Don't know,9,Don't know,,,,x,x,x,x,x,x,x,x,MCQ170M,1
+HAC2K,2,No,2,No,x,,,,,,,,,,,MCQ170M,1
+MCD170M,2,No,2,No,,,x,,,,,,,,,MCQ170M,1
+MCQ170I,2,No,2,No,,x,,,,,,,,,,MCQ170M,1
+MCQ170M,2,No,2,No,,,,x,x,x,x,x,x,x,x,MCQ170M,1
+MCD170M,7,Refused,7,Refused,,,x,,,,,,,,,MCQ170M,1
+MCQ170I,7,Refused,7,Refused,,x,,,,,,,,,,MCQ170M,1
+MCQ170M,7,Refused,7,Refused,,,,x,x,x,x,x,x,x,x,MCQ170M,1
+HAC2K,1,Yes,1,Yes,x,,,,,,,,,,,MCQ170M,1
+MCD170M,1,Yes,1,Yes,,,x,,,,,,,,,MCQ170M,1
+MCQ170I,1,Yes,1,Yes,,x,,,,,,,,,,MCQ170M,1
+MCQ170M,1,Yes,1,Yes,,,,x,x,x,x,x,x,x,x,MCQ170M,1
+HAC1N,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ220,1
+HAC1O,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ220,1
+MCQ220,9,Don't know,9,Don't know,,x,x,x,x,x,x,x,x,x,x,MCQ220,1
+MCQ220,2,No,2,No,,x,x,x,x,x,x,x,x,x,x,MCQ220,1
+HAC1N,2,No (HAC1O),2,No,x,,,,,,,,,,,MCQ220,1
+HAC1O,2,No (HAC4A),2,No,x,,,,,,,,,,,MCQ220,1
+MCQ220,7,Refused,7,Refused,,x,x,x,x,x,x,x,x,x,x,MCQ220,1
+MCQ220,1,Yes,1,Yes,,x,x,x,x,x,x,x,x,x,x,MCQ220,1
+HAC1N,1,Yes (HAC3NR),1,Yes,x,,,,,,,,,,,MCQ220,1
+HAC1O,1,Yes (HAC3OR),1,Yes,x,,,,,,,,,,,MCQ220,1
+MCQ240AA,18-75,18-75 years old,18-75,18-75 years old,,x,x,x,x,x,x,,,,,MCQ240AA,1
+MCQ240AA,20-67,20-67 years old,20-67,20-67 years old,,,,,,,,x,x,x,,MCQ240AA,1
+MCQ240AA,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240AA,1
+MCQ240AA,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240AA,1
+MCQ240AA,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240AA,1
+MCQ240AA,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240AA,1
+MCQ240BB,17-75,17-75 years old,17-75,17-75 years old,,x,x,x,x,x,x,,,,,MCQ240BB,1
+MCQ240BB,25-72,25-72 years old,25-72,25-72 years old,,,,,,,,x,x,x,,MCQ240BB,1
+MCQ240BB,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240BB,1
+MCQ240BB,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240BB,1
+MCQ240BB,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240BB,1
+MCQ240BB,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240BB,1
+MCQ240H,34-83,34-83 years old,34-83,34-83 years old,,x,x,x,x,,,,,,,MCQ240H,1
+MCQ240H,43-75,43-75 years old,43-75,43-75 years old,,,,,,x,x,,,,,MCQ240H,1
+MCQ240H,52-71,52-71 years old,52-71,52-71 years old,,,,,,,,x,x,x,,MCQ240H,1
+MCQ240H,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240H,1
+MCQ240H,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240H,1
+MCQ240H,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240H,1
+MCQ240H,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240H,1
+MCQ240I,52,52 years old,52,52 years old,,,,,,x,,,,,,MCQ240I,1
+MCQ240I,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240I,1
+MCQ240I,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240I,1
+MCQ240I,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240I,1
+MCQ240I,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240I,1
+MCQ240J,26-83,26-83 years old,26-83,26-83 years old,,x,x,x,x,,,,,,,MCQ240J,1
+MCQ240J,27-76,27-76 years old,27-76,27-76 years old,,,,,,x,x,x,x,x,,MCQ240J,1
+MCQ240J,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240J,1
+MCQ240J,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240J,1
+MCQ240J,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240J,1
+MCQ240J,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240J,1
+MCQ240K,19-75,19-75 years old,19-75,19-75 years old,,x,x,x,x,,,,,,,MCQ240K,1
+MCQ240K,30-70,30-70 years old,30-70,30-70 years old,,,,,,x,x,,,,,MCQ240K,1
+MCQ240K,43-74,43-74 years old,43-74,43-74 years old,,,,,,,,x,x,,,MCQ240K,1
+MCQ240K,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240K,1
+MCQ240K,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240K,1
+MCQ240K,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240K,1
+MCQ240K,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240K,1
+MCQ240M,28-70,28-70 years old,28-70,28-70 years old,,,,,,,,x,x,x,,MCQ240M,1
+MCQ240M,28-83,28-83 years old,28-83,28-83 years old,,x,x,x,x,,,,,,,MCQ240M,1
+MCQ240M,29-77,29-77 years old,29-77,29-77 years old,,,,,,x,x,,,,,MCQ240M,1
+MCQ240M,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240M,1
+MCQ240M,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240M,1
+MCQ240M,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240M,1
+MCQ240M,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240M,1
+MCQ240R,23,23 years old,23,23 years old,,,,,,x,,,,,,MCQ240R,1
+MCQ240R,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240R,1
+MCQ240R,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240R,1
+MCQ240R,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240R,1
+MCQ240R,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240R,1
+MCQ240S,16,16-16 years old,16,16 years or younger,,x,x,x,x,,,x,x,x,,MCQ240S,1
+MCQ240S,17-74,17-74 years old,17-74,17-74 years old,,,,,,,,x,x,x,,MCQ240S,1
+MCQ240S,17-80,17-80 years old,17-80,17-80 years old,,x,x,x,x,,,,,,,MCQ240S,1
+MCQ240S,18-79,18-79 years old,18-79,18-79 years old,,,,,,x,x,,,,,MCQ240S,1
+MCQ240S,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240S,1
+MCQ240S,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240S,1
+MCQ240S,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240S,1
+MCQ240S,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240S,1
+MCQ240T,40,40 years old,40,40 years old,,,x,,,,,,,,,MCQ240T,1
+MCQ240T,40-71,40-71 years old,40-71,40-71 years old,,,,,,,,x,x,x,,MCQ240T,1
+MCQ240T,55-77,55-77 years old,55-77,55-77 years old,,,,,,x,x,,,,,MCQ240T,1
+MCQ240T,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240T,1
+MCQ240T,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240T,1
+MCQ240T,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240T,1
+MCQ240T,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240T,1
+MCQ240V,41-78,41-78 years old,41-78,41-78 years old,,,,,,,x,,,,,MCQ240V,1
+MCQ240V,43-81,43-81 years old,43-81,43-81 years old,,x,x,x,x,,,,,,,MCQ240V,1
+MCQ240V,48-65,48-65 years old,48-65,48-65 years old,,,,,,,,x,x,x,,MCQ240V,1
+MCQ240V,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240V,1
+MCQ240V,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240V,1
+MCQ240V,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240V,1
+MCQ240V,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240V,1
+MCQ240Y,16,16-16 years old,16,16 years or younger,,,,,,,,x,x,,,MCQ240Y,1
+MCQ240Y,17-55,17-55 years old,17-55,17-55 years old,,,,,,,,x,x,,,MCQ240Y,1
+MCQ240Y,30,30 years old,30,30 years old,,,,,,x,,,,,,MCQ240Y,1
+MCQ240Y,32-71,32-71 years old,32-71,32-71 years old,,x,x,x,x,,,,,,,MCQ240Y,1
+MCQ240Y,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240Y,1
+MCQ240Y,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240Y,1
+MCQ240Y,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240Y,1
+MCQ240Y,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240Y,1
+HAC6,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ250E,1
+MCQ250E,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ250E,1
+HAC6,2,No,2,No,x,,,,,,,,,,,MCQ250E,1
+MCQ250E,2,No,2,No,,x,x,x,,,,,,,,MCQ250E,1
+MCQ250E,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ250E,1
+HAC6,1,Yes,1,Yes,x,,,,,,,,,,,MCQ250E,1
+MCQ250E,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ250E,1
+MCQ250F,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ250F,1
+MCQ250F,2,No,2,No,,x,x,x,,,,,,,,MCQ250F,1
+MCQ250F,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ250F,1
+MCQ250F,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ250F,1
+MCQ270,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ270,1
+HAC7,9,Don't know (HAD1),9,Don't know,x,,,,,,,,,,,MCQ270,1
+MCQ270,2,No,2,No,,x,x,x,,,,,,,,MCQ270,1
+HAC7,2,No (HAD1),2,No,x,,,,,,,,,,,MCQ270,1
+MCQ270,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ270,1
+HAC7,1,Yes,1,Yes,x,,,,,,,,,,,MCQ270,1
+MCQ270,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ270,1
+MCQ250G,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ300A,1
+MCQ300A,9,Don't know,9,Don't know,,,,,x,x,x,x,x,x,x,MCQ300A,1
+HAC4B,9,Don't know (HAC6),9,Don't know,x,,,,,,,,,,,MCQ300A,1
+MCQ250G,2,No,2,No,,x,x,x,,,,,,,,MCQ300A,1
+MCQ300A,2,No,2,No,,,,,x,x,x,x,x,x,x,MCQ300A,1
+HAC4B,2,No (HAC6),2,No,x,,,,,,,,,,,MCQ300A,1
+MCQ250G,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ300A,1
+MCQ300A,7,Refused,7,Refused,,,,,x,x,x,x,x,x,x,MCQ300A,1
+MCQ250G,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ300A,1
+MCQ300A,1,Yes,1,Yes,,,,,x,x,x,x,x,x,x,MCQ300A,1
+HAC4B,1,Yes (HAC5B1),1,Yes,x,,,,,,,,,,,MCQ300A,1
+MCQ250C,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ300B,1
+MCQ250C,2,No,2,No,,x,x,x,,,,,,,,MCQ300B,1
+MCQ250C,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ300B,1
+MCQ250C,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ300B,1
+MCQ250A,9,Don't know,9,Don't know,,x,x,x,,,,,,,,MCQ300C,1
+MCQ300C,9,Don't know,9,Don't know,,,,,x,x,x,x,x,x,x,MCQ300C,1
+HAC4A,9,Don't know (HAC4B),9,Don't know,x,,,,,,,,,,,MCQ300C,1
+MCQ250A,2,No,2,No,,x,x,x,,,,,,,,MCQ300C,1
+MCQ300C,2,No,2,No,,,,,x,x,x,x,x,x,x,MCQ300C,1
+HAC4A,2,No (HAC4B),2,No,x,,,,,,,,,,,MCQ300C,1
+MCQ250A,7,Refused,7,Refused,,x,x,x,,,,,,,,MCQ300C,1
+MCQ300C,7,Refused,7,Refused,,,,,x,x,x,x,x,x,x,MCQ300C,1
+MCQ250A,1,Yes,1,Yes,,x,x,x,,,,,,,,MCQ300C,1
+MCQ300C,1,Yes,1,Yes,,,,,x,x,x,x,x,x,x,MCQ300C,1
+HAC4A,1,Yes (HAC5A1),1,Yes,x,,,,,,,,,,,MCQ300C,1
+MCQ520,9,Don't know,9,Don't know,,,,,,,,,,,x,MCQ520,1
+HAJ1,9,Don't know (HAJ9),9,Don't know,x,,,,,,,,,,,MCQ520,1
+MCQ520,2,No,2,No,,,,,,,,,,,x,MCQ520,1
+HAJ1,2,No (HAJ9),2,No,x,,,,,,,,,,,MCQ520,1
+MCQ520,7,Refused,7,Refused,,,,,,,,,,,x,MCQ520,1
+HAJ1,1,Yes,1,Yes,x,,,,,,,,,,,MCQ520,1
+MCQ520,1,Yes,1,Yes,,,,,,,,,,,x,MCQ520,1
+MCQ540,9,Don't know,9,Don't know,,,,,,,,,,,x,MCQ540,1
+HAJ7,9,Don't know (HAK1),9,Don't know,x,,,,,,,,,,,MCQ540,1
+MCQ540,2,No,2,No,,,,,,,,,,,x,MCQ540,1
+HAJ7,2,No (HAJ9),2,No,x,,,,,,,,,,,MCQ540,1
+MCQ540,7,Refused,7,Refused,,,,,,,,,,,x,MCQ540,1
+HAJ7,1,Yes,1,Yes,x,,,,,,,,,,,MCQ540,1
+MCQ540,1,Yes,1,Yes,,,,,,,,,,,x,MCQ540,1
+HAJ16,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ550,1
+HAJ9,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ550,1
+MCQ550,9,Don't know,9,Don't know,,,,,,,,,,,x,MCQ550,1
+HAJ16,2,No,2,No,x,,,,,,,,,,,MCQ550,1
+HAJ9,2,No,2,No,x,,,,,,,,,,,MCQ550,1
+MCQ550,2,No,2,No,,,,,,,,,,,x,MCQ550,1
+MCQ550,7,Refused,7,Refused,,,,,,,,,,,x,MCQ550,1
+HAJ16,1,Yes,1,Yes,x,,,,,,,,,,,MCQ550,1
+HAJ9,1,Yes,1,Yes,x,,,,,,,,,,,MCQ550,1
+MCQ550,1,Yes,1,Yes,,,,,,,,,,,x,MCQ550,1
+MCQ560,9,Don't know,9,Don't know,,,,,,,,,,,x,MCQ560,1
+HAJ12,9,Don't know (HAK1),9,Don't know,x,,,,,,,,,,,MCQ560,1
+HAJ17,9,Don't know (HAK1),9,Don't know,x,,,,,,,,,,,MCQ560,1
+MCQ560,2,No,2,No,,,,,,,,,,,x,MCQ560,1
+HAJ12,2,No (HAK1),2,No,x,,,,,,,,,,,MCQ560,1
+HAJ17,2,No (HAK1),2,No,x,,,,,,,,,,,MCQ560,1
+MCQ560,7,Refused,7,Refused,,,,,,,,,,,x,MCQ560,1
+HAJ12,1,Yes,1,Yes,x,,,,,,,,,,,MCQ560,1
+HAJ17,1,Yes,1,Yes,x,,,,,,,,,,,MCQ560,1
+MCQ560,1,Yes,1,Yes,,,,,,,,,,,x,MCQ560,1
+PAD020,9,Don't know,9,Don't know,,x,x,x,x,,,,,,,PAD020,1
+PAD020,2,No,2,No,,x,x,x,x,,,,,,,PAD020,1
+HAT4,2,No (HAT6),2,No,x,,,,,,,,,,,PAD020,1
+PAD020,7,Refused,7,Refused,,x,x,x,x,,,,,,,PAD020,1
+PAD020,3,Unable to do activity,3,Unable to do activity,,x,x,x,x,,,,,,,PAD020,1
+PAD020,1,Yes,1,Yes,,x,x,x,x,,,,,,,PAD020,1
+HAT4,1,Yes (HAT5),1,Yes,x,,,,,,,,,,,PAD020,1
+PAD440,9,Don't know,9,Don't know,,x,x,x,x,,,,,,,PAD440,1
+PAD440,2,No,2,No,,x,x,x,x,,,,,,,PAD440,1
+HAT16,2,No (HAT18),2,No,x,,,,,,,,,,,PAD440,1
+PAD440,7,Refused,7,Refused,,x,x,x,x,,,,,,,PAD440,1
+PAD440,3,Unable to do activity,3,Unable to do activity,,x,x,x,x,,,,,,,PAD440,1
+PAD440,1,Yes,1,Yes,,x,x,x,x,,,,,,,PAD440,1
+HAT16,1,Yes (HAT17),1,Yes,x,,,,,,,,,,,PAD440,1
+HAT27,3,About the same,3,About the same,x,,,,,,,,,,,PAQ500,1
+PAQ500,3,About the same?,3,About the same,,x,x,x,x,,,,,,,PAQ500,1
+HAT27,9,Don't know,9,Don't know,x,,,,,,,,,,,PAQ500,1
+PAQ500,9,Don't know,9,Don't know,,x,x,x,x,,,,,,,PAQ500,1
+HAT27,2,Less active,2,Less active,x,,,,,,,,,,,PAQ500,1
+PAQ500,2,"less active, or",2,Less active,,x,x,x,x,,,,,,,PAQ500,1
+HAT27,1,More active,1,More active,x,,,,,,,,,,,PAQ500,1
+PAQ500,1,more active,1,More active,,x,x,x,x,,,,,,,PAQ500,1
+PAQ500,7,Refused,7,Refused,,x,x,x,x,,,,,,,PAQ500,1
+HAT28,3,About the same,3,About the same,x,,,,,,,,,,,PAQ520,1
+PAQ520,3,About the same?,3,About the same,,x,x,x,x,,,,,,,PAQ520,1
+HAT28,9,Don't know,9,Don't know,x,,,,,,,,,,,PAQ520,1
+PAQ520,9,Don't know,9,Don't know,,x,x,x,x,,,,,,,PAQ520,1
+HAT28,2,Less active,2,Less active,x,,,,,,,,,,,PAQ520,1
+PAQ520,2,"less active, or",2,Less active,,x,x,x,x,,,,,,,PAQ520,1
+HAT28,1,More active,1,More active,x,,,,,,,,,,,PAQ520,1
+PAQ520,1,more active,1,More active,,x,x,x,x,,,,,,,PAQ520,1
+PAQ520,7,Refused,7,Refused,,x,x,x,x,,,,,,,PAQ520,1
+HAT30,3,About the same,3,About the same,x,,,,,,,,,,,PAQ540,1
+PAQ540,3,About the same?,3,About the same,,x,x,x,x,,,,,,,PAQ540,1
+HAT30,9,Don't know,9,Don't know,x,,,,,,,,,,,PAQ540,1
+PAQ540,9,Don't know,9,Don't know,,x,x,x,x,,,,,,,PAQ540,1
+HAT30,2,Less active,2,Less active,x,,,,,,,,,,,PAQ540,1
+PAQ540,2,"less active, or",2,Less active,,x,x,x,x,,,,,,,PAQ540,1
+HAT30,1,More active,1,More active,x,,,,,,,,,,,PAQ540,1
+PAQ540,1,more active,1,More active,,x,x,x,x,,,,,,,PAQ540,1
+PAQ540,7,Refused,7,Refused,,x,x,x,x,,,,,,,PAQ540,1
+HQKX12S,99999,Don't know,99999,Don't know,x,,,,,,,,,,,RXDDAYS,1
+RXD260,99999,Don't know,99999,Don't know,,x,x,,,,,,,,,RXDDAYS,1
+RXDDAYS,99999,Don't know,99999,Don't know,,,,x,x,x,x,x,x,x,x,RXDDAYS,1
+RXD260,77777,Refused,77777,Refused,,x,x,,,,,,,,,RXDDAYS,1
+RXDDAYS,77777,Refused,77777,Refused,,,,x,x,x,x,x,x,x,x,RXDDAYS,1
+RXD030,9,Don't know,9,Don't know,,x,x,,,,,,,,,RXDUSE,1
+RXD030,2,No,2,No,,x,x,,,,,,,,,RXDUSE,1
+RXD030,7,Refused,7,Refused,,x,x,,,,,,,,,RXDUSE,1
+HQKX1B,1,Yes,1,Yes,x,,,,,,,,,,,RXDUSE,1
+RXD030,1,Yes,1,Yes,,x,x,,,,,,,,,RXDUSE,1
+RXQ250,2,No,2,No,,x,x,,,,,,,,,RXQSEEN,1
+RXQSEEN,2,No,2,No,,,,x,x,x,x,x,x,x,x,RXQSEEN,1
+RXQSEEN,3,Only pharmacy print out seen,3,Only pharmacy print out seen,,,,,,,,,x,x,x,RXQSEEN,1
+RXQ250,1,Yes,1,Yes,,x,x,,,,,,,,,RXQSEEN,1
+RXQSEEN,1,Yes,1,Yes,,,,x,x,x,x,x,x,x,x,RXQSEEN,1
+HAC3CR,1-16,16 years or younger,16,16 years or younger,x,,,,,,,,,,,MCD180B,2
+MCD180B,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCD180B,2
+MCQ180B,0-16,16 years or younger,16,16 years or younger,,x,x,x,x,,,x,x,x,,MCD180B,2
+MCQ180B,1-16,16 years or younger,16,16 years or younger,,,,,,x,x,,,,,MCD180B,2
+MCQ180B,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,x,x,x,,MCD180B,2
+MCQ180B,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCD180B,2
+HAC3CR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCD180B,2
+MCD180B,18-79,18-79 years old,18-79,18-79 years old,,,,,,,,,,,x,MCD180B,2
+MCD180B,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCD180B,2
+MCQ180B,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCD180B,2
+MCQ180B,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCD180B,2
+HAC3CR,90,90 + years,90,90 + years,x,,,,,,,,,,,MCD180B,2
+HAC3CR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCD180B,2
+MCD180B,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCD180B,2
+MCQ180B,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCD180B,2
+HAC3CR,777,Less than 1 year,16,16 years or younger,x,,,,,,,,,,,MCD180B,2
+MCD180B,77777,Refused,77777,Refused,,,,,,,,,,,x,MCD180B,2
+MCQ180B,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCD180B,2
+MCD180C,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCD180C,2
+MCQ180C,0-16,16 years or younger,16,16 years or younger,,,,,,,,x,x,x,,MCD180C,2
+MCQ180C,1-16,16 years or younger,16,16 years or younger,,x,x,x,x,x,x,,,,,MCD180C,2
+MCQ180C,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,x,x,x,,MCD180C,2
+MCQ180C,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCD180C,2
+MCD180C,20-79,20-79 years old,20-79,20-79 years old,,,,,,,,,,,x,MCD180C,2
+MCQ180C,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCD180C,2
+MCD180C,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCD180C,2
+MCQ180C,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCD180C,2
+MCQ180C,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCD180C,2
+MCD180C,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCD180C,2
+MCQ180C,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCD180C,2
+MCD180C,77777,Refused,77777,Refused,,,,,,,,,,,x,MCD180C,2
+MCD180D,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCD180D,2
+MCQ180D,0-16,16 years or younger,16,16 years or younger,,,,,,,,x,x,x,,MCD180D,2
+MCQ180D,1-16,16 years or younger,16,16 years or younger,,x,x,x,x,x,x,,,,,MCD180D,2
+MCQ180D,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,x,x,x,,MCD180D,2
+MCQ180D,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCD180D,2
+MCD180D,20-79,20-79 years old,20-79,20-79 years old,,,,,,,,,,,x,MCD180D,2
+MCQ180D,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCD180D,2
+MCD180D,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCD180D,2
+MCQ180D,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCD180D,2
+MCQ180D,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCD180D,2
+MCD180D,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCD180D,2
+MCQ180D,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCD180D,2
+MCD180D,77777,Refused,77777,Refused,,,,,,,,,,,x,MCD180D,2
+HAF12R,1-16,16 years or younger,16,16 years or younger,x,,,,,,,,,,,MCD180E,2
+MCD180E,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCD180E,2
+MCQ180E,1-16,16 years or younger,16,16 years or younger,,,,,,,,x,x,x,,MCD180E,2
+MCQ180E,2-16,16 years or younger,16,16 years or younger,,x,x,x,x,,,,,,,MCD180E,2
+MCQ180E,4-16,16 years or younger,16,16 years or younger,,,,,,x,x,,,,,MCD180E,2
+MCQ180E,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,x,x,x,,MCD180E,2
+MCQ180E,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCD180E,2
+HAF12R,17-88,17-88 years old,17-88,17-88 years old,x,,,,,,,,,,,MCD180E,2
+MCD180E,19-79,19-79 years old,19-79,19-79 years old,,,,,,,,,,,x,MCD180E,2
+MCQ180E,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCD180E,2
+MCD180E,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCD180E,2
+MCQ180E,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCD180E,2
+HAF12R,90,90 + years,90,90 + years,x,,,,,,,,,,,MCD180E,2
+HAF12R,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCD180E,2
+MCQ180E,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCD180E,2
+MCD180E,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCD180E,2
+MCQ180E,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCD180E,2
+MCD180E,77777,Refused,77777,Refused,,,,,,,,,,,x,MCD180E,2
+MCQ180F,0-16,0-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCD180F,2
+MCQ180F,1-16,1-16 years old,16,16 years or younger,,x,x,x,x,x,x,,,,,MCD180F,2
+MCD180F,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCD180F,2
+MCQ180F,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,x,x,x,,MCD180F,2
+MCQ180F,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCD180F,2
+HAC3DR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCD180F,2
+HAC3DR,6-16,6-16 years old,16,16 years or younger,x,,,,,,,,,,,MCD180F,2
+MCD180F,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCD180F,2
+MCQ180F,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCD180F,2
+MCQ180F,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCD180F,2
+HAC3DR,90,90 + years,90,90 + years,x,,,,,,,,,,,MCD180F,2
+HAC3DR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCD180F,2
+MCD180F,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCD180F,2
+MCQ180F,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCD180F,2
+MCD180F,77777,Refused,77777,Refused,,,,,,,,,,,x,MCD180F,2
+MCQ180F,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCD180F,2
+HAC3GR,1-16,1-16 years old,16,16 years or younger,x,,,,,,,,,,,MCD180G,2
+MCQ180G,10-16,10-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCD180G,2
+MCD180G,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCD180G,2
+MCQ180G,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,x,x,x,,MCD180G,2
+MCQ180G,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCD180G,2
+HAC3GR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCD180G,2
+MCQ180G,3-16,3-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCD180G,2
+MCQ180G,6-16,6-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCD180G,2
+MCD180G,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCD180G,2
+MCQ180G,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCD180G,2
+MCQ180G,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCD180G,2
+HAC3GR,90,90 + years,90,90 + years,x,,,,,,,,,,,MCD180G,2
+HAC3GR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCD180G,2
+MCD180G,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCD180G,2
+MCQ180G,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCD180G,2
+MCD180G,77777,Refused,77777,Refused,,,,,,,,,,,x,MCD180G,2
+MCQ180G,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCD180G,2
+MCQ180K,0-16,0-16 years old,16,16 years or younger,,x,x,x,x,x,x,x,x,x,,MCD180K,2
+HAC3FR,1-16,1-16 years old,16,16 years or younger,x,,,,,,,,,,,MCD180K,2
+MCD180K,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCD180K,2
+MCQ180K,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,x,x,x,,MCD180K,2
+MCQ180K,17-83,17-83 years old,17-83,17-83 years old,,x,x,x,x,,,,,,,MCD180K,2
+HAC3FR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCD180K,2
+MCQ180K,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCD180K,2
+MCD180K,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCD180K,2
+MCQ180K,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCD180K,2
+HAC3FR,90,90 + years,90,90 + years,x,,,,,,,,,,,MCD180K,2
+HAC3FR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCD180K,2
+MCQ180K,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCD180K,2
+MCD180K,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCD180K,2
+HAC3FR,777,Less than 1 year,16,16 years or younger,x,,,,,,,,,,,MCD180K,2
+MCQ180K,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCD180K,2
+MCD180K,77777,Refused,77777,Refused,,,,,,,,,,,x,MCD180K,2
+MCQ180L,0-16,0-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCD180L,2
+MCQ180L,1-16,1-16 years old,16,16 years or younger,,,,,,x,x,x,x,x,,MCD180L,2
+MCD180L,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCD180L,2
+MCQ180L,17-78,17-78 years old,17-78,17-78 years old,,,,,,x,x,,,,,MCD180L,2
+MCQ180L,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCD180L,2
+MCQ180L,17-83,17-83 years old,17-83,17-83 years old,,x,x,x,x,,,,,,,MCD180L,2
+MCQ180L,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCD180L,2
+MCD180L,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCD180L,2
+MCQ180L,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCD180L,2
+MCQ180L,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCD180L,2
+MCD180L,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCD180L,2
+MCQ180L,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCD180L,2
+MCD180L,77777,Refused,77777,Refused,,,,,,,,,,,x,MCD180L,2
+MCQ180M,0-16,0-16 years old,16,16 years or younger,,,,x,x,x,x,,,,,MCD180M,2
+HAC3JR,1-16,1-16 years old,16,16 years or younger,x,,,,,,,,,,,MCD180M,2
+MCD180M,1-16,1-16 years old,16,16 years or younger,,,x,,,,,,,,,MCD180M,2
+MCQ180M,1-16,1-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCD180M,2
+MCD180M,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCD180M,2
+MCQ180M,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,x,x,x,,MCD180M,2
+HAC3JR,17-84,17-84 years old,17-84,17-84 years old,x,,,,,,,,,,,MCD180M,2
+MCQ180I,17-84,17-84 years old,17-84,17-84 years old,,x,,,,,,,,,,MCD180M,2
+MCD180M,17-84,17-84 years old,17-84,17-84 years old,,,x,,,,,,,,,MCD180M,2
+MCQ180M,17-84,17-84 years old,17-84,17-84 years old,,,,x,x,,,,,,,MCD180M,2
+HAC3KR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCD180M,2
+HAC3KR,3-16,3-16 years old,16,16 years or younger,x,,,,,,,,,,,MCD180M,2
+MCQ180I,5-16,5-16 years old,16,16 years or younger,,x,,,,,,,,,,MCD180M,2
+MCD180M,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCD180M,2
+MCQ180M,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCD180M,2
+MCQ180I,85,85 years or older,85,85 years or older,,x,,,,,,,,,,MCD180M,2
+MCD180M,85,85 years or older,85,85 years or older,,,x,,,,,,,,,MCD180M,2
+MCQ180M,85,85 years or older,85,85 years or older,,,,x,x,,,,,,,MCD180M,2
+HAC3JR,90,90 + years,90,90 + years,x,,,,,,,,,,,MCD180M,2
+HAC3JR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCD180M,2
+HAC3KR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCD180M,2
+MCQ180I,99999,Don't know,99999,Don't know,,x,,,,,,,,,,MCD180M,2
+MCD180M,99999,Don't know,99999,Don't know,,,x,,,,,,,,x,MCD180M,2
+MCQ180M,99999,Don't know,99999,Don't know,,,,x,x,x,x,x,x,x,,MCD180M,2
+MCQ180I,77777,Refused,77777,Refused,,x,,,,,,,,,,MCD180M,2
+MCD180M,77777,Refused,77777,Refused,,,x,,,,,,,,x,MCD180M,2
+MCQ180M,77777,Refused,77777,Refused,,,,x,x,x,x,x,x,x,,MCD180M,2
+HAC3MR,1-16,1-16 years old,16,16 years or younger,x,,,,,,,,,,,MCD180N,2
+MCD180N,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCD180N,2
+MCQ180N,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,x,x,x,,MCD180N,2
+HAC3MR,17-86,17-86 years old,17-86,17-86 years old,x,,,,,,,,,,,MCD180N,2
+MCQ180N,2-16,2-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCD180N,2
+MCQ180N,8-16,8-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCD180N,2
+MCQ180N,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCD180N,2
+MCD180N,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCD180N,2
+HAC3MR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCD180N,2
+MCQ180N,99999,Don't know,99999,Don't know,,,,,,x,x,x,x,x,,MCD180N,2
+MCD180N,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCD180N,2
+HAC3MR,777,Less than 1 year,16,16 years or younger,x,,,,,,,,,,,MCD180N,2
+MCQ180N,77777,Refused,77777,Refused,,,,,,x,x,x,x,x,,MCD180N,2
+MCD180N,77777,Refused,77777,Refused,,,,,,,,,,,x,MCD180N,2
+MCQ020,1-19,1-19 years old,1-19,1-19 years old,,x,,,,,,,,,,MCQ025,2
+MCQ025,1-79,1-79 years old,1-79,1-79 years old,,,,,,,x,x,x,x,x,MCQ025,2
+MCQ025,1-84,1-84 years old,1-84,1-84 years old,,,x,x,x,x,,,,,,MCQ025,2
+HAC3ER,1-88,1-88 years old,1-88,1-88 years old,x,,,,,,,,,,,MCQ025,2
+MCQ025,80,80 years or older,80,80 years or older,,,,,,,x,x,x,x,x,MCQ025,2
+MCQ020,85,85 years or older,85,85 years or older,,x,,,,,,,,,,MCQ025,2
+MCQ025,85,85 years or older,85,85 years or older,,,x,x,x,x,,,,,,MCQ025,2
+HAC3ER,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ025,2
+MCQ020,99999,Don't know,99999,Don't know,,x,,,,,,,,,,MCQ025,2
+MCQ025,99999,Don't know,99999,Don't know,,,x,x,x,x,x,x,x,x,x,MCQ025,2
+HAC3ER,777,Less than 1 year,1,Less than 1 year,x,,,,,,,,,,,MCQ025,2
+MCQ020,77777,Refused,77777,Refused,,x,,,,,,,,,,MCQ025,2
+MCQ025,77777,Refused,77777,Refused,,,x,x,x,x,x,x,x,x,x,MCQ025,2
+HAC3AR,0-16,16 years or younger,16,16 years or younger,x,,,,,,,,,,,MCQ180A,2
+MCQ180A,1-16,16 years or younger,16,16 years or younger,,x,x,x,x,x,x,,,,,MCQ180A,2
+MCD180A,16,16 years or younger,16,16 years or younger,,,,,,,,,,,x,MCQ180A,2
+MCQ180A,0-16,16 years or younger,16,16 years or younger,,,,,,,,x,x,x,,MCQ180A,2
+MCQ180A,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,x,x,x,,MCQ180A,2
+MCD180A,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,,,,x,MCQ180A,2
+MCQ180A,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ180A,2
+HAC3AR,17-89,17-89 years old,17-89,17-89 years old,x,,,,,,,,,,,MCQ180A,2
+MCQ180A,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ180A,2
+MCD180A,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ180A,2
+MCQ180A,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ180A,2
+HAC3AR,90,90 + years,90,90 + years,x,,,,,,,,,,,MCQ180A,2
+HAC3AR,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ180A,2
+MCQ180A,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ180A,2
+MCD180A,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ180A,2
+HAC3AR,777,Less than 1 year,16,16 years or younger,x,,,,,,,,,,,MCQ180A,2
+MCQ180A,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ180A,2
+MCD180A,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ180A,2
+MCQ180H,1-16,1-16 years old,16,16 years or younger,,x,,,,,,,,,,MCQ180H,2
+MCQ180H,17-72,17-72 years old,17-72,17-72 years old,,x,,,,,,,,,,MCQ180H,2
+MCQ180H,85,85 years or older,85,85 years or older,,x,,,,,,,,,,MCQ180H,2
+MCQ180H,99999,Don't know,99999,Don't know,,x,,,,,,,,,,MCQ180H,2
+MCQ180H,77777,Refused,77777,Refused,,x,,,,,,,,,,MCQ180H,2
+HAC1B,9,Don't know,9,Don't know,x,,,,,,,,,,,MCQ195,2
+MCQ190,9,Don't know,9,Don't know,,x,x,x,x,x,,,,,,MCQ195,2
+MCQ191,9,Don't know,9,Don't know,,,,,,,x,,,,,MCQ195,2
+MCQ195,9,Don't know,9,Don't know,,,,,,,,x,x,x,x,MCQ195,2
+HAC1B,2,Osteoarthritis,2,Osteoarthritis or degenerative arthritis,x,,,,,,,,,,,MCQ195,2
+MCQ190,2,Osteoarthritis,2,Osteoarthritis or degenerative arthritis,,x,x,x,x,x,,,,,,MCQ195,2
+MCQ191,2,Osteoarthritis,2,Osteoarthritis or degenerative arthritis,,,,,,,x,,,,,MCQ195,2
+MCQ195,1,Osteoarthritis or degenerative arthritis,2,Osteoarthritis or degenerative arthritis,,,,,,,,x,x,x,x,MCQ195,2
+MCQ190,3,Other,4,Other,,x,x,x,x,x,,,,,,MCQ195,2
+MCQ191,4,Other,4,Other,,,,,,,x,,,,,MCQ195,2
+MCQ195,4,Other,4,Other,,,,,,,,x,x,x,x,MCQ195,2
+MCQ191,3,Psoriatic arthritis,3,Psoriatic arthritis,,,,,,,x,,,,,MCQ195,2
+MCQ195,3,Psoriatic arthritis,3,Psoriatic arthritis,,,,,,,,x,x,x,x,MCQ195,2
+MCQ190,7,Refused,7,Refused,,x,x,x,x,x,,,,,,MCQ195,2
+MCQ191,7,Refused,7,Refused,,,,,,,x,,,,,MCQ195,2
+MCQ195,7,Refused,7,Refused,,,,,,,,x,x,x,x,MCQ195,2
+HAC1B,1,Rheumatoid arthritis,1,Rheumatoid arthritis,x,,,,,,,,,,,MCQ195,2
+MCQ190,1,Rheumatoid arthritis,1,Rheumatoid arthritis,,x,x,x,x,x,,,,,,MCQ195,2
+MCQ191,1,Rheumatoid arthritis,1,Rheumatoid arthritis,,,,,,,x,,,,,MCQ195,2
+MCQ195,2,Rheumatoid arthritis,1,Rheumatoid arthritis,,,,,,,,x,x,x,x,MCQ195,2
+MCQ240A,17-78,17-78 years old,17-78,17-78 years old,,,,,,,,x,x,x,,MCQ240A,2
+MCQ240A,17-83,17-83 years old,17-83,17-83 years old,,x,x,x,x,,,,,,,MCQ240A,2
+MCQ240A,5-16,5-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240A,2
+MCQ240A,7-16,7-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240A,2
+MCQ240A,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240A,2
+MCQ240A,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240A,2
+MCQ240A,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240A,2
+MCQ240A,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240A,2
+MCQ240B,1-16,1-16 years old,16,16 years or younger,,x,x,x,x,x,x,,,,,MCQ240B,2
+MCQ240B,10-16,10-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240B,2
+MCQ240B,17-66,17-66 years old,17-66,17-66 years old,,x,x,x,x,x,x,,,,,MCQ240B,2
+MCQ240B,17-70,17-70 years old,17-70,17-70 years old,,,,,,,,x,x,x,,MCQ240B,2
+MCQ240B,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240B,2
+MCQ240B,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240B,2
+MCQ240B,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240B,2
+MCQ240B,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240B,2
+MCQ240C,17-77,17-77 years old,17-77,17-77 years old,,,,,,x,x,,,,,MCQ240C,2
+MCQ240C,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240C,2
+MCQ240C,4-16,4-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240C,2
+MCQ240C,55-76,55-76 years old,55-76,55-76 years old,,,,,,,,x,x,x,,MCQ240C,2
+MCQ240C,6-16,6-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240C,2
+MCQ240C,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240C,2
+MCQ240C,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240C,2
+MCQ240C,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240C,2
+MCQ240C,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240C,2
+MCQ240CC,0-16,0-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240CC,2
+MCQ240CC,14-16,14-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240CC,2
+MCQ240CC,17-77,17-77 years old,17-77,17-77 years old,,,,,,,,x,x,x,,MCQ240CC,2
+MCQ240CC,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240CC,2
+MCQ240CC,20-72,20-72 years old,20-72,20-72 years old,,,,,,x,x,,,,,MCQ240CC,2
+MCQ240CC,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240CC,2
+MCQ240CC,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240CC,2
+MCQ240CC,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240CC,2
+MCQ240CC,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240CC,2
+MCQ240D,11-16,11-16 years old,16,16 years or younger,,,,,,,,x,x,,,MCQ240D,2
+MCQ240D,17-73,17-73 years old,17-73,17-73 years old,,,,,,,,x,x,,,MCQ240D,2
+MCQ240D,17-75,17-75 years old,17-75,17-75 years old,,,x,x,x,x,x,,,,,MCQ240D,2
+MCQ240D,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240D,2
+MCQ240D,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240D,2
+MCQ240D,9-16,9-16 years old,16,16 years or younger,,,x,x,x,x,x,,,,,MCQ240D,2
+MCQ240D,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240D,2
+MCQ240D,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240D,2
+MCQ240DD,0-16,0-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240DD,2
+MCQ240DD,1-16,1-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240DD,2
+MCQ240DD,17-77,17-77 years old,17-77,17-77 years old,,,,,,x,x,,,,,MCQ240DD,2
+MCQ240DD,17-78,17-78 years old,17-78,17-78 years old,,,,,,,,x,x,x,,MCQ240DD,2
+MCQ240DD,17-83,17-83 years old,17-83,17-83 years old,,x,x,x,x,,,,,,,MCQ240DD,2
+MCQ240DD,3-16,3-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240DD,2
+MCQ240DD,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240DD,2
+MCQ240DD,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240DD,2
+MCQ240DD,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240DD,2
+MCQ240DD,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240DD,2
+MCQ240DK,20-80,20-80 years old,20-80,20-80 years old,,,,,x,x,x,,,,,MCQ240DK,2
+MCQ240DK,23-47,23-47 years old,23-47,23-47 years old,,,,,,,,x,x,x,,MCQ240DK,2
+MCQ240DK,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240DK,2
+MCQ240DK,85,85 years or older,85,85 years or older,,,,,x,,,,,,,MCQ240DK,2
+MCQ240DK,999,Don't know,99999,Don't know,,,,,,,,x,x,x,,MCQ240DK,2
+MCQ240DK,99999,Don't know,99999,Don't know,,,,,x,x,x,,,,,MCQ240DK,2
+MCQ240DK,777,Refused,77777,Refused,,,,,,,,x,x,x,,MCQ240DK,2
+MCQ240DK,77777,Refused,77777,Refused,,,,,x,x,x,,,,,MCQ240DK,2
+MCQ240E,14-16,14-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240E,2
+MCQ240E,17-78,17-78 years old,17-78,17-78 years old,,,,,,x,x,,,,,MCQ240E,2
+MCQ240E,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ240E,2
+MCQ240E,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240E,2
+MCQ240E,2-16,2-16 years old,16,16 years or younger,,x,x,x,x,x,x,,,,,MCQ240E,2
+MCQ240E,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240E,2
+MCQ240E,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240E,2
+MCQ240E,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240E,2
+MCQ240E,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240E,2
+MCQ240F,15-16,15-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240F,2
+MCQ240F,17-65,17-65 years old,17-65,17-65 years old,,,,,,,,x,x,x,,MCQ240F,2
+MCQ240F,17-73,17-73 years old,17-73,17-73 years old,,x,x,x,x,x,x,,,,,MCQ240F,2
+MCQ240F,4-16,4-16 years old,16,16 years or younger,,x,x,x,x,x,x,,,,,MCQ240F,2
+MCQ240F,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240F,2
+MCQ240F,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240F,2
+MCQ240F,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240F,2
+MCQ240F,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240F,2
+MCQ240G,13-16,13-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240G,2
+MCQ240G,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ240G,2
+MCQ240G,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240G,2
+MCQ240G,2-16,2-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240G,2
+MCQ240G,21-79,21-79 years old,21-79,21-79 years old,,,,,,x,x,,,,,MCQ240G,2
+MCQ240G,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240G,2
+MCQ240G,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240G,2
+MCQ240G,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240G,2
+MCQ240G,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240G,2
+MCQ240L,17-70,17-70 years old,17-70,17-70 years old,,,,,,x,x,,,,,MCQ240L,2
+MCQ240L,17-75,17-75 years old,17-75,17-75 years old,,,,,,,,x,x,x,,MCQ240L,2
+MCQ240L,28-84,28-84 years old,28-84,28-84 years old,,x,x,x,x,,,,,,,MCQ240L,2
+MCQ240L,3-16,3-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240L,2
+MCQ240L,4-16,4-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240L,2
+MCQ240L,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240L,2
+MCQ240L,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240L,2
+MCQ240L,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240L,2
+MCQ240L,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240L,2
+MCQ240N,12-16,12-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240N,2
+MCQ240N,15-16,15-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240N,2
+MCQ240N,17-76,17-76 years old,17-76,17-76 years old,,,,,,x,x,,,,,MCQ240N,2
+MCQ240N,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240N,2
+MCQ240N,29-79,29-79 years old,29-79,29-79 years old,,,,,,,,x,x,x,,MCQ240N,2
+MCQ240N,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240N,2
+MCQ240N,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240N,2
+MCQ240N,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240N,2
+MCQ240N,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240N,2
+MCQ240O,15-16,15-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240O,2
+MCQ240O,17-76,17-76 years old,17-76,17-76 years old,,,,,,x,x,,,,,MCQ240O,2
+MCQ240O,17-80,17-80 years old,17-80,17-80 years old,,x,x,x,x,,,,,,,MCQ240O,2
+MCQ240O,19-79,19-79 years old,19-79,19-79 years old,,,,,,,,x,x,x,,MCQ240O,2
+MCQ240O,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240O,2
+MCQ240O,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240O,2
+MCQ240O,9-16,9-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240O,2
+MCQ240O,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240O,2
+MCQ240O,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240O,2
+MCQ240P,12-16,12-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240P,2
+MCQ240P,15-16,15-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240P,2
+MCQ240P,17-78,17-78 years old,17-78,17-78 years old,,,,,,,,x,x,x,,MCQ240P,2
+MCQ240P,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ240P,2
+MCQ240P,17-83,17-83 years old,17-83,17-83 years old,,x,x,x,x,,,,,,,MCQ240P,2
+MCQ240P,6-16,6-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240P,2
+MCQ240P,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240P,2
+MCQ240P,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240P,2
+MCQ240P,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240P,2
+MCQ240P,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240P,2
+MCQ240Q,1-16,1-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240Q,2
+MCQ240Q,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ240Q,2
+MCQ240Q,27-70,27-70 years old,27-70,27-70 years old,,,,,,x,x,,,,,MCQ240Q,2
+MCQ240Q,30-70,30-70 years old,30-70,30-70 years old,,x,x,x,x,,,,,,,MCQ240Q,2
+MCQ240Q,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240Q,2
+MCQ240Q,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240Q,2
+MCQ240Q,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240Q,2
+MCQ240Q,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240Q,2
+MCQ240U,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ240U,2
+MCQ240U,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240U,2
+MCQ240U,2-16,2-16 years old,16,16 years or younger,,x,x,x,x,x,x,,,,,MCQ240U,2
+MCQ240U,32-79,32-79 years old,32-79,32-79 years old,,,,,,,,x,x,x,,MCQ240U,2
+MCQ240U,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240U,2
+MCQ240U,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240U,2
+MCQ240U,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240U,2
+MCQ240U,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240U,2
+MCQ240W,10-16,10-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240W,2
+MCQ240W,11-16,11-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240W,2
+MCQ240W,17-78,17-78 years old,17-78,17-78 years old,,,,,,x,x,,,,,MCQ240W,2
+MCQ240W,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ240W,2
+MCQ240W,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240W,2
+MCQ240W,3-16,3-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240W,2
+MCQ240W,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240W,2
+MCQ240W,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240W,2
+MCQ240W,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240W,2
+MCQ240W,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240W,2
+MCQ240X,1-16,1-16 years old,16,16 years or younger,,x,x,x,x,,,,,,,MCQ240X,2
+MCQ240X,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,x,,,,,MCQ240X,2
+MCQ240X,17-84,17-84 years old,17-84,17-84 years old,,x,x,x,x,,,,,,,MCQ240X,2
+MCQ240X,18-79,18-79 years old,18-79,18-79 years old,,,,,,,,x,x,x,,MCQ240X,2
+MCQ240X,5-16,5-16 years old,16,16 years or younger,,,,,,x,x,,,,,MCQ240X,2
+MCQ240X,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240X,2
+MCQ240X,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240X,2
+MCQ240X,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240X,2
+MCQ240X,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240X,2
+MCQ240Z,11-16,11-16 years old,16,16 years or younger,,,,,,,,x,x,x,,MCQ240Z,2
+MCQ240Z,17-79,17-79 years old,17-79,17-79 years old,,,,,,,,x,x,x,,MCQ240Z,2
+MCQ240Z,22-82,22-82 years old,22-82,22-82 years old,,x,x,x,x,,,,,,,MCQ240Z,2
+MCQ240Z,32-76,32-76 years old,32-76,32-76 years old,,,,,,x,x,,,,,MCQ240Z,2
+MCQ240Z,80,80 years or older,80,80 years or older,,,,,,x,x,x,x,x,,MCQ240Z,2
+MCQ240Z,85,85 years or older,85,85 years or older,,x,x,x,x,,,,,,,MCQ240Z,2
+MCQ240Z,99999,Don't know,99999,Don't know,,x,x,x,x,x,x,x,x,x,,MCQ240Z,2
+MCQ240Z,77777,Refused,77777,Refused,,x,x,x,x,x,x,x,x,x,,MCQ240Z,2
+MCQ280,1-101,1-101 years old,1-101,1-101 years old,,x,x,x,,,,,,,,MCQ280,2
+HAC8,555,50 +,555,50 +,x,,,,,,,,,,,MCQ280,2
+HAC8,9-107,9-107 years old,9-107,9-107 years old,x,,,,,,,,,,,MCQ280,2
+HAC8,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ280,2
+MCQ280,99999,Don't know,99999,Don't know,,x,x,x,,,,,,,,MCQ280,2
+MCQ280,77777,Refused,77777,Refused,,x,x,x,,,,,,,,MCQ280,2
+HAC8,444,Under 50,444,Under 50,x,,,,,,,,,,,MCQ280,2
+MCQ320,1-16,1-16 years old,16,16 years or younger,,,,,,x,,,,,,MCQ320,2
+MCQ320,1-16,1-16 years old,16,16 years or younger,,,,,x,,,,,,,MCQ320,2
+MCQ320,17-79,17-79 years old,17-79,17-79 years old,,,,,,x,,,,,,MCQ320,2
+MCQ320,17-85,17-85 years old,17-85,17-85 years old,,,,,x,,,,,,,MCQ320,2
+MCQ320,80,80 years or older,80,80 years or older,,,,,,x,,,,,,MCQ320,2
+MCQ320,999,Don't know,999,Don't know,,,,,x,x,,,,,,MCQ320,2
+MCQ320,777,Refused,777,Refused,,,,,x,x,,,,,,MCQ320,2
+HAJ13,11-99,11-99 years old,11-99,11-99 years old,x,,,,,,,,,,,MCQ570,2
+MCQ570,15-79,15-79 years old,15-79,15-79 years old,,,,,,,,,,,x,MCQ570,2
+HAJ18R,20-87,20-87 years old,20-87,20-87 years old,x,,,,,,,,,,,MCQ570,2
+MCQ570,80,80 years or older,80,80 years or older,,,,,,,,,,,x,MCQ570,2
+HAJ18R,90,90 + years,90,90 + years,x,,,,,,,,,,,MCQ570,2
+HAJ18R,999,Don't know,99999,Don't know,x,,,,,,,,,,,MCQ570,2
+MCQ570,99999,Don't know,99999,Don't know,,,,,,,,,,,x,MCQ570,2
+MCQ570,77777,Refused,77777,Refused,,,,,,,,,,,x,MCQ570,2
+HAT15S,1-95,1-95 times,1-95,1-95 times,x,,,,,,,,,,,PAD120,2
+PAD120,1-99,1-99 times,1-99,1-99 times,,x,x,x,x,,,,,,,PAD120,2
+PAD120,100-300,100 +,100,100 +,,x,x,x,x,,,,,,,PAD120,2
+HAT15S,100,100 +,100,100 +,x,,,,,,,,,,,PAD120,2
+HAT15S,9999,Don't know,99999,Don't know,x,,,,,,,,,,,PAD120,2
+PAD120,99999,Don't know,99999,Don't know,,x,x,x,x,,,,,,,PAD120,2
+PAD120,77777,Refused,77777,Refused,,x,x,x,x,,,,,,,PAD120,2
+HAT17S,1-91,1-91 times,1-91,1-91 times,x,,,,,,,,,,,PAD460,2
+PAD460,1-99,1-99 times,1-99,1-99 times,,x,x,x,x,,,,,,,PAD460,2
+PAD460,100-300,100 +,100,100 +,,x,x,x,x,,,,,,,PAD460,2
+HAT17S,100,100 +,100,100 +,x,,,,,,,,,,,PAD460,2
+PAD460,999,Don't know,999,Don't know,,x,x,x,x,,,,,,,PAD460,2
+PAD460,777,Refused,777,Refused,,x,x,x,x,,,,,,,PAD460,2
+HAT5S,1-91,1-91 times,1-91,1-91 times,x,,,,,,,,,,,PAQ050Q,2
+PAQ050Q,1-99,1-99 times,1-99,1-99 times,,x,x,x,x,,,,,,,PAQ050Q,2
+HAT5S,100,100 +,100,100 +,x,,,,,,,,,,,PAQ050Q,2
+PAQ050Q,100-124,100-124 times,100,100 +,,x,x,x,x,,,,,,,PAQ050Q,2
+PAQ050Q,99999,Don't know,99999,Don't know,,x,x,x,x,,,,,,,PAQ050Q,2
+PAQ050Q,77777,Refused,77777,Refused,,x,x,x,x,,,,,,,PAQ050Q,2
