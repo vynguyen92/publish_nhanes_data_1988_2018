@@ -73,6 +73,8 @@ questionnaire_unclean <- compile_datasets(cleaning_documentation = list_master_f
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Clean the NHANES Datasets  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
+list_master_files <- upload_nhanes_master_files("NHANES - Master List of Files 1i.xlsx")
+
 # Clean the mortality dataset
 mortality_clean <- clean_mortality_dataset(mortality_unclean
                                            , list_master_files
@@ -122,7 +124,7 @@ occupation_clean <- clean_occupation_dataset(occupations_unclean
                                              , list_master_files)
 
 
-questionnaire_clean <- clean_questionnaire_dataset(questionnaire_unclean
+questionnaire_clean_test <- clean_questionnaire_dataset(questionnaire_unclean
                                                    , list_master_files
                                                    , "Questionnaire")
 
@@ -130,8 +132,6 @@ questionnaire_clean <- clean_questionnaire_dataset(questionnaire_unclean
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Create dictionary  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-
-list_master_files <- upload_nhanes_master_files("NHANES - Master List of Files 1i.xlsx")
 
 df_medications_drug_info <- create_dictionary_drugs("RXQ_DRUG")
 
