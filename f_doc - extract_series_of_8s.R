@@ -37,7 +37,7 @@ extract_series_of_8 <- function(dataset_unclean
   
   # View(df_eights)
   
-  name_file_df_eights <- paste("series_8_updated"
+  name_file_df_eights <- paste("series_8_updated_"
                                , name_dataset
                                , ".csv"
                                , sep = "")
