@@ -8,7 +8,7 @@ extract_series_of_8 <- function(dataset_unclean
   
   obtain_eights <- function(x)
   {
-    pattern <- "^.*8{2,}.*$"
+    pattern <- "(\\b8\\b|\\b8{2,}\\b)"
     matches <- grep(pattern, as.character(x), value = TRUE)
     
     matches <- as.numeric(matches) %>%
@@ -41,6 +41,6 @@ extract_series_of_8 <- function(dataset_unclean
                                , name_dataset
                                , ".csv"
                                , sep = "")
-  
+
   write.csv(df_eights, name_file_df_eights)
 }
