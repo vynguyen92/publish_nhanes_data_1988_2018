@@ -31,7 +31,7 @@ resolve_multiple_codenames <- function(vector_corrected_codenames
   {
     # Determine the corrected codename for a given variable
     corrected_codename_i <- vector_corrected_codenames[i]
-    # print(corrected_codename_i)
+    print(corrected_codename_i)
     
     # Determine the row indices that pertaining to this codename in the documentation dataset
     index_corrected_codename_i <- which(df_doc_cleaning[,colname_corrected_codename] == corrected_codename_i)
@@ -226,6 +226,14 @@ resolve_multiple_codenames <- function(vector_corrected_codenames
       }
 
     }
+    
+    # relevant_codenames <- unique(c(corrected_codename_i
+    #                                , old_codenames
+    #                                , "SDDSRVYR"))
+    # 
+    # View(df_unclean %>% 
+    #         select(all_of(relevant_codenames)) %>%
+    #         unique(.))
     
   }
   # Define the dataset as cleaned with all the codename harmonized
