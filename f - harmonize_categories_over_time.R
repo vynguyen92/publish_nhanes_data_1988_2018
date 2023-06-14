@@ -27,9 +27,7 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
     # .[1]
   # print(new_codenames_fix)
   
-  new_codenames_fix <- c("DID040"
-                         , "DIQ060"
-                         , "RHD180"
+  new_codenames_fix <- c( "RHD180"
                          , "RHD190"
                          , "RHQ171"
                          , "RHQ542B"
@@ -46,14 +44,14 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
   num_new_codenames_fix <- length(new_codenames_fix)
   # print(num_new_codenames_fix)
 
-  View(dataset_unclean %>%
-         select("SDDSRVYR"
-                , "DID040"
-                , "DID040G"
-                , "DID040Q") %>%
-         unique(.))
+  # View(dataset_unclean %>%
+  #        select("SDDSRVYR"
+  #               , "DIQ060"
+  #               , "DIQ060G"
+  #               , "DIQ060Q") %>%
+  #        unique(.))
   
-  for(f in seq(num_new_codenames_fix)[1])
+  for(f in seq(num_new_codenames_fix))
   {
     # Determine a given codename that requires harmonizing of its categories
     new_codename_fix_f <- new_codenames_fix[f]
@@ -232,7 +230,7 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
     if(all_na_in_df_checking_problems == FALSE)
     {
       print(new_codename_fix_f)
-      View(df_checking_problems)
+      print(df_checking_problems)
     }
     
   }
