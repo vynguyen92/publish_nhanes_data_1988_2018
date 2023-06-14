@@ -227,6 +227,10 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
 
     all_na_in_df_checking_problems <- all(is.na(df_checking_problems_no_cycle))
 
+    
+    # Problematic variables for the questionnaire module include RHQ542B and RHQ542C, but these are okay
+    # because these variables are only concern about use of products (e.g., patches or Cream/suppository/injection)
+    # instead of not using (MAPF45 or MAPF41 == 2) or don't know (MAPF45 or MAPF41 == 9)
     if(all_na_in_df_checking_problems == FALSE)
     {
       print(new_codename_fix_f)
