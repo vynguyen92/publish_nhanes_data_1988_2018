@@ -76,11 +76,11 @@ incorporate_categorical_changes_for_ranges <- function(long_fix_cat_documentatio
       new_categories_i <- seq(from = beginning_new_cat
                                        , to = ending_new_cat
                                        , by = 1)
-      # print(new_categories_i)
+      
     } else {
       new_categories_i <- as.numeric(new_categories_i)
     }
-
+    # print(new_categories_i)
 
     cycle_i <- long_subset_documentation %>%
       filter(categories_num == ranges_i) %>%
@@ -94,6 +94,10 @@ incorporate_categorical_changes_for_ranges <- function(long_fix_cat_documentatio
     {
       cycle_j <- cycle_i[j]
       # print(cycle_j)
+      
+      # print(sequence_old_categories_i)
+      
+      # print(new_categories_i)
       
       subset_partial_cycle_j <- data.frame(categories_num = sequence_old_categories_i
                                            , new_categories = new_categories_i
