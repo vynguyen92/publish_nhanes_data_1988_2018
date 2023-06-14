@@ -133,6 +133,7 @@ resolve_multiple_codenames <- function(vector_corrected_codenames
              , all_of(old_codenames)
              , "SDDSRVYR") %>%
       unique(.)
+    # View(df_unique)
     
     
     num_columns <- ncol(df_unique)
@@ -227,11 +228,12 @@ resolve_multiple_codenames <- function(vector_corrected_codenames
 
     }
     
+    # # Check harmonization of codenames
     # relevant_codenames <- unique(c(corrected_codename_i
     #                                , old_codenames
     #                                , "SDDSRVYR"))
     # 
-    # View(df_unclean %>% 
+    # View(df_unclean %>%
     #         select(all_of(relevant_codenames)) %>%
     #         unique(.))
     
