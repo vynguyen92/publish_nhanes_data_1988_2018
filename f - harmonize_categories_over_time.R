@@ -15,7 +15,7 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
                                            , list_cleaning_documentation
                                            , dataset_unclean)
 {
-  print(dim(dataset_unclean))
+  # print(colnames(dataset_unclean))
   # Extract the dataset on cleaning documentation for harmonizing categories over time
   dataset_fix_categories <- list_cleaning_documentation[[name_fix_categories_of_df]]
   # View(dataset_fix_categories)
@@ -27,12 +27,12 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
     # .[1]
   # print(new_codenames_fix)
   
-  new_codenames_fix <- c( "RHD180"
-                         , "RHD190"
-                         , "RHQ171"
-                         , "RHQ542B"
-                         , "RHQ542C"
-                         )
+  # new_codenames_fix <- c( "RHD180"
+  #                        , "RHD190"
+  #                        , "RHQ171"
+  #                        , "RHQ542B"
+  #                        , "RHQ542C"
+  #                        )
   
   # new_codenames_fix <- "DID040"
 
@@ -122,7 +122,13 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
       long_subset_category_fix <- long_subset_category_fix %>%
         mutate(age_group = "ADULTS")
 
-      dataset_unclean <- dataset_unclean %>%
+      subset_unclean <- dataset_unclean %>%
+        select("SEQN"
+               , "SEQN_new"
+               , "age_group"
+               , new_codename_fix_f
+               , all_of(original_codenames)
+               , "SDDSRVYR") %>%
         left_join(.
                   , long_subset_category_fix
                   , by = c(new_codename_fix_f
@@ -134,7 +140,13 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
       long_subset_category_fix <- long_subset_category_fix %>%
         mutate(age_group = "YOUTH")
 
-      dataset_unclean <- dataset_unclean %>%
+      subset_unclean <- dataset_unclean %>%
+        select("SEQN"
+               , "SEQN_new"
+               , "age_group"
+               , new_codename_fix_f
+               , all_of(original_codenames)
+               , "SDDSRVYR") %>%
         left_join(.
                   , long_subset_category_fix
                   , by = c(new_codename_fix_f
@@ -163,6 +175,7 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
     #                  )) %>%
     #        unique(.))
 
+    # print(new_codename_fix_f)
     subset_unclean <- subset_unclean %>%
       select(-all_of(new_codename_fix_f))
     # print(colnames(subset_unclean))
@@ -245,6 +258,18 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
                                               , "SEQN_new"
                                               , "SDDSRVYR"))
   
+  # There were duplicates for HFA8R and age_group, since two different demographic  
+  # variables used it for adults and youth.
+  if(name_fix_categories_of_df == "Demographics Fix Category")
+  {
+    extra_colnames <- colnames(dataset_unclean_harmonized) %>%
+      grep("\\.(x|y)$", ., value = TRUE)
+    # print(extra_colnames)
+    
+    dataset_unclean_harmonized <- dataset_unclean_harmonized %>%
+      select(-one_of(extra_colnames))
+  }
+  
   # print(dim(dataset_unclean_harmonized))
   
   colnames_other_unaffected <- setdiff(colnames(dataset_unclean)
@@ -257,14 +282,36 @@ harmonize_categories_over_time <- function(name_fix_categories_of_df
   
   dataset_unclean_unaffected <- dataset_unclean %>%
     select(all_of(colnames_other_unaffected))
+  
+  
 
   # Define the dataset as clean
   dataset_clean <- full_join(dataset_unclean_harmonized
                              , dataset_unclean_unaffected
                              , by = c("SEQN"
                                       , "SEQN_new"
-                                      , "SDDSRVYR"))
-  # print(dim(dataset_clean))
+                                      , "SDDSRVYR"
+                                      ))
+  
+  # print(colnames(dataset_unclean_harmonized))
+  # print(colnames(dataset_unclean_unaffected))
+  
+  diff_num_participants <- nrow(dataset_clean) - nrow(dataset_unclean)
+  
+  diff_num_colnames <- ncol(dataset_clean) - ncol(dataset_unclean)
+  
+  # Unit test to detect if extra variables or participants were added during the 
+  # harmonization of the categories
+  if(diff_num_participants != 0 | diff_num_colnames != 0)
+  {
+    seqn_unclean <- dataset_unclean$SEQN_new
+    seqn_clean <- dataset_clean$SEQN_new
+    print(outersect(seqn_unclean, seqn_clean))
+    
+    colnames_unclean <- colnames(dataset_unclean)
+    colnames_clean <- colnames(dataset_clean)
+    print(outersect(colnames_unclean, colnames_clean))
+  }
   
   return(dataset_clean)
 }
