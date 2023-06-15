@@ -65,10 +65,10 @@ clean_demographics_dataset <- function(dataset_unclean
     drop_na(SEQN)
 
   print("Check number of cycles matches between dataset and documentation")
-  
+
   dataset_cleaner <- check_cycles_between_documentation_df(dataset_cleaner
                                                            , dataset_document_cleaning)
-  
+
   print("Ensure all columns are label")
 
   dataset_cleaner <- ensure_all_columns_are_label(dataset_cleaner
