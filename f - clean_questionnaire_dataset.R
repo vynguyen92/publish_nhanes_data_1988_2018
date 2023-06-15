@@ -24,6 +24,14 @@ clean_questionnaire_dataset <- function(dataset_unclean
   # .[1]
   # print(corrected_codenames)
   
+  # ##
+  # corrected_codenames <- c("DID040"
+  #                          , "DID040G"
+  #                          , "DID040Q"
+  #                          , "DIQ060"
+  #                          , "DIQ060G"
+  #                          , "DIQ060Q")
+  
   print("Ensure all variables have only one codename")
   
   # For chemicals with multiple chemical codenames, harmonize the codenames
@@ -34,34 +42,39 @@ clean_questionnaire_dataset <- function(dataset_unclean
                                                 , dataset_cleaner
                                                 , "SDDSRVYR")
   
-  print("Harmonize categories of variables over time")
+  print("Create categories for variable on units of measurement")
   
+  dataset_cleaner <- create_categories_for_units_variables(dataset_document_cleaning
+                                                           , dataset_cleaner)
+  
+  print("Harmonize categories of variables over time")
+
   name_df_fix_categories <- paste(name_dataset
                                   , "Fix Category"
                                   , sep = " ")
-  
+
   dataset_cleaner <- harmonize_categories_over_time(name_df_fix_categories
                                                     , list_document_cleaning
                                                     , dataset_cleaner)
-  
-  print("Include only harmonized and/or selected variables")
 
-  codenames_include <- dataset_document_cleaning %>%
-    filter(variable_codename_use != "SEQN") %>%
-    pull(variable_codename_use) %>%
-    unique(.)
-  # print(codenames_include)
-
-  dataset_cleaner <- dataset_cleaner[,c("SEQN"
-                                        , "SEQN_new"
-                                        , "SDDSRVYR"
-                                        , codenames_include)] %>%
-    drop_na(SEQN)
-
-  print("Ensure all columns are labelled")
-
-  dataset_cleaner <- ensure_all_columns_are_label(dataset_cleaner
-                                                  , dataset_document_cleaning)
+  # print("Include only harmonized and/or selected variables")
+  # 
+  # codenames_include <- dataset_document_cleaning %>%
+  #   filter(variable_codename_use != "SEQN") %>%
+  #   pull(variable_codename_use) %>%
+  #   unique(.)
+  # # print(codenames_include)
+  # 
+  # dataset_cleaner <- dataset_cleaner[,c("SEQN"
+  #                                       , "SEQN_new"
+  #                                       , "SDDSRVYR"
+  #                                       , codenames_include)] %>%
+  #   drop_na(SEQN)
+  # 
+  # print("Ensure all columns are labelled")
+  # 
+  # dataset_cleaner <- ensure_all_columns_are_label(dataset_cleaner
+  #                                                 , dataset_document_cleaning)
 
   return(dataset_cleaner)
 }
