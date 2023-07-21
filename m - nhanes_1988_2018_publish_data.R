@@ -18,9 +18,6 @@ mortality_directory <- paste(working_directory
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  Compile the NHANES Datasets  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-# Upload the cleaning documentation for all datasets
-list_master_files <- upload_nhanes_master_files("NHANES - Master List of Files 1i.xlsx")
-
 # Extract the individual mortality datasets and compile them into the unclean mortality dataset
 mortality_unclean <- compile_mortality_dataset(dataset_directory = mortality_directory
                                                , current_directory = working_directory)
@@ -43,7 +40,8 @@ medications_unclean <- compile_datasets(cleaning_documentation = list_master_fil
                                           filter(grepl("\\bPrescription Medications\\b"
                                                        , .$file_summary) == TRUE &
                                                    is.na(.$SDDSRVYR) == FALSE)
-                                        , current_directory = working_directory)
+                                        , current_directory = working_directory
+                                        , name_dataset = "Medications")
 
 
 chemicals_unclean <- compile_datasets(cleaning_documentation = list_master_files$Chemicals
@@ -59,13 +57,6 @@ occupations_unclean <- compile_datasets(cleaning_documentation = list_master_fil
                                         , current_directory = working_directory
                                         , name_dataset = "Occupation")
 
-
-questionnaire_unclean <- compile_datasets(cleaning_documentation = list_master_files$Questionnaire %>%
-                                            filter(grepl("\\bPrescription Medications\\b"
-                                                         , .$file_summary) == FALSE &
-                                                     is.na(.$SDDSRVYR) == FALSE)
-                                          , current_directory = working_directory
-                                          , name_dataset = "Questionnaire")
 
 setwd(working_directory)
 questionnaire_unclean <- compile_datasets(cleaning_documentation = list_master_files$Questionnaire %>%
@@ -96,20 +87,14 @@ demographics_clean <- clean_demographics_dataset(demographics_unclean
                                                  , "Demographics")
 
 setwd(working_directory)
-response_clean_test <- clean_response_dataset(response_unclean
-                                              , list_master_files
-                                              , "Response"
-                                              , demographics_clean)
+response_clean <- clean_response_dataset(response_unclean
+                                         , list_master_files
+                                         , "Response"
+                                         , demographics_clean)
 
 medications_clean <- clean_medications_dataset(medications_unclean
                                                , list_master_files
                                                , "Questionnaire")
-
-
-
-chemicals_clean_test <- clean_chemicals_dataset(chemicals_unclean
-                                                , list_master_files
-                                                , "Chemicals")
 
 list_chemicals_clean <- clean_chemicals_dataset(chemicals_unclean
                                                 , list_master_files
@@ -118,6 +103,8 @@ list_chemicals_clean <- clean_chemicals_dataset(chemicals_unclean
 chemicals_clean <- list_chemicals_clean$only_harmonized_variable
 
 comments_unclean <- list_chemicals_clean$harmonized_and_unharmonized_variables
+
+rm(list_chemicals_clean)
 
 comments_clean <- form_comments_dataset(comments_unclean
                                         , list_master_files
@@ -130,8 +117,10 @@ weights_clean <- form_survey_weights_dataset(weights_unclean
 occupation_clean <- clean_occupation_dataset(occupations_unclean
                                              , list_master_files)
 
+# Upload the cleaning documentation for all datasets
+list_master_files <- upload_nhanes_master_files("NHANES - Master List of Files 1i.xlsx")
 
-questionnaire_clean_test <- clean_questionnaire_dataset(questionnaire_unclean
+questionnaire_clean <- clean_questionnaire_dataset(questionnaire_unclean
                                                    , list_master_files
                                                    , "Questionnaire")
 
