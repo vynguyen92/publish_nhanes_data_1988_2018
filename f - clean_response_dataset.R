@@ -67,6 +67,7 @@ clean_response_dataset <- function(dataset_unclean
   print("Harmonize categories over time")
 
   dataset_cleaner <- harmonize_categories_over_time("Response Fix Category"
+                                                    , name_dataset
                                                     , list_document_cleaning
                                                     , dataset_cleaner)
 
@@ -75,7 +76,13 @@ clean_response_dataset <- function(dataset_unclean
   codenames_include <- dataset_document_cleaning %>%
     pull(variable_codename_use) %>%
     unique(.)
+  # View(data.frame(codenames_include))
 
+  # print(outersect(colnames(dataset_cleaner), c("SEQN"
+  #                                              , "SEQN_new"
+  #                                              , "SDDSRVYR"
+  #                                              , codenames_include)))
+  
   dataset_cleaner <- dataset_cleaner[,c("SEQN"
                                         , "SEQN_new"
                                         , "SDDSRVYR"
@@ -83,10 +90,10 @@ clean_response_dataset <- function(dataset_unclean
     drop_na(SEQN)
 
   print("Check number of cycles matches between dataset and documentation")
-  
+
   dataset_cleaner <- check_cycles_between_documentation_df(dataset_cleaner
                                                            , dataset_document_cleaning)
-  
+
   print("Ensure all columns are label")
 
   dataset_cleaner <- ensure_all_columns_are_label(dataset_cleaner
