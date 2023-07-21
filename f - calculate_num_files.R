@@ -8,7 +8,8 @@ calculate_num_files <- function(list_documentation)
          , .) %>% 
     unique(.) 
   
-  names_dataset <- names_dataset[!(names_dataset %in% "Biomonitoring Equivalents")]
+  names_dataset <- names_dataset[!(names_dataset %in% c("Biomonitoring Equivalents"
+                                                        , "Correspondence Table"))]
   # print(names_dataset)
   
   extract_file_columns <- function(x)
@@ -99,8 +100,22 @@ calculate_num_files <- function(list_documentation)
     group_by(in_dataset) %>%
     summarise(num_files = n()) %>%
     ungroup()
-  View(df_files)
+  # View(df_files)
   View(df_num_files_by_modules)
+  
+  df_num_files_by_modules_and_study_type <- df_files %>%
+    mutate(nhanes_type = ifelse(SDDSRVYR == -1
+                                , "III"
+                                , "Continuous")) %>%
+    select(file_name
+           , in_dataset
+           , nhanes_type) %>%
+    unique(.) %>%
+    group_by(in_dataset
+             , nhanes_type) %>%
+    summarise(num_files = n()) %>%
+    ungroup()
+  View(df_num_files_by_modules_and_study_type)
   
   df_num_variable_by_module <- df_files %>%
     filter(grepl("^WT_", variable_codename) == FALSE) %>%
@@ -115,6 +130,7 @@ calculate_num_files <- function(list_documentation)
   
   list_stats <- list("num_total_files" = num_unique_files
                      , "num_files_by_cycle" = df_num_files_by_cycle
+                     , "num_files_by_module_and_nhanes_type" = df_num_files_by_modules_and_study_type
                      , "df_files_by_cycle" = df_files
                      , "df_num_files_by_modules" = df_num_files_by_modules)
   
