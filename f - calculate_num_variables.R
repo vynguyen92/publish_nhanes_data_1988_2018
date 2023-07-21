@@ -10,7 +10,8 @@ calculate_num_variables <- function(list_documentation
          , .) %>% 
     unique(.) 
   
-  names_dataset <- names_dataset[!(names_dataset %in% "Biomonitoring Equivalents")]
+  names_dataset <- names_dataset[!(names_dataset %in% c("Biomonitoring Equivalents"
+                                                        , "Correspondence Table"))]
   # print(names_dataset)
   
   extract_file_columns <- function(x)
@@ -65,6 +66,7 @@ calculate_num_variables <- function(list_documentation
     pull(variable_codename) %>%
     unique(.) %>%
     length(.)
+  # View(num_unique_original_variables)
   # print(num_unique_original_variables)
   
   harmonized_variables_dictionary <- dataset_dictionary %>%
@@ -95,7 +97,7 @@ calculate_num_variables <- function(list_documentation
   # print(num_harmonized_variables)
   
   list_stats <- list("num_unique_original_variables" = num_unique_original_variables
-                     , "num_unique_harmonized_variables" = length(harmonized_df_files)
+                     , "num_unique_harmonized_variables" = length(harmonized_variables_dictionary)
                      , "df_variables_by_cycle" = df_files
                      , "df_num_variables_per_module" = df_num_variables_per_module)
   
