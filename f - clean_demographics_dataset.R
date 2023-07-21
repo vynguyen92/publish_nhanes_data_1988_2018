@@ -50,6 +50,7 @@ clean_demographics_dataset <- function(dataset_unclean
                                   , sep = " ")
 
   dataset_cleaner <- harmonize_categories_over_time(name_df_fix_categories
+                                                    , name_dataset
                                                     , list_document_cleaning
                                                     , dataset_cleaner)
 
