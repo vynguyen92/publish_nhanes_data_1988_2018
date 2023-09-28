@@ -1,0 +1,56 @@
+---
+title: "Checking observations on glucose and insulin"
+author: "Vy Nguyen"
+date: "2023-09-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages(tidyverse)
+library(tidyverse)
+```
+
+## R Markdown
+
+
+```{r glucose}
+
+response_clean %>% 
+  select(LBXGLU, SDDSRVYR) %>% 
+  na.omit(.) %>%
+  nrow(.)
+
+df_total_participants_by_year <- response_clean %>% 
+  select(LBXGLU, SDDSRVYR) %>% 
+  # na.omit(.) %>% 
+  group_by(SDDSRVYR) %>% 
+  count() %>%
+  rename(total_obs = n)
+
+df_total_participants_with_glucose_by_year <- response_clean %>% 
+  select(LBXGLU, SDDSRVYR) %>% 
+  na.omit(.) %>% 
+  group_by(SDDSRVYR) %>% 
+  count() %>%
+  rename(total_with_glucose = n)
+
+df_stats_glucose <- full_join(df_total_participants_with_glucose_by_year
+                              , df_total_participants_by_year
+                              , by = "SDDSRVYR") %>%
+  mutate(missing = total_obs - total_with_glucose)
+
+```
+
+```{r insulin}
+response_clean %>% 
+  select(LBDINSI, SDDSRVYR) %>% 
+  na.omit(.) %>%
+  nrow(.)
+
+response_clean %>% 
+  select(LBDINSI, SDDSRVYR) %>% 
+  na.omit(.) %>% 
+  group_by(SDDSRVYR) %>% 
+  count()
+```
