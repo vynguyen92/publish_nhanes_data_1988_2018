@@ -67,10 +67,10 @@ form_comments_dataset <- function(dataset_unclean
                                                             , dataset_document_cleaning)
 
 
-  print("Exclude indicators when participants do not have measurements")
-
-  dataset_cleaner <- exclude_extraneous_indicators(dataset_cleaner
-                                                   , dataset_document_cleaning)
+  # print("Exclude indicators when participants do not have measurements")
+  # 
+  # dataset_cleaner <- exclude_extraneous_indicators(dataset_cleaner
+  #                                                  , dataset_document_cleaning)
 
   print("Include reasonable comments (i.e. values are 0, 1, or 2)")
 
@@ -78,7 +78,7 @@ form_comments_dataset <- function(dataset_unclean
                                                 , dataset_document_cleaning)
 
   print("Include only harmonized and/or selected variables")
-  
+
   # Define a vector of the harmonized comment codenames
   included_codenames_unique <- dataset_document_cleaning %>%
     drop_na(comment_codename_use) %>%
@@ -93,11 +93,11 @@ form_comments_dataset <- function(dataset_unclean
            , "SDDSRVYR")
 
   print("Check number of cycles matches between dataset and documentation")
-  
+
   dataset_cleaner <- check_cycles_between_documentation_df(dataset_cleaner
                                                            , dataset_document_cleaning
                                                            , "comments")
-  
+
   print("Ensure all columns are label")
 
   dataset_cleaner <- ensure_all_columns_are_label(dataset_cleaner
@@ -105,6 +105,6 @@ form_comments_dataset <- function(dataset_unclean
                                                   , "comments")
 
   # print(colnames(dataset_cleaner))
-  
+
   return(dataset_cleaner)
 }
