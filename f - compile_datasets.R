@@ -20,12 +20,12 @@ compile_datasets <- function(cleaning_documentation
   # print(cycles_nhanes)
   
   num_cycles <- length(cycles_nhanes)
-  # print(num_cycles)
+  print(num_cycles)
   
   list_datasets_per_cycle <- list()
   list_all_datasets <- list()
-  
-  
+
+
   for(i in seq(num_cycles))
   {
     cycle_i <- cycles_nhanes[i]
@@ -57,7 +57,7 @@ compile_datasets <- function(cleaning_documentation
     # print(num_files)
 
     # print("statistic_replicates" %in% colnames(subset_cleaning_doc_i))
-    
+
     if("statistic_replicates" %in% colnames(subset_cleaning_doc_i) == TRUE)
     {
       codenames_include <- subset_cleaning_doc_i %>%
@@ -67,46 +67,46 @@ compile_datasets <- function(cleaning_documentation
                                              , "calculate_estimated_gfr"))) %>%
         pull(variable_codename) %>%
         unique(.)
-     
+
     } else {
-      
-      if(name_dataset == "Weights") 
+
+      if(name_dataset == "Weights")
       {
         codenames_include <- subset_cleaning_doc_i %>%
           pull(weight_codename) %>%
-          unique(.) %>% 
+          unique(.) %>%
           strsplit(.
-                   , split = ", ") %>% 
-          unlist(.) %>%  
+                   , split = ", ") %>%
+          unlist(.) %>%
           unique(.)
-        
+
       } else if(name_dataset == "Occupation") {
-        
+
         codenames_include <- subset_cleaning_doc_i %>%
           filter(is.na(file_name) == FALSE) %>%
           pull(variable_codename) %>%
           unique(.)
-        
+
       } else {
-        
+
         # if(cycle_i == -1)
         # {
         #   codenames_include <- subset_cleaning_doc_i %>%
         #     filter(is.na(file_name) == FALSE) %>%
         #     pull(variable_codename) %>%
         #     unique(.)
-        #   
+        #
         # } else {
           codenames_include <- subset_cleaning_doc_i %>%
             pull(variable_codename) %>%
             unique(.)
         # }
-        
-        
+
+
       }
       # print(codenames_include)
-      
-      
+
+
     }
 
     if(name_dataset == "Chemicals")
@@ -116,13 +116,13 @@ compile_datasets <- function(cleaning_documentation
         pull(comment_codename) %>%
         unique(.)
       # print(comments_codename)
-      
+
       codenames_include <- codenames_include %>%
         append(., comments_codename)
-    
-    } 
+
+    }
     # print(codenames_include)
-    
+
     if(cycle_i == -1)
     {
       nhanes_iii_directory <- paste(current_directory
@@ -137,7 +137,7 @@ compile_datasets <- function(cleaning_documentation
     }
 
     list_datasets_per_cycle <- list()
-    
+
     for(j in seq(num_files))
     {
       file_name_j <- files_names[j]
@@ -193,8 +193,8 @@ compile_datasets <- function(cleaning_documentation
             as.numeric(.)
           # print(column_width)
 
-        
-          
+
+
           temp_df <- read_fwf(file = file_name_j_use,
                               col_types = column_types,
                               col_positions = fwf_widths(column_width
@@ -202,14 +202,14 @@ compile_datasets <- function(cleaning_documentation
                               na = ".")
           # View(temp_df)
 
-          
-          
+
+
           # print(str(temp_df$DEPSTLC1))
 
         }
 
- 
-        
+
+
 
       } else {
         # Store jth dataset into temp_file
@@ -217,10 +217,10 @@ compile_datasets <- function(cleaning_documentation
 
         # print(str(temp_df))
       }
-      
+
       # print(which(colnames(temp_df) == "original_file"))
       # print(unique(temp_df$original_file))
-      
+
       list_datasets_per_cycle[[j]] <- temp_df %>%
         remove_var_label(.)
 
@@ -231,16 +231,16 @@ compile_datasets <- function(cleaning_documentation
     # {
     #   variables_common <- intersect(colnames(x)
     #                                 , colnames(y))
-    #   
+    #
     #   print(variables_common)
-    #   
+    #
     #   merged_dataset <- full_join(x
     #                               , y
     #                               , by = variables_common)
-    # 
+    #
     #   return(merged_dataset)
     # }
-    
+
     joining_by_SEQN <- function(x, y) full_join(x, y, by = "SEQN")
 
     # print(length(list_datasets_per_cycle))
@@ -256,16 +256,16 @@ compile_datasets <- function(cleaning_documentation
 
     # View(df_merged_for_cycle_i)
     # print(which(colnames(df_merged_for_cycle_i) == "original_file"))
-    
+
     # colnames(df_merged_for_cycle_i)[grepl(".x$|.y$",colnames(df_merged_for_cycle_i)) == FALSE] %>%
     #   print(.)
-    
+
     # subset_test <- df_merged_for_cycle_i %>%
     #   filter(SEQN == 3) %>%
     #   t(.)
     # View(subset_test)
     # which(t(subset_test[1,]) != t(subset_test[2,])) %>% print(.)
-    
+
 
     if(cycle_i == -1)
     {
@@ -283,7 +283,7 @@ compile_datasets <- function(cleaning_documentation
                                 , sep = ""))
 
     }
-    
+
     # View(colnames(df_merged_for_cycle_i) %>% data.frame(.))
     # print("yes")
 
@@ -310,19 +310,19 @@ compile_datasets <- function(cleaning_documentation
 
     codenames_include <- intersect(codenames_include
                                    , colnames(df_merged_for_cycle_i))
-    
+
     list_all_datasets[[label_cycle]] <- df_merged_for_cycle_i %>%
       select(SEQN
              , SEQN_new
              , SDDSRVYR
              , all_of(codenames_include))
-    
+
     # df_merged_for_cycle_i <- df_merged_for_cycle_i %>%
     #   select(SEQN
     #          , SEQN_new
     #          , SDDSRVYR
     #          , all_of(codenames_include))
-    
+
     # if(i == 1)
     # {
     #   merged_nhanes_dataset_final <- df_merged_for_cycle_i
@@ -345,6 +345,6 @@ compile_datasets <- function(cleaning_documentation
   # merged_nhanes_dataset_final_cleaner <- clean_duplicates_of_seqn_from_cycles(merged_nhanes_dataset_final)
 
   setwd(current_directory)
-  
+
   return(merged_nhanes_dataset_final)
 }
