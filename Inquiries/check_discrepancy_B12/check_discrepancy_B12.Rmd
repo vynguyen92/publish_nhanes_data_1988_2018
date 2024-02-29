@@ -1,0 +1,83 @@
+---
+title: "Check discrepancy of Vitamin B12 between curated NHANES and official NHANES"
+author: "Vy Nguyen"
+date: "2024-02-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages(tidyverse)
+library(tidyverse)
+
+install.packages("readxl")
+library(readxl)
+```
+
+## R Markdown
+
+```{r read in attachments}
+
+attachment_1 <- read_excel("Attachment 1.xlsx"
+                           , skip = 1)
+
+# change column names to enable ease of using the object name without using quotes
+colnames(attachment_1)[which(colnames(attachment_1) == "your curated data (LBXB12)")] <- "your_curated_data"
+
+colnames(attachment_1)[which(colnames(attachment_1) == "data from NHANES website (LBXB12)")] <- "data_from_NHANES_website"
+
+attachment_2 <- read_excel("Attachment  2.xlsx"
+                           , skip = 1)
+
+# change column names to enable ease of using the object name without using quotes
+colnames(attachment_2)[which(colnames(attachment_2) == "your curated data (LBXB12)")] <- "your_curated_data"
+
+colnames(attachment_2)[which(colnames(attachment_2) == "data from NHANES website (LBXB12)")] <- "data_from_NHANES_website"
+
+```
+
+
+```{r discrepancy in attachment 1}
+
+# Problem: There are discrepancies in the values of the variable LBXB12 when compared to the data available on the NHANES official website.
+
+# Explanation: My curated LBXB12 is the average of vitamin B12 measurements in the 1st (LBXB121) and 2nd exams (LBXB122). The data from NHANES official website (data_from_NHANES_website) in your attachment is the measurements from the 1st exam. 
+
+# subset of my curated NHANES for the chemical module
+subset_b12 <- chemicals_clean %>%
+  select(SEQN
+         , LBXB12
+         , LBXB121 # Serum vitamin B12 replicate 1 (from file L06_B - Cadmium, Lead, Mercury, Cotinine & Nutritional Biochemistries)
+         , LBXB122 # Serum vitamin B12 replicate 2 (from file L06_2_B - Cadmium, Lead, Total Mercury, Ferritin, Serum Folate, RBC Folate, Vitamin B12, Homocysteine, Methylmalonic acid, Cotinine - Blood, Second Exam)
+         , SDDSRVYR) %>%
+  filter(SDDSRVYR != -1)
+
+# merge the subset with your attachment to perform a comparison
+attachment_1_updated <- attachment_1 %>%
+  left_join(.
+            , subset_b12
+            , by = "SEQN") %>%
+  # The vitamin B12 measurements from the NHANES website are replicate 1 from L06_B (First Exam)
+  mutate(compare_first_exam_with_replicate_1 = data_from_NHANES_website == LBXB121) %>%
+  # The vitamin B12 measurements in my curated NHANES is the average of the replicates (measurements from L06_B - First Exame and L06_2_B - Second Exam)
+  mutate(compare_curated_data_with_mean_of_replicates = your_curated_data == (LBXB121 + LBXB122)/2)
+View(attachment_1_updated)
+
+
+```
+
+
+```{r discrepancy in attachment 2}
+
+# Problem: There are instances where seven individuals are listed as having a value for LBXB12 in my curated dataset, whereas the NHANES official data designates these cases as NA (Not Available).
+
+# Explanation:  The list values (LBXB12) for these 7 participants are measurements from their 2nd exam (LBXB122). These participants do not have measurements from their 1st exam. When there are NO measurements for vitamin B12 in one exam but YES for the other exam, my curated LBXB12 takes the values from the exam with measurements. 
+
+# merge the subset with your attachment to perform a comparison
+attachment_2_updated <- attachment_2 %>%
+  left_join(.
+            , subset_b12
+            , by = "SEQN")
+View(attachment_2_updated)
+
+```
