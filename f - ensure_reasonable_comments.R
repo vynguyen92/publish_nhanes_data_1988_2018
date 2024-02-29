@@ -23,7 +23,11 @@ ensure_reasonable_comments <- function(dataset_new
     
     if(unreasonable_comments == FALSE)
     {
-      print(comment_codename_i)
+      print(paste("codename with unreasonable comment codes:"
+                  , comment_codename_i))
+      print(paste("unreasonable comment codes:"
+                  , dataset_new[index_comments_wrong,comment_codename_i] %>%
+                    unique(.)))
     }
     
     dataset_new[index_comments_wrong,comment_codename_i] <- NA
