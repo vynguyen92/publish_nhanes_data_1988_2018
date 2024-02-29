@@ -26,14 +26,16 @@ indicate_relation_to_LOD_comment_missing <- function(df_after_harmonization
                  # , LOD_notes) == TRUE 
            #& 
              !is.na(LOD) == TRUE 
-           & !is.na(comment_codename_use) == TRUE)
-  # View(df_doc_cleaning_missing_comment)
+           & is.na(comment_codename) == TRUE)
+  View(df_doc_cleaning_missing_comment)
   
   # Determine the chemical codename that have missing comments
   chem_missing_comment <- df_doc_cleaning_missing_comment %>%
     pull(variable_codename_use) %>%
     unique(.)
   # print(chem_missing_comment)
+  
+  # chem_missing_comment <- "SSDCP"
   
   # Determine the number of chemicals with missing comments
   num_chem_missing_comment <- length(chem_missing_comment)
@@ -54,7 +56,7 @@ indicate_relation_to_LOD_comment_missing <- function(df_after_harmonization
       filter(variable_codename_use == chem_missing_j) %>%
       pull(comment_codename_use) %>%
       unique(.)
-    # 
+    # print(comment_codename_j)
     
     if(is_empty(comment_codename_j) == FALSE)
     {
