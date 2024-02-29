@@ -81,7 +81,17 @@ calculate_num_variables <- function(list_documentation
   
   # View(df_files)
     
-  df_num_variables_per_module <- df_files %>%
+  df_num_variables_per_module <- dataset_dictionary %>%
+    select(variable_codename_use
+           , in_dataset) %>%
+    unique() %>%
+    group_by( in_dataset) %>%
+    count() %>%
+    ungroup()
+  # View(df_num_variables_per_module)
+  
+  
+  df_num_variables_per_module_file_cat <- df_files %>%
     select(variable_codename_use
            , file_category
            , in_dataset) %>%
@@ -99,7 +109,8 @@ calculate_num_variables <- function(list_documentation
   list_stats <- list("num_unique_original_variables" = num_unique_original_variables
                      , "num_unique_harmonized_variables" = length(harmonized_variables_dictionary)
                      , "df_variables_by_cycle" = df_files
-                     , "df_num_variables_per_module" = df_num_variables_per_module)
+                     , "df_num_variables_per_module" = df_num_variables_per_module
+                     , "df_num_variables_per_module_file_cat" = df_num_variables_per_module_file_cat)
   
   return(list_stats)
 }
