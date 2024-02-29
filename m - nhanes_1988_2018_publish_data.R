@@ -153,3 +153,5 @@ list_num_files <- calculate_num_files(list_master_files)
 
 list_num_variables <- calculate_num_variables(list_master_files
                                               , df_dictionary)
+
+list_num_corrections <- calculate_num_corrections(list_master_files)
