@@ -27,7 +27,7 @@ indicate_relation_to_LOD_comment_missing <- function(df_after_harmonization
            #& 
              !is.na(LOD) == TRUE 
            & is.na(comment_codename) == TRUE)
-  View(df_doc_cleaning_missing_comment)
+  # View(df_doc_cleaning_missing_comment)
   
   # Determine the chemical codename that have missing comments
   chem_missing_comment <- df_doc_cleaning_missing_comment %>%
@@ -35,6 +35,7 @@ indicate_relation_to_LOD_comment_missing <- function(df_after_harmonization
     unique(.)
   # print(chem_missing_comment)
   
+  # For debugging
   # chem_missing_comment <- "SSDCP"
   
   # Determine the number of chemicals with missing comments
