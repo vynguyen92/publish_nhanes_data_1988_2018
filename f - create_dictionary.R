@@ -86,7 +86,8 @@ create_dictionary <- function(list_dataset
          , .) %>% 
     unique(.) 
   
-  names_dataset <- names_dataset[!(names_dataset %in% "Biomonitoring Equivalents")]
+  names_dataset <- names_dataset[!(names_dataset %in% c("Biomonitoring Equivalents"
+                                                        , "Correspondence Table"))]
   # print(names_dataset)
   
   df_files <- names_dataset %>%
