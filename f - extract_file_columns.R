@@ -12,6 +12,7 @@ extract_file_columns <- function(x
            , SDDSRVYR) %>%
     unique(.) %>%
     mutate(in_dataset = str_to_title(name_dataset_i))
+  # View(subset_files_i)
   
   if(name_dataset_i == "Chemicals")
   {
