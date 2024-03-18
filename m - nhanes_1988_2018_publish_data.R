@@ -110,15 +110,15 @@ comments_clean <- form_comments_dataset(comments_unclean
                                         , list_master_files
                                         , "Chemicals")
 
+# Upload the cleaning documentation for all datasets
+list_master_files <- upload_nhanes_master_files("NHANES - Master List of Files 1i.xlsx")
+
 weights_clean <- form_survey_weights_dataset(weights_unclean
                                              , list_master_files
                                              , "Weights")
 
 occupation_clean <- clean_occupation_dataset(occupations_unclean
                                              , list_master_files)
-
-# Upload the cleaning documentation for all datasets
-list_master_files <- upload_nhanes_master_files("NHANES - Master List of Files 1i.xlsx")
 
 questionnaire_clean <- clean_questionnaire_dataset(questionnaire_unclean
                                                    , list_master_files
