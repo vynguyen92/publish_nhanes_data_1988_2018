@@ -3,6 +3,7 @@ form_survey_weights_dataset <- function(dataset_unclean
                                         , name_dataset = "Weights")
 {
   library("tidyverse")
+  library("usefun")
   
   # Extract the documentation dataset for the chemicals
   dataset_document_cleaning <- list_document_cleaning[[name_dataset]]
@@ -20,10 +21,16 @@ form_survey_weights_dataset <- function(dataset_unclean
     unique(.)
   # print(codenames_include)
   
-  dataset_cleaner <- dataset_cleaner[,c("SEQN"
-                                        , "SEQN_new"
-                                        , "SDDSRVYR"
-                                        , codenames_include)] %>%
+  # print(outersect(codenames_include
+  #                 , colnames(dataset_cleaner)))
+  
+  all_codenames_include <- c("SEQN"
+                             , "SEQN_new"
+                             , "SDDSRVYR"
+                             , codenames_include) %>%
+    unique(.)
+  
+  dataset_cleaner <- dataset_cleaner[,all_codenames_include] %>%
     drop_na(SEQN)
   
   
