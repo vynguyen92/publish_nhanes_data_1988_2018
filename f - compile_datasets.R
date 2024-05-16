@@ -39,7 +39,7 @@ compile_datasets <- function(cleaning_documentation
     {
 
       subset_cleaning_doc_i <- subset_cleaning_doc_i %>%
-        filter(problem_with_file != "exist in search engine but not in list of NHANES datasets")
+        filter(!(problem_with_file %in% c("exist in search engine but not in list of NHANES datasets")))
 
     } else {
       subset_cleaning_doc_i <- subset_cleaning_doc_i
@@ -219,6 +219,7 @@ compile_datasets <- function(cleaning_documentation
           unique(.)
         
         problem_with_file_boolean <- !is.na(problem_with_file_description)
+        # print(problem_with_file_boolean)
         
         if(problem_with_file_boolean == TRUE)
         {
@@ -228,20 +229,19 @@ compile_datasets <- function(cleaning_documentation
                                                , sep = "")
           setwd(nhanes_continuous_directory)
           
+          # print(list.files())
+          
           file_name_j <- paste(file_name_j
                                , ".XPT"
                                , sep = "")
           
-          temp_df <- nhanes(file_name_j)
+          temp_df <- read_xpt(file_name_j)
+          # View(temp_df)
           
         } else {
           # Store jth dataset into temp_file
           temp_df <- nhanes(file_name_j)
         }
-        
-        # Store jth dataset into temp_file
-        temp_df <- nhanes(file_name_j)
-
         # print(str(temp_df))
       }
 
