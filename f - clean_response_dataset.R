@@ -73,6 +73,7 @@ clean_response_dataset <- function(dataset_unclean
 
   print("Include only harmonized and/or selected variables")
 
+  # View(dataset_document_cleaning)
   codenames_include <- dataset_document_cleaning %>%
     pull(variable_codename_use) %>%
     unique(.)
@@ -82,22 +83,25 @@ clean_response_dataset <- function(dataset_unclean
   #                                              , "SEQN_new"
   #                                              , "SDDSRVYR"
   #                                              , codenames_include)))
-  
-  dataset_cleaner <- dataset_cleaner[,c("SEQN"
+
+  dataset_cleaner <- dataset_cleaner[,unique(c("SEQN"
                                         , "SEQN_new"
                                         , "SDDSRVYR"
-                                        , codenames_include)] %>%
+                                        , codenames_include))] %>%
     drop_na(SEQN)
 
   print("Check number of cycles matches between dataset and documentation")
 
   dataset_cleaner <- check_cycles_between_documentation_df(dataset_cleaner
                                                            , dataset_document_cleaning)
+  # print("LBXTST" %in% colnames(dataset_cleaner))
 
   print("Ensure all columns are label")
 
   dataset_cleaner <- ensure_all_columns_are_label(dataset_cleaner
-                                                      , list_master_files$Response)
+                                                  , list_master_files$Response)
 
+  # print("LBXTST" %in% colnames(dataset_cleaner))
+  
   return(dataset_cleaner)
 }
