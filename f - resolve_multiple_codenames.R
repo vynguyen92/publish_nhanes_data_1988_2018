@@ -31,7 +31,7 @@ resolve_multiple_codenames <- function(vector_corrected_codenames
   {
     # Determine the corrected codename for a given variable
     corrected_codename_i <- vector_corrected_codenames[i]
-    # print(corrected_codename_i)
+    print(corrected_codename_i)
     
     # Determine the row indices that pertaining to this codename in the documentation dataset
     index_corrected_codename_i <- which(df_doc_cleaning[,colname_corrected_codename] == corrected_codename_i)
@@ -46,7 +46,6 @@ resolve_multiple_codenames <- function(vector_corrected_codenames
       subset_document_clean <- subset_document_clean %>%
         drop_na(comment_codename)
     }
-    
     # print(subset_document_clean)
     
     # Determine the unharmonized codenames that pertained to the corrected codename
@@ -92,13 +91,15 @@ resolve_multiple_codenames <- function(vector_corrected_codenames
       } else {
         index_participants_cycle <- which(vector_cycle %in% c(survey_years_j))
       }
-      # print(df_unclean[index_participants, colname_cycle] %>% unique(.))
+      # print(df_unclean[index_participants_cycle, colname_cycle] %>% unique(.))
 
       
       index_not_na <- which(is.na(df_unclean[,old_codename_j]) == FALSE)
+      # print(index_not_na)
       
       index_participants <- intersect(index_participants_cycle
                                       , index_not_na)
+      # print(index_participants)
 
       # measurements <- df_unclean[index_participants, c(old_codename_j,corrected_codename_i, colname_cycle)]
       measurements <- df_unclean[index_participants, old_codename_j]
