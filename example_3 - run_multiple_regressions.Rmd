@@ -384,19 +384,10 @@ run_associations_svyglm <- function(x,
       mutate(formula = formula_regression) %>% 
       relocate(variable_codename_use)
     
-  # Manually extract and calculate the model statistics
-  # glance() did not work on a model object that account for the sampling design 
+  # Extract the regression statistics for the model
   } else if(boolean_statistics_type == "glance") {
     
-    df_stats <- data.frame("nobs" = length(model_x$y),
-                           "null.deviance" = model_x$null.deviance,
-                           "df.null" = model_x$df.null,
-                           "logLik" = logLik(model_x)[1],
-                           "df" = length(model_svyglm_lead$coefficients) + 1,
-                           "AIC" = model_x$aic,
-                           "BIC" = -2*logLik + log(nobs)*df,
-                           "deviance" = model_x$deviance,
-                           "df.residual" = model_x$df.residual) %>%
+    df_stats <- glance(model_x) %>%
       mutate(variable_codename_use = x) %>%
       mutate(formula = formula_regression) %>% 
       relocate(variable_codename_use)
@@ -408,9 +399,9 @@ run_associations_svyglm <- function(x,
 }
 
 df_svyglm_metals_tidy <- metals_codename %>%
-    map(., 
-        run_associations_svyglm, 
-        nhanes_subset, 
+    map(.,
+        run_associations_svyglm,
+        nhanes_subset,
         "tidy") %>%
     bind_rows(.) %>%
   mutate(percent_diff = (10^estimate - 1)*100)
