@@ -29,14 +29,29 @@ form_wide_original_codenames_files <- function(x
                                                                     , "19a"
                                                                     , "21a"))
   
-  subset_files_i <- list_documentations[[name_dataset_i]] %>%
-    select(variable_codename_use
-           , variable_codename
-           , variable_description_use
-           , file_name
-           , file_category
-           , year	
-           , SDDSRVYR) %>%
+  if("replicate_codenames" %in% colnames(list_documentations[[name_dataset_i]]))
+  {
+    subset_files_i <- list_documentations[[name_dataset_i]] %>%
+      select(variable_codename_use
+             , variable_codename
+             , variable_description_use
+             , file_name
+             , file_category
+             , year	
+             , SDDSRVYR
+             , replicate_codenames)
+  } else {
+    subset_files_i <- list_documentations[[name_dataset_i]] %>%
+      select(variable_codename_use
+             , variable_codename
+             , variable_description_use
+             , file_name
+             , file_category
+             , year	
+             , SDDSRVYR)
+  }
+  
+  subset_files_i <- subset_files_i %>%
     mutate(year = gsub("[A-Za-z]","", year) %>%
              gsub("\\s-\\s", "", .) %>%
              gsub("\\s*$", "", .)) %>%
@@ -72,12 +87,29 @@ form_wide_original_codenames_files <- function(x
                                       gsub("-", "", .)
                                     , ".pdf"
                                     , sep = "")
-                            , weblink))
+                            , weblink)) %>%
+    mutate(weblink = ifelse(grepl("^pyr_tot", file_name) == TRUE & SDDSRVYR %in% c(1,2)
+                            , "https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/food-surveys-research-group/docs/mypyramid-equivalents-product-downloads/"
+                            , ifelse(grepl("^pyr_tot", file_name) == TRUE & SDDSRVYR == 3
+                                     , "https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/food-surveys-research-group/docs/mped-databases-for-downloading/"
+                                     , weblink))) %>%
+    mutate(original_codenames = variable_codename)
     # mutate(original_name_weblink = paste(variable_codename
     #                                      , " ("
     #                                      , 
     #                                      , ")"))
   # View(subset_files_i)
+  
+  
+  # print(colnames(subset_files_i))
+  
+  if("replicate_codenames" %in% colnames(subset_files_i))
+  {
+    subset_files_i <- create_weblinks_for_derived_variables(subset_files_i
+                                                            , df_file_name_subsection_nhanes_iii)
+  }
+  
+
   
   # print(subset_files_i %>% 
   #        filter(SDDSRVYR == -1) %>%
