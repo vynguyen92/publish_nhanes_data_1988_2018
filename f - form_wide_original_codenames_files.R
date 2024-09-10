@@ -109,6 +109,11 @@ form_wide_original_codenames_files <- function(x
                                                             , df_file_name_subsection_nhanes_iii)
   }
   
+  if("ADULT" %in% subset_files_i$file_name & "YOUTH" %in% subset_files_i$file_name)
+  {
+    subset_files_i <- merge_weblinks_for_adult_and_youth_variables(subset_files_i)
+  }
+  
 
   
   # print(subset_files_i %>% 
